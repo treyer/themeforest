@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const { ProvidePlugin } = require("webpack");
 
 const path = require("path");
 
@@ -21,7 +22,10 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: [".tsx", ".ts", ".jsx", ".js"] },
+  resolve: {
+    extensions: [".tsx", ".ts", ".jsx", ".js"],
+    alias: { components: path.resolve(__dirname, "src/components") },
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -35,6 +39,9 @@ module.exports = {
           noErrorOnMissing: true,
         },
       ],
+    }),
+    new ProvidePlugin({
+      React: "react",
     }),
   ],
 };
