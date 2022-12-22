@@ -1,6 +1,6 @@
 import TestComponent from "components/TestComponent";
 
-function App() {
+const App = () => {
   return (
     <div className="wrapper">
       <div className="inner">
@@ -9,6 +9,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
