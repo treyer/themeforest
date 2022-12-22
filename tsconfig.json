@@ -26,7 +26,8 @@
     // Modules Configuration
     "baseUrl": "./",
     "paths": {
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "layouts/*": ["src/layouts/*"]
     },
     "module": "ES2022",
     "moduleResolution": "node",

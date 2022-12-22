@@ -1,14 +1,7 @@
-import TestComponent from "components/TestComponent/TestComponent";
+import MainLayout from "layouts/MainLayout/MainLayout";
 
 const App = () => {
-  return (
-    <div className="wrapper">
-      <div className="inner">
-        <h1>Hello world!!</h1>
-        <TestComponent></TestComponent>
-      </div>
-    </div>
-  );
+  return <MainLayout />;
 };
 
 export default App;

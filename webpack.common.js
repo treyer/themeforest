@@ -24,7 +24,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js"],
-    alias: { components: path.resolve(__dirname, "src/components") },
+    alias: {
+      components: path.resolve(__dirname, "src/components"),
+      layouts: path.resolve(__dirname, "src/layouts"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
