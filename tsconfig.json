@@ -27,7 +27,10 @@
     "baseUrl": "./",
     "paths": {
       "components/*": ["src/components/*"],
-      "layouts/*": ["src/layouts/*"]
+      "layouts/*": ["src/layouts/*"],
+      "styles/*": ["src/styles/*"],
+      "context/*": ["src/context/*"],
+      "types/*": ["src/types/*"]
     },
     "module": "ES2022",
     "moduleResolution": "node",

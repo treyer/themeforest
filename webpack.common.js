@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { ProvidePlugin } = require("webpack");
@@ -27,6 +28,9 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, "src/components"),
       layouts: path.resolve(__dirname, "src/layouts"),
+      styles: path.resolve(__dirname, "src/styles"),
+      context: path.resolve(__dirname, "src/context"),
+      types: path.resolve(__dirname, "src/types"),
     },
   },
   plugins: [
