@@ -1,5 +1,6 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Button = styled.button``;
+const NavButton = styled(NavLink)``;
 
-export default Button;
+export default NavButton;

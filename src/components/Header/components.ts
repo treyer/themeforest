@@ -16,6 +16,6 @@ export const Inner = styled.header`
   min-width: ${({ theme }) => theme.size.mobileM};
 `;
 
-export const ButtonsBlock = styled.div`
+export const ButtonsBlock = styled.nav`
   display: flex;
 `;
