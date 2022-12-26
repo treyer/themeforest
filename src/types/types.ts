@@ -3,6 +3,11 @@ export enum LogoSize {
   Small,
 }
 
+export enum Theme {
+  Light = "light",
+  Dark = "dark",
+}
+
 export interface TypographyStyles {
   "font-family": string;
   "font-style": string;

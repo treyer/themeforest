@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import LogoImage from "./components";
 import ThemeContext from "context/ThemeContext";
-import { LogoSize } from "types/types";
+import { LogoSize, Theme } from "types/types";
 
 type Props = {
   type: LogoSize;
@@ -18,7 +18,7 @@ const Logo = ({ type }: Props) => {
     <LogoImage
       dimensions={type === LogoSize.Large ? dimensionsLarge : dimensionsSmall}
       src={`../../assets/svg/${
-        themeContext === "light" ? "logo_blue.svg" : "logo_white.svg"
+        themeContext === Theme.Light ? "logo_blue.svg" : "logo_white.svg"
       }`}
     />
   );

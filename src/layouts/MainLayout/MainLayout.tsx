@@ -9,6 +9,7 @@ import Footer from "components/Footer/Footer";
 import Header from "components/Header/Header";
 import ThemeContext from "context/ThemeContext";
 import Loader from "components/Loader/Loader";
+import { Theme } from "types/types";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("pages/AboutPage/AboutPage"));
@@ -19,13 +20,13 @@ const ServicesPage = lazy(() => import("pages/ServicesPage/ServicesPage"));
 const TeamPage = lazy(() => import("pages/TeamPage/TeamPage"));
 
 const MainLayout = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(Theme.Dark);
 
   return (
     <ThemeContext.Provider value={theme}>
       <ThemeProvider
         theme={
-          theme === "light"
+          theme === Theme.Light
             ? { ...commonTheme, ...lightTheme }
             : { ...commonTheme, ...darkTheme }
         }

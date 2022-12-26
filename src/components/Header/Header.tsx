@@ -11,7 +11,9 @@ const Header = () => {
         <ButtonsBlock>
           <MenuButton to="/">Home</MenuButton>
           <MenuButton to="/">Solutions</MenuButton>
-          <MenuButton to="/">Pages</MenuButton>
+          <MenuButton to={null} isSubmenu>
+            Pages
+          </MenuButton>
           <MenuButton to="/">Elements</MenuButton>
           <MenuButton to="/blog">Blog</MenuButton>
           <MenuButton to="/contacts">Contacts</MenuButton>

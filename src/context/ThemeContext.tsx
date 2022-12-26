@@ -1,3 +1,5 @@
 import React from "react";
 
-export default React.createContext("light");
+import { Theme } from "types/types";
+
+export default React.createContext(Theme.Dark);
