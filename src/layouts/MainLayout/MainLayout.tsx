@@ -19,7 +19,7 @@ const ServicesPage = lazy(() => import("pages/ServicesPage/ServicesPage"));
 const TeamPage = lazy(() => import("pages/TeamPage/TeamPage"));
 
 const MainLayout = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   return (
     <ThemeContext.Provider value={theme}>

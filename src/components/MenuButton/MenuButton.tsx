@@ -1,4 +1,6 @@
-import NavButton from "./components";
+import Typography from "components/Typography/Typography";
+import { HeaderStyle } from "types/types";
+import Button from "./components";
 
 type Props = {
   to: string;
@@ -6,7 +8,13 @@ type Props = {
 };
 
 const MenuButton = ({ to, children }: Props) => {
-  return <NavButton to={to}>{children}</NavButton>;
+  return (
+    <Button to={to}>
+      <Typography headerStyle={HeaderStyle.Headline7_medium}>
+        {children}
+      </Typography>
+    </Button>
+  );
 };
 
 export default MenuButton;

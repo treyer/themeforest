@@ -16,9 +16,9 @@ const Logo = ({ type }: Props) => {
 
   return (
     <LogoImage
-      dimensions={type === LogoSize.large ? dimensionsLarge : dimensionsSmall}
+      dimensions={type === LogoSize.Large ? dimensionsLarge : dimensionsSmall}
       src={`../../assets/svg/${
-        themeContext === "light" ? "logo_white.svg" : "logo_blue.svg"
+        themeContext === "light" ? "logo_blue.svg" : "logo_white.svg"
       }`}
     />
   );

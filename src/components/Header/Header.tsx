@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Inner>
-        <Logo type={LogoSize.large} />
+        <Logo type={LogoSize.Large} />
         <ButtonsBlock>
           <MenuButton to="/">Home</MenuButton>
           <MenuButton to="/">Solutions</MenuButton>

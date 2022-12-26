@@ -1,3 +1,4 @@
+import { LOADER_HEIGHT, LOADER_WIDTH } from "constants/common";
 import { Bars } from "react-loader-spinner";
 import { withTheme } from "styled-components";
 
@@ -14,7 +15,12 @@ type Props = {
 const Loader = ({ theme }: Props) => {
   return (
     <Wrapper>
-      <Bars width="100" height="70" color={theme.colors.grey} visible={true} />
+      <Bars
+        width={LOADER_WIDTH}
+        height={LOADER_HEIGHT}
+        color={theme.colors.grey}
+        visible={true}
+      />
     </Wrapper>
   );
 };
