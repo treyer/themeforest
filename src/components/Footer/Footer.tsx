@@ -1,5 +1,3 @@
-import Icon from "components/Icon/Icon";
-import { chevronDownPath } from "constants/iconPaths";
 import {
   AdditionalData,
   Inner,

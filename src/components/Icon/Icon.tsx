@@ -1,18 +1,14 @@
-import Wrapper from "./components";
+import IconImage from "./components";
 
 type Props = {
-  path: string;
-  color: string;
+  url: string;
   width: number;
   height: number;
+  color?: string;
 };
 
-const Icon = ({ path, ...rest }: Props) => {
-  return (
-    <Wrapper {...rest}>
-      <path d={path} />
-    </Wrapper>
-  );
+const Icon = (props: Props) => {
+  return <IconImage {...props} />;
 };
 
 export default Icon;

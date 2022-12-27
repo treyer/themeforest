@@ -8,15 +8,6 @@ export enum Theme {
   Dark = "dark",
 }
 
-export interface TypographyStyles {
-  "font-family": string;
-  "font-style": string;
-  "font-weight": string;
-  "font-size": string;
-  "line-height": string;
-  "letter-spacing": string;
-}
-
 export enum HeaderStyle {
   Headline1_extrabold = "headline1_extrabold",
   Headline2_extrabold = "headline2_extrabold",
@@ -34,4 +25,16 @@ export enum ParagraphStyle {
   Paragraph2_bold = "paragraph2_bold",
   Paragraph3_regular = "paragraph3_regular",
   Paragraph3_semibold = "paragraph3_semibold",
+}
+
+export enum ButtonSize {
+  ExtraBig = "extraBig",
+  Big = "big",
+  Standard = "standard",
+  Little = "little",
+}
+
+export enum ButtonType {
+  Square = "square",
+  Round = "round",
 }
