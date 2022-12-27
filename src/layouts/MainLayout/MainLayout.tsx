@@ -10,6 +10,7 @@ import Header from "components/Header/Header";
 import ThemeContext from "context/ThemeContext";
 import Loader from "components/Loader/Loader";
 import { Theme } from "types/types";
+import { MainWrapper } from "./components";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("pages/AboutPage/AboutPage"));
@@ -32,7 +33,7 @@ const MainLayout = () => {
         }
       >
         <Header />
-        <main>
+        <MainWrapper>
           <Suspense fallback={<Loader />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -44,7 +45,7 @@ const MainLayout = () => {
               <Route path="/team" element={<TeamPage />} />
             </Routes>
           </Suspense>
-        </main>
+        </MainWrapper>
         <Footer />
       </ThemeProvider>
     </ThemeContext.Provider>
