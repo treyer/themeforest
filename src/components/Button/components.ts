@@ -10,12 +10,13 @@ type PropsSquareButton = {
   disabled: boolean;
 };
 
-type PropStandardIconWrapper = {
+type PropSquareButtonIconWrapper = {
   width: number;
   height: number;
 };
 
 type PropsStandardIcon = {
+  className: string;
   url: string;
   width: number;
   height: number;
@@ -72,6 +73,42 @@ export const SquareButton = styled.button<PropsSquareButton>`
 
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 
+  & .icon {
+    background-color: ${({ filled, disabled }) => {
+      if (disabled && filled) {
+        return COLOR_FILL_DISABLED;
+      }
+      if (disabled && !filled) {
+        return COLOR_NO_FILL_DISABLED;
+      }
+      return filled ? COLOR_FILL : COLOR_NO_FILL;
+    }};
+  }
+
+  &:hover .icon {
+    background-color: ${({ filled, disabled }) => {
+      if (disabled && filled) {
+        return COLOR_FILL_DISABLED;
+      }
+      if (disabled && !filled) {
+        return COLOR_NO_FILL_DISABLED;
+      }
+      return filled ? COLOR_FILL_HOVERED : COLOR_NO_FILL_HOVERED;
+    }};
+  }
+
+  &:active .icon {
+    background-color: ${({ filled, disabled }) => {
+      if (disabled && filled) {
+        return COLOR_FILL_DISABLED;
+      }
+      if (disabled && !filled) {
+        return COLOR_NO_FILL_DISABLED;
+      }
+      return filled ? COLOR_FILL_PRESSED : COLOR_NO_FILL_PRESSED;
+    }};
+  }
+
   &:hover {
     color: ${({ filled, disabled }) => {
       if (disabled && filled) {
@@ -90,7 +127,8 @@ export const SquareButton = styled.button<PropsSquareButton>`
         return BG_COLOR_NO_FILL_DISABLED;
       }
       return filled ? BG_COLOR_FILL_HOVERED : BG_COLOR_NO_FILL_HOVERED;
-    }}
+    }};
+  }
 
   &:active {
     color: ${({ filled, disabled }) => {
@@ -110,7 +148,8 @@ export const SquareButton = styled.button<PropsSquareButton>`
         return BG_COLOR_NO_FILL_DISABLED;
       }
       return filled ? BG_COLOR_FILL_PRESSED : BG_COLOR_NO_FILL_PRESSED;
-    }}
+    }};
+  }
 `;
 
 export const SquareButtonInner = styled.div`
@@ -119,12 +158,12 @@ export const SquareButtonInner = styled.div`
   align-items: center;
 `;
 
-export const StandardIconWrapper = styled.div<PropStandardIconWrapper>`
+export const SquareButtonIconWrapper = styled.div<PropSquareButtonIconWrapper>`
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
   margin-right: 10px;
 `;
 
-export const StandardIcon = styled(Icon)<PropsStandardIcon>``;
+export const SquareButtonIcon = styled(Icon)<PropsStandardIcon>``;
 
 export const RoundButton = styled.button``;

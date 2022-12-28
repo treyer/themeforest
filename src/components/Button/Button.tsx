@@ -4,8 +4,8 @@ import {
   RoundButton,
   SquareButton,
   SquareButtonInner,
-  StandardIcon,
-  StandardIconWrapper,
+  SquareButtonIcon,
+  SquareButtonIconWrapper,
 } from "./components";
 
 type Props = {
@@ -52,18 +52,20 @@ const Button = ({
         disabled={disabled}
       >
         <SquareButtonInner>
-          {size === ButtonSize.Standard && iconUrl && (
-            <StandardIconWrapper
-              width={ICON_SIZES.standard.width}
-              height={ICON_SIZES.standard.height}
-            >
-              <StandardIcon
-                url={iconUrl}
-                width={ICON_SIZES.standard.width}
-                height={ICON_SIZES.standard.height}
-              />
-            </StandardIconWrapper>
-          )}
+          {(size === ButtonSize.Standard || size === ButtonSize.ExtraBig) &&
+            iconUrl && (
+              <SquareButtonIconWrapper
+                width={ICON_SIZES[size].width}
+                height={ICON_SIZES[size].height}
+              >
+                <SquareButtonIcon
+                  className="icon"
+                  url={iconUrl}
+                  width={ICON_SIZES[size].width}
+                  height={ICON_SIZES[size].height}
+                />
+              </SquareButtonIconWrapper>
+            )}
           <Typography headerStyle={BUTTON_TEXT_STYLE[size]}>
             {children}
           </Typography>

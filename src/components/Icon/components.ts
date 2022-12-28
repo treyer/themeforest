@@ -10,7 +10,7 @@ type Props = {
 const IconImage = styled.div<Props>`
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
-  background-color: ${({ color, theme }) => color || theme.colors.primary};
+  ${({ color }) => (color ? ` background-color: ${color};` : "")}
   -webkit-mask-image: url(/assets/svg/${({ url }) => url});
   mask-image: url(/assets/svg/${({ url }) => url});
   mask-repeat: no-repeat;
