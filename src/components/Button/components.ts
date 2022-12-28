@@ -41,6 +41,8 @@ const COLOR_NO_FILL_HOVERED = "#185CFF";
 const COLOR_NO_FILL_PRESSED = "#185CFF";
 const COLOR_NO_FILL_DISABLED = "#9497A1";
 
+const DEFAULT_RADIUS = 6;
+
 export const SquareButton = styled.button<PropsSquareButton>`
   display: flex;
   justify-content: center;
@@ -51,7 +53,10 @@ export const SquareButton = styled.button<PropsSquareButton>`
   min-width: ${({ size }) => size.width}px;
   height: ${({ size }) => size.height}px;
 
-  border-radius: ${({ theme }) => theme.radiuses[0]}px;
+  border-radius: ${(props) =>
+    props && props.theme && props.theme.radiuses
+      ? props.theme.radiuses[0]
+      : DEFAULT_RADIUS}px;
   color: ${({ filled, disabled }) => {
     if (disabled && filled) {
       return COLOR_FILL_DISABLED;
