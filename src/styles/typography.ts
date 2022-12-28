@@ -1,6 +1,20 @@
+interface Styles {
+  [key: string]: string | number;
+}
+
+interface TypographyStyles {
+  [key: string]: Styles;
+}
+
 const fontManrope = { "font-family": "Manrope", "font-style": "normal" };
 
-export const headerStyles = {
+const fontOpenSans = {
+  "font-family": "OpenSans",
+  "font-style": "normal",
+  "letter-spacing": "-0.015em",
+};
+
+export const typographyStyles: TypographyStyles = {
   headline1_extrabold: {
     ...fontManrope,
     "font-weight": 800,
@@ -57,15 +71,6 @@ export const headerStyles = {
     "line-height": "24px",
     "letter-spacing": "-0.01em",
   },
-};
-
-const fontOpenSans = {
-  "font-family": "OpenSans",
-  "font-style": "normal",
-  "letter-spacing": "-0.015em",
-};
-
-export const paragraphStyles = {
   paragraph1_regular: {
     ...fontOpenSans,
     "font-weight": 400,

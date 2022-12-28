@@ -8,7 +8,7 @@ export enum Theme {
   Dark = "dark",
 }
 
-export enum HeaderStyle {
+export enum TypographyStyle {
   Headline1_extrabold = "headline1_extrabold",
   Headline2_extrabold = "headline2_extrabold",
   Headline3_extrabold = "headline3_extrabold",
@@ -17,9 +17,6 @@ export enum HeaderStyle {
   Headline6_bold = "headline6_bold",
   Headline7_semibold = "headline7_semibold",
   Headline7_medium = "headline7_medium",
-}
-
-export enum ParagraphStyle {
   Paragraph1_regular = "paragraph1_regular",
   Paragraph2_regular = "paragraph2_regular",
   Paragraph2_bold = "paragraph2_bold",

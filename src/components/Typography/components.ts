@@ -1,26 +1,19 @@
 import styled from "styled-components";
-import { headerStyles, paragraphStyles } from "styles/typography";
+import { typographyStyles } from "styles/typography";
 
-import { HeaderStyle, ParagraphStyle } from "types/types";
+import { TypographyStyle } from "types/types";
 
 type Props = {
-  headerStyle?: HeaderStyle;
-  paragraphStyle?: ParagraphStyle;
+  textStyle: TypographyStyle;
+  color: string;
 };
 
 const StyledText = styled.span<Props>`
-  ${({ headerStyle }) =>
-    headerStyle
-      ? Object.entries(headerStyles[headerStyle]).map(
-          (el) => `${el[0]}: ${el[1]};`,
-        )
-      : ""}
-  ${({ paragraphStyle }) =>
-    paragraphStyle
-      ? Object.entries(paragraphStyles[paragraphStyle]).map(
-          (el) => `${el[0]}: ${el[1]};`,
-        )
-      : ""}
+  ${({ textStyle }) =>
+    Object.entries(typographyStyles[textStyle]).map(
+      (el) => `${el[0]}: ${el[1]};`,
+    )}
+  color: ${({ color }) => color};
 `;
 
 export default StyledText;

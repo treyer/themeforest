@@ -1,14 +1,20 @@
-import { HeaderStyle, ParagraphStyle } from "types/types";
+import { TypographyStyle } from "types/types";
 import StyledText from "./components";
 
 type Props = {
-  headerStyle?: HeaderStyle;
-  paragraphStyle?: ParagraphStyle;
+  textStyle: TypographyStyle;
+  color?: string;
   children: string;
 };
 
-const Typography = ({ children, ...rest }: Props) => {
-  return <StyledText {...rest}>{children}</StyledText>;
+const COLOR_BLACK = "#000000";
+
+const Typography = ({ textStyle, color = COLOR_BLACK, children }: Props) => {
+  return (
+    <StyledText textStyle={textStyle} color={color}>
+      {children}
+    </StyledText>
+  );
 };
 
 export default Typography;

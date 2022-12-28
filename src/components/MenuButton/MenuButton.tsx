@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 
 import Typography from "components/Typography/Typography";
-import { HeaderStyle } from "types/types";
+import { TypographyStyle } from "types/types";
 import { Button, ButtonSimple, ButtonSubmenu } from "./components";
 import ThemeContext from "context/ThemeContext";
 
@@ -23,7 +23,7 @@ const MenuButton = ({ to, children, isSubmenu }: Props) => {
     <>
       {to !== null && (
         <Button to={to}>
-          <Typography headerStyle={HeaderStyle.Headline7_medium}>
+          <Typography textStyle={TypographyStyle.Headline7_medium}>
             {children}
           </Typography>
         </Button>
@@ -34,14 +34,14 @@ const MenuButton = ({ to, children, isSubmenu }: Props) => {
           currentTheme={theme}
           onClick={handleButtonSubmenuClick}
         >
-          <Typography headerStyle={HeaderStyle.Headline7_medium}>
+          <Typography textStyle={TypographyStyle.Headline7_medium}>
             {children}
           </Typography>
         </ButtonSubmenu>
       )}
       {to === null && !isSubmenu && (
         <ButtonSimple>
-          <Typography headerStyle={HeaderStyle.Headline7_medium}>
+          <Typography textStyle={TypographyStyle.Headline7_medium}>
             {children}
           </Typography>
         </ButtonSimple>

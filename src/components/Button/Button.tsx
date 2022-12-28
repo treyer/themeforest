@@ -1,5 +1,5 @@
 import Typography from "components/Typography/Typography";
-import { ButtonSize, ButtonType, HeaderStyle } from "types/types";
+import { ButtonSize, ButtonType, TypographyStyle } from "types/types";
 import {
   RoundButton,
   SquareButton,
@@ -30,10 +30,10 @@ const ICON_SIZES = {
 };
 
 const BUTTON_TEXT_STYLE = {
-  extraBig: HeaderStyle.Headline6_bold,
-  big: HeaderStyle.Headline6_bold,
-  standard: HeaderStyle.Headline7_semibold,
-  little: HeaderStyle.Headline7_semibold,
+  extraBig: TypographyStyle.Headline6_bold,
+  big: TypographyStyle.Headline6_bold,
+  standard: TypographyStyle.Headline7_semibold,
+  little: TypographyStyle.Headline7_semibold,
 };
 
 const Button = ({
@@ -66,7 +66,7 @@ const Button = ({
                 />
               </SquareButtonIconWrapper>
             )}
-          <Typography headerStyle={BUTTON_TEXT_STYLE[size]}>
+          <Typography textStyle={BUTTON_TEXT_STYLE[size]}>
             {children}
           </Typography>
         </SquareButtonInner>
@@ -76,7 +76,9 @@ const Button = ({
   //TODO: round Button
   return (
     <RoundButton>
-      <Typography>{children}</Typography>
+      <Typography textStyle={TypographyStyle.Headline6_bold}>
+        {children}
+      </Typography>
     </RoundButton>
   );
 };
