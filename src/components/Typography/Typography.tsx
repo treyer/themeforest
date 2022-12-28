@@ -7,9 +7,7 @@ type Props = {
   children: string;
 };
 
-const COLOR_BLACK = "#000000";
-
-const Typography = ({ textStyle, color = COLOR_BLACK, children }: Props) => {
+const Typography = ({ textStyle, color, children }: Props) => {
   return (
     <StyledText textStyle={textStyle} color={color}>
       {children}

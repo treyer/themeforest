@@ -1,5 +1,12 @@
-const fontColorMain = "#9497A1";
+import { Theme } from "types/types";
 
-const lightTheme = { fontColorMain };
+const fontColorMain = "#9497A1";
+const fontColorMenuButton = "#292D33";
+
+const lightTheme = {
+  fontColorMain,
+  fontColorMenuButton,
+  currentTheme: Theme.Light,
+};
 
 export default lightTheme;

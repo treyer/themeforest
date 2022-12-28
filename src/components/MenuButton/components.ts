@@ -15,6 +15,10 @@ export const Button = styled(NavLink)`
 
   color: ${({ theme }) => theme.fontColorMain};
 
+  &.active span {
+    font-weight: 600;
+  }
+
   &.active:after {
     content: "";
 

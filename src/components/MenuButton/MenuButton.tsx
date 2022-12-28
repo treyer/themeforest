@@ -1,19 +1,23 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
+import { withTheme } from "styled-components";
 
 import Typography from "components/Typography/Typography";
-import { TypographyStyle } from "types/types";
+import { Theme, TypographyStyle } from "types/types";
 import { Button, ButtonSimple, ButtonSubmenu } from "./components";
-import ThemeContext from "context/ThemeContext";
 
 type Props = {
   to: string | null;
   children: string;
   isSubmenu?: boolean;
+  theme: {
+    fontColorMenuButton: string;
+    currentTheme: Theme;
+  };
 };
 
-const MenuButton = ({ to, children, isSubmenu }: Props) => {
+const MenuButton = ({ to, children, isSubmenu, theme }: Props) => {
   const [isSubmenuOpened, setIsSubmenuOpened] = useState(false);
-  const theme = useContext(ThemeContext);
+  // const currentTheme = useContext(ThemeContext);
 
   const handleButtonSubmenuClick = () => {
     setIsSubmenuOpened((prev) => !prev);
@@ -23,7 +27,10 @@ const MenuButton = ({ to, children, isSubmenu }: Props) => {
     <>
       {to !== null && (
         <Button to={to}>
-          <Typography textStyle={TypographyStyle.Headline7_medium}>
+          <Typography
+            textStyle={TypographyStyle.Headline7_medium}
+            color={theme.fontColorMenuButton}
+          >
             {children}
           </Typography>
         </Button>
@@ -31,17 +38,23 @@ const MenuButton = ({ to, children, isSubmenu }: Props) => {
       {to === null && isSubmenu && (
         <ButtonSubmenu
           isSubmenuOpened={isSubmenuOpened}
-          currentTheme={theme}
+          currentTheme={theme.currentTheme}
           onClick={handleButtonSubmenuClick}
         >
-          <Typography textStyle={TypographyStyle.Headline7_medium}>
+          <Typography
+            textStyle={TypographyStyle.Headline7_medium}
+            color={theme.fontColorMenuButton}
+          >
             {children}
           </Typography>
         </ButtonSubmenu>
       )}
       {to === null && !isSubmenu && (
         <ButtonSimple>
-          <Typography textStyle={TypographyStyle.Headline7_medium}>
+          <Typography
+            textStyle={TypographyStyle.Headline7_medium}
+            color={theme.fontColorMenuButton}
+          >
             {children}
           </Typography>
         </ButtonSimple>
@@ -50,4 +63,4 @@ const MenuButton = ({ to, children, isSubmenu }: Props) => {
   );
 };
 
-export default MenuButton;
+export default withTheme(MenuButton);
