@@ -13,11 +13,11 @@ const Header = () => {
         <Logo type={LogoSize.Large} />
         <ButtonsBlock>
           <MenuButton to="/">Home</MenuButton>
-          <MenuButton to="/">Solutions</MenuButton>
+          <MenuButton to="/solutions">Solutions</MenuButton>
           <MenuButton to={null} isSubmenu>
             Pages
           </MenuButton>
-          <MenuButton to="/">Elements</MenuButton>
+          <MenuButton to="/elements">Elements</MenuButton>
           <MenuButton to="/blog">Blog</MenuButton>
           <MenuButton to="/contacts">Contacts</MenuButton>
         </ButtonsBlock>

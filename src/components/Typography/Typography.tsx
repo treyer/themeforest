@@ -4,7 +4,7 @@ import StyledText from "./components";
 type Props = {
   textStyle: TypographyStyle;
   color?: string;
-  children: string;
+  children: string | JSX.Element;
 };
 
 const Typography = ({ textStyle, color, children }: Props) => {

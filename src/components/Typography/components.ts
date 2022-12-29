@@ -13,7 +13,8 @@ const StyledText = styled.span<Props>`
     Object.entries(typographyStyles[textStyle]).map(
       (el) => `${el[0]}: ${el[1]};`,
     )}
-  color:  ${({ color }) => color};
+
+  ${({ color }) => (color ? `color: ${color}` : "")};
 `;
 
 export default StyledText;

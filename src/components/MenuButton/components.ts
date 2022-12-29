@@ -41,7 +41,7 @@ export const Button = styled(NavLink)`
   }
 `;
 
-export const ButtonSubmenu = styled.span<Props>`
+export const ButtonSubmenu = styled.div<Props>`
   position: relative;
 
   color: ${({ theme }) => theme.fontColorMain};
@@ -49,19 +49,19 @@ export const ButtonSubmenu = styled.span<Props>`
   cursor: pointer;
 
   &::after {
-    content: url("assets/svg/${({ isSubmenuOpened, currentTheme }) => {
+    content: ${({ isSubmenuOpened, currentTheme }) => {
       if (isSubmenuOpened) {
         if (currentTheme === Theme.Light) {
-          return "icon_chevron_up_20_light.svg";
+          return "url('assets/svg/icon_chevron_up_20_light.svg')";
         }
-        return "icon_chevron_up_20.svg";
+        return "url('assets/svg/icon_chevron_up_20.svg')";
       } else {
         if (currentTheme === Theme.Light) {
-          return "icon_chevron_down_20_light.svg";
+          return "url('assets/svg/icon_chevron_down_20_light.svg')";
         }
-        return "icon_chevron_down_20.svg";
+        return "url('assets/svg/icon_chevron_down_20.svg')";
       }
-    }}");
+    }};
 
     position: absolute;
     top: 2px;
@@ -78,7 +78,7 @@ export const ButtonSubmenu = styled.span<Props>`
   }
 `;
 
-export const ButtonSimple = styled.span`
+export const ButtonSimple = styled.div`
   color: ${({ theme }) => theme.fontColorMain};
 
   &:hover {

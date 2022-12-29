@@ -17,7 +17,6 @@ type Props = {
 
 const MenuButton = ({ to, children, isSubmenu, theme }: Props) => {
   const [isSubmenuOpened, setIsSubmenuOpened] = useState(false);
-  // const currentTheme = useContext(ThemeContext);
 
   const handleButtonSubmenuClick = () => {
     setIsSubmenuOpened((prev) => !prev);
