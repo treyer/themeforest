@@ -1,5 +1,3 @@
-import { withTheme } from "styled-components";
-
 import Logo from "components/Logo/Logo";
 import Typography from "components/Typography/Typography";
 import { LogoSize, TypographyStyle } from "types/types";
@@ -13,24 +11,17 @@ import {
   LeftBlock,
   MainData,
   RightBlock,
-  RightBlockColumn,
   SocialMediaWrapper,
   Wrapper,
   ColumnDataWrapperUl,
   PolicyBlock,
   TextAdditional,
+  SocialIconDarkMode,
 } from "./components";
-import Icon from "components/Icon/Icon";
 import { SOCIAL_NETWORK_LIST } from "constants/common";
 import FooterLink from "components/controls/FooterLink/FooterLink";
 
-type Props = {
-  theme: {
-    footerPrimaryColor: string;
-  };
-};
-
-function Footer({ theme }: Props) {
+function Footer() {
   return (
     <Wrapper>
       <Inner>
@@ -47,18 +38,18 @@ function Footer({ theme }: Props) {
             </DescriptionWrapper>
             <SocialMediaWrapper>
               {SOCIAL_NETWORK_LIST.map((el) => (
-                <Icon
+                <SocialIconDarkMode
                   key={el.id}
                   url={el.url}
                   width={24}
                   height={24}
-                  color={theme.footerPrimaryColor}
+                  color={"inherit"}
                 />
               ))}
             </SocialMediaWrapper>
           </LeftBlock>
           <RightBlock>
-            <RightBlockColumn>
+            <div>
               <Typography textStyle={TypographyStyle.Headline6_bold}>
                 <TextPrimary>Quick Link</TextPrimary>
               </Typography>
@@ -74,8 +65,8 @@ function Footer({ theme }: Props) {
                   <FooterLink to="/faqs">FAQ</FooterLink>
                 </ColumnDataWrapperUl>
               </nav>
-            </RightBlockColumn>
-            <RightBlockColumn>
+            </div>
+            <div>
               <Typography textStyle={TypographyStyle.Headline6_bold}>
                 <TextPrimary>Service</TextPrimary>
               </Typography>
@@ -88,8 +79,8 @@ function Footer({ theme }: Props) {
                   <FooterLink to="/map">Site map</FooterLink>
                 </ColumnDataWrapperUl>
               </nav>
-            </RightBlockColumn>
-            <RightBlockColumn>
+            </div>
+            <div>
               <Typography textStyle={TypographyStyle.Headline6_bold}>
                 <TextPrimary>Contact Info</TextPrimary>
               </Typography>
@@ -106,7 +97,7 @@ function Footer({ theme }: Props) {
                   </TextSecondary>
                 </Typography>
               </ColumnDataWrapper>
-            </RightBlockColumn>
+            </div>
           </RightBlock>
         </MainData>
         <AdditionalData>
@@ -129,4 +120,4 @@ function Footer({ theme }: Props) {
   );
 }
 
-export default withTheme(Footer);
+export default Footer;

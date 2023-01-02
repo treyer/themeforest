@@ -57,6 +57,7 @@ export const SquareButton = styled.button<PropsSquareButton>`
     props && props.theme && props.theme.radiuses
       ? props.theme.radiuses[0]
       : DEFAULT_RADIUS}px;
+  border: none;
   color: ${({ filled, disabled }) => {
     if (disabled && filled) {
       return COLOR_FILL_DISABLED;

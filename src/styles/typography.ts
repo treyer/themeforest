@@ -15,6 +15,13 @@ const fontOpenSans = {
 };
 
 export const typographyStyles: TypographyStyles = {
+  headline0_extrabold: {
+    ...fontManrope,
+    "font-weight": 800,
+    "font-size": "57px",
+    "line-height": "66px",
+    "letter-spacing": "-0.015em",
+  },
   headline1_extrabold: {
     ...fontManrope,
     "font-weight": 800,

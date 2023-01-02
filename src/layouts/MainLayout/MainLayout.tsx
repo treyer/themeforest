@@ -6,6 +6,7 @@ import commonTheme from "styles/commonTheme";
 import darkTheme from "styles/darkTheme";
 import lightTheme from "styles/lightTheme";
 import Footer from "components/Footer/Footer";
+import FooterLight from "components/Footer/FooterLight";
 import Header from "components/Header/Header";
 import ThemeContext from "context/ThemeContext";
 import Loader from "components/Loader/Loader";
@@ -46,7 +47,8 @@ const MainLayout = () => {
             </Routes>
           </Suspense>
         </MainWrapper>
-        <Footer />
+        {theme === Theme.Dark && <Footer />}
+        {theme === Theme.Light && <FooterLight />}
       </ThemeProvider>
     </ThemeContext.Provider>
   );

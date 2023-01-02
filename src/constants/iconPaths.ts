@@ -12,4 +12,5 @@ export const ICON_URLS = {
   LinkedIn: "/assets/svg/icon_linkedin.svg",
   Twitter: "/assets/svg/icon_twitter.svg",
   Youtube: "/assets/svg/icon_youtube.svg",
+  ArrowRight: "/assets/svg/icon_arrow_right.svg",
 };

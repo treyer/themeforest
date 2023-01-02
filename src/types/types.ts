@@ -9,6 +9,7 @@ export enum Theme {
 }
 
 export enum TypographyStyle {
+  Headline0_extrabold = "headline0_extrabold",
   Headline1_extrabold = "headline1_extrabold",
   Headline2_extrabold = "headline2_extrabold",
   Headline3_extrabold = "headline3_extrabold",
@@ -34,4 +35,34 @@ export enum ButtonSize {
 export enum ButtonType {
   Square = "square",
   Round = "round",
+}
+
+export enum FlexDirection {
+  Raw = "raw",
+  Column = "column",
+}
+
+export enum FlexJustify {
+  Start = "start",
+  SpaceBetween = "space-between",
+  Center = "center",
+  End = "end",
+}
+
+export enum FlexAlign {
+  Center = "center",
+  Start = "start",
+  End = "end",
+  Left = "left",
+  Right = "right",
+}
+
+export enum SectionType {
+  Wide = "wide",
+  Narrow = "narrow",
+}
+
+export enum SectionDirection {
+  Raw = "raw",
+  Column = "column",
 }
