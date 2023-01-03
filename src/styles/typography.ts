@@ -78,6 +78,12 @@ export const typographyStyles: TypographyStyles = {
     "line-height": "24px",
     "letter-spacing": "-0.01em",
   },
+  headline8_semibold: {
+    ...fontOpenSans,
+    "font-weight": 600,
+    "font-size": "12px",
+    "line-height": "24px",
+  },
   paragraph1_regular: {
     ...fontOpenSans,
     "font-weight": 400,

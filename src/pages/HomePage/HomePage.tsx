@@ -1,8 +1,10 @@
+import ButtonRound from "components/controls/ButtonRound/ButtonRound";
 import ButtonSimple from "components/controls/ButtonSimple/ButtonSimple";
 import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
 import Typography from "components/Typography/Typography";
 import {
+  ButtonRoundSize,
   ButtonSimpleSize,
   FlexAlign,
   FlexDirection,
@@ -10,7 +12,13 @@ import {
   SectionType,
   TypographyStyle,
 } from "types/types";
-import { ImageHome, TextBlack, TextGrey, TextStressed } from "./components";
+import {
+  ImageHome,
+  LearnMoreBtnWrapper,
+  TextBlack,
+  TextGrey,
+  TextStressed,
+} from "./components";
 
 const HomePage = () => {
   return (
@@ -36,6 +44,9 @@ const HomePage = () => {
       </Section>
 
       <Section type={SectionType.Wide} marginTop={90}>
+        <LearnMoreBtnWrapper>
+          <ButtonRound size={ButtonRoundSize.Big}>Learn more</ButtonRound>
+        </LearnMoreBtnWrapper>
         <ImageHome />
       </Section>
 

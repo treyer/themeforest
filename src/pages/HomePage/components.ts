@@ -20,3 +20,9 @@ export const ImageHome = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 `;
+
+export const LearnMoreBtnWrapper = styled.div`
+  position: absolute;
+  top: -60px;
+  right: 635px;
+`;

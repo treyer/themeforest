@@ -18,6 +18,7 @@ export enum TypographyStyle {
   Headline6_bold = "headline6_bold",
   Headline7_semibold = "headline7_semibold",
   Headline7_medium = "headline7_medium",
+  Headline8_semibold = "headline8_semibold",
   Paragraph1_regular = "paragraph1_regular",
   Paragraph2_regular = "paragraph2_regular",
   Paragraph2_bold = "paragraph2_bold",
@@ -68,6 +69,11 @@ export enum SectionDirection {
 }
 
 export enum ButtonSimpleSize {
+  Big = "big",
+  Small = "small",
+}
+
+export enum ButtonRoundSize {
   Big = "big",
   Small = "small",
 }

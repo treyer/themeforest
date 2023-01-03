@@ -9,6 +9,8 @@ const BUTTON_SIZES = {
 
 export const Button = styled.button<Omit<ButtonSimpleProps, "children">>`
   box-sizing: border-box;
+  box-shadow: ${({ theme, disabled }) =>
+    disabled ? "none" : theme.shadows[0]};
 
   width: ${({ size }) =>
     BUTTON_SIZES[size as keyof typeof BUTTON_SIZES].width}px;
@@ -24,6 +26,7 @@ export const Button = styled.button<Omit<ButtonSimpleProps, "children">>`
   border-radius: ${({ theme }) => theme.radiuses[0]}px;
 
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
+  user-select: none;
 
   &:hover {
     background-color: ${({ theme, disabled }) =>
@@ -34,6 +37,8 @@ export const Button = styled.button<Omit<ButtonSimpleProps, "children">>`
   }
 
   &:active {
+    box-shadow: none;
+
     background-color: ${({ theme, disabled }) =>
       disabled ? theme.colors.grey : theme.colors.primary};
   }

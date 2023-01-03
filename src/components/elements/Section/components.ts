@@ -3,6 +3,8 @@ import { SectionDirection, SectionType } from "types/types";
 import { SectionProps } from "./types";
 
 export const StyledDiv = styled.div<Omit<SectionProps, "children">>`
+  position: relative;
+
   display: flex;
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ direction }) =>

@@ -11,6 +11,8 @@ const grey = "#9497A1";
 const background = "#F1F6FA";
 const redError = "#C14040";
 
+const shadows = ["0px 12px 30px rgba(24, 92, 255, 0.18)"];
+
 const size = {
   mobileS: "320px",
   mobileM: "360px",
@@ -37,6 +39,7 @@ export default {
   spaces: [0, 4, 8, 16, 32, 64, 70, 84, 128],
   fontSizes: [12, 14, 16, 20, 24, 32, 40, 56, 60, 72, 80],
   radiuses: [6, 10, 30],
+  shadows,
   colors: {
     primary,
     secondary,
