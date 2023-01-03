@@ -66,3 +66,8 @@ export enum SectionDirection {
   Raw = "raw",
   Column = "column",
 }
+
+export enum ButtonSimpleSize {
+  Big = "big",
+  Small = "small",
+}

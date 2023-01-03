@@ -4,7 +4,9 @@ const tertiary = "#F0F9FF"; //light grey
 const helperBlue1 = "#194060";
 const helperBlue2 = "#607D94";
 const helperBlue3 = "#C9DCEC";
+const helperBlue4 = "#467dff";
 const black = "#292D33";
+const white = "#ffffff";
 const grey = "#9497A1";
 const background = "#F1F6FA";
 const redError = "#C14040";
@@ -42,7 +44,9 @@ export default {
     helperBlue1,
     helperBlue2,
     helperBlue3,
+    helperBlue4,
     black,
+    white,
     grey,
     background,
     redError,

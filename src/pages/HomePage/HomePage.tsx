@@ -1,9 +1,10 @@
-import Button from "components/Button/Button";
+import ButtonSimple from "components/controls/ButtonSimple/ButtonSimple";
 import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
 import Typography from "components/Typography/Typography";
 import {
-  ButtonSize,
+  ButtonSimpleSize,
+  FlexAlign,
   FlexDirection,
   FlexJustify,
   SectionType,
@@ -47,7 +48,11 @@ const HomePage = () => {
             </TextBlack>
           </Typography>
         </Flex>
-        <Flex direction={FlexDirection.Column} width={540}>
+        <Flex
+          direction={FlexDirection.Column}
+          align={FlexAlign.Start}
+          width={540}
+        >
           <Typography textStyle={TypographyStyle.Paragraph1_regular}>
             <TextGrey>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -56,13 +61,14 @@ const HomePage = () => {
               dicta sunt explicabo.
             </TextGrey>
           </Typography>
-          <Flex justify={FlexJustify.Start}>
-            <Button size={ButtonSize.Little} filled>
+          <Flex justify={FlexJustify.Start} marginTop={30}>
+            <ButtonSimple size={ButtonSimpleSize.Big}>
               Discover more
-            </Button>
+            </ButtonSimple>
           </Flex>
         </Flex>
       </Section>
+      <Section type={SectionType.Wide} marginTop={120}></Section>
     </>
   );
 };
