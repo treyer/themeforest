@@ -84,6 +84,13 @@ export const typographyStyles: TypographyStyles = {
     "font-size": "12px",
     "line-height": "24px",
   },
+  paragraph0_bold: {
+    ...fontOpenSans,
+    "font-weight": 800,
+    "font-size": "50px",
+    "line-height": "70px",
+    "letter-spacing": "-0.025em",
+  },
   paragraph1_regular: {
     ...fontOpenSans,
     "font-weight": 400,

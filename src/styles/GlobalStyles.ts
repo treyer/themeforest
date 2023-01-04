@@ -141,6 +141,10 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .color-grey {
+    color: #9497A1;
+  }
+
 
 `;
 

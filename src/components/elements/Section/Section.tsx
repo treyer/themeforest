@@ -7,6 +7,8 @@ const Section = ({
   direction = SectionDirection.Raw,
   marginTop = 0,
   marginBottom = 0,
+  rowGap = "unset",
+  columnGap = "unset",
   children,
 }: SectionProps) => {
   return (
@@ -15,6 +17,8 @@ const Section = ({
       direction={direction}
       marginTop={marginTop}
       marginBottom={marginBottom}
+      rowGap={rowGap}
+      columnGap={columnGap}
     >
       {children}
     </StyledDiv>

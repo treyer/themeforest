@@ -1,13 +1,7 @@
 import IconImage from "./components";
+import { IconProps } from "./types";
 
-type Props = {
-  url: string;
-  width: number;
-  height: number;
-  color?: string;
-};
-
-const Icon = (props: Props) => {
+const Icon = (props: IconProps) => {
   return <IconImage {...props} />;
 };
 

@@ -1,6 +1,6 @@
 import Typography from "components/Typography/Typography";
-import { ButtonSimpleSize, TypographyStyle } from "types/types";
 import { Button } from "./components";
+import { ButtonSimpleSize, TextColor, TextStyle } from "types/types";
 import { ButtonSimpleProps } from "./types";
 
 const ButtonSimple = ({
@@ -13,9 +13,10 @@ const ButtonSimple = ({
       <Typography
         textStyle={
           size === ButtonSimpleSize.Small
-            ? TypographyStyle.Headline7_semibold
-            : TypographyStyle.Headline6_bold
+            ? TextStyle.Headline7_semibold
+            : TextStyle.Headline6_bold
         }
+        color={TextColor.White}
       >
         {children}
       </Typography>

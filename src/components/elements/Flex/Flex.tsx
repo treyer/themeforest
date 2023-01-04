@@ -6,11 +6,13 @@ const Flex = ({
   direction = FlexDirection.Raw,
   justify = FlexJustify.SpaceBetween,
   align = FlexAlign.Center,
-  width = "auto",
-  marginTop = 0,
-  marginLeft = 0,
-  marginBottom = 0,
-  marginRight = 0,
+  width = "100%",
+  marginTop = null,
+  marginLeft = null,
+  marginBottom = null,
+  marginRight = null,
+  rowGap = "unset",
+  columnGap = "unset",
   children,
 }: FlexProps) => {
   return (
@@ -23,6 +25,8 @@ const Flex = ({
       marginLeft={marginLeft}
       marginBottom={marginBottom}
       marginRight={marginRight}
+      rowGap={rowGap}
+      columnGap={columnGap}
     >
       {children}
     </FlexElement>

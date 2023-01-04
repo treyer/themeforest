@@ -5,5 +5,7 @@ export type SectionProps = {
   direction?: SectionDirection;
   marginTop?: number;
   marginBottom?: number;
+  rowGap?: "unset" | number;
+  columnGap?: "unset" | number;
   children?: JSX.Element | JSX.Element[];
 };

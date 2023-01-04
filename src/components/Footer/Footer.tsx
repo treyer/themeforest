@@ -1,6 +1,6 @@
 import Logo from "components/Logo/Logo";
 import Typography from "components/Typography/Typography";
-import { LogoSize, TypographyStyle } from "types/types";
+import { LogoSize, TextStyle } from "types/types";
 import {
   AdditionalData,
   ColumnDataWrapper,
@@ -29,7 +29,7 @@ function Footer() {
           <LeftBlock>
             <Logo type={LogoSize.Large} />
             <DescriptionWrapper>
-              <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+              <Typography textStyle={TextStyle.Paragraph3_regular}>
                 <TextSecondary>
                   Ut enim ad minima veniam, quis nostrum exercitationem ullam
                   corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
@@ -50,7 +50,7 @@ function Footer() {
           </LeftBlock>
           <RightBlock>
             <div>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>Quick Link</TextPrimary>
               </Typography>
               <nav>
@@ -67,7 +67,7 @@ function Footer() {
               </nav>
             </div>
             <div>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>Service</TextPrimary>
               </Typography>
               <nav>
@@ -81,17 +81,17 @@ function Footer() {
               </nav>
             </div>
             <div>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>Contact Info</TextPrimary>
               </Typography>
               <ColumnDataWrapper>
-                <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+                <Typography textStyle={TextStyle.Paragraph3_regular}>
                   <TextSecondary>ensome@co.us</TextSecondary>
                 </Typography>
-                <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+                <Typography textStyle={TextStyle.Paragraph3_regular}>
                   <TextSecondary> +1 601-201-5580</TextSecondary>
                 </Typography>
-                <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+                <Typography textStyle={TextStyle.Paragraph3_regular}>
                   <TextSecondary>
                     1642 Washington Avenue, Jackson, MS, Mississippi, 39201
                   </TextSecondary>
@@ -102,15 +102,15 @@ function Footer() {
         </MainData>
         <AdditionalData>
           <div>
-            <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+            <Typography textStyle={TextStyle.Paragraph3_regular}>
               <TextAdditional>Ensome© 2022 All Rights Reserved</TextAdditional>
             </Typography>
           </div>
           <PolicyBlock>
-            <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+            <Typography textStyle={TextStyle.Paragraph3_regular}>
               <TextAdditional>Privacy policy</TextAdditional>
             </Typography>
-            <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+            <Typography textStyle={TextStyle.Paragraph3_regular}>
               <TextAdditional>Terms of us</TextAdditional>
             </Typography>
           </PolicyBlock>

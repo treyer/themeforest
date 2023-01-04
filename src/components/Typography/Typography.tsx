@@ -1,18 +1,42 @@
-import { TypographyStyle } from "types/types";
-import StyledText from "./components";
+import { TextColor, TextElement } from "types/types";
+import { StyledTextDiv, StyledTextSpan } from "./components";
+import { TypographyProps } from "./types";
 
-type Props = {
-  textStyle: TypographyStyle;
-  color?: string;
-  children: string | JSX.Element;
-};
-
-const Typography = ({ textStyle, color, children }: Props) => {
-  return (
-    <StyledText textStyle={textStyle} color={color}>
-      {children}
-    </StyledText>
-  );
+const Typography = ({
+  textStyle,
+  color = TextColor.Default,
+  textElement = TextElement.Span,
+  width = null,
+  marginTop = null,
+  marginBottom = null,
+  children,
+}: TypographyProps) => {
+  if (textElement === TextElement.Span) {
+    return (
+      <StyledTextSpan
+        textStyle={textStyle}
+        color={color}
+        marginTop={marginTop}
+        marginBottom={marginBottom}
+      >
+        {children}
+      </StyledTextSpan>
+    );
+  }
+  if (textElement === TextElement.Div) {
+    return (
+      <StyledTextDiv
+        textStyle={textStyle}
+        color={color}
+        width={width}
+        marginTop={marginTop}
+        marginBottom={marginBottom}
+      >
+        {children}
+      </StyledTextDiv>
+    );
+  }
+  return null;
 };
 
 export default Typography;

@@ -8,7 +8,7 @@ export enum Theme {
   Dark = "dark",
 }
 
-export enum TypographyStyle {
+export enum TextStyle {
   Headline0_extrabold = "headline0_extrabold",
   Headline1_extrabold = "headline1_extrabold",
   Headline2_extrabold = "headline2_extrabold",
@@ -19,6 +19,7 @@ export enum TypographyStyle {
   Headline7_semibold = "headline7_semibold",
   Headline7_medium = "headline7_medium",
   Headline8_semibold = "headline8_semibold",
+  Paragraph0_bold = "paragraph0_bold",
   Paragraph1_regular = "paragraph1_regular",
   Paragraph2_regular = "paragraph2_regular",
   Paragraph2_bold = "paragraph2_bold",
@@ -76,4 +77,21 @@ export enum ButtonSimpleSize {
 export enum ButtonRoundSize {
   Big = "big",
   Small = "small",
+}
+
+export enum TextColor {
+  Default = "black",
+  Grey = "grey",
+  Black = "black",
+  Primary = "primary",
+  White = "white",
+}
+
+export enum TextElement {
+  Span = "span",
+  Div = "div",
+}
+
+export enum IconColor {
+  Primary = "primary",
 }

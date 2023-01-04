@@ -1,16 +1,17 @@
 import styled from "styled-components";
+import { IconColor } from "types/types";
 
-type Props = {
-  width: number;
-  height: number;
-  url: string;
-  color?: string;
-};
+import { IconProps } from "./types";
 
-const IconImage = styled.div<Props>`
+const IconImage = styled.div<IconProps>`
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
-  ${({ color }) => (color ? ` background-color: ${color};` : "")}
+  ${({ color, theme }) => {
+    if (!color) return "";
+    if (color === IconColor.Primary)
+      return `background-color: ${theme.colors.primary};`;
+    return `background-color: ${color};`;
+  }}
   -webkit-mask-image: url(${({ url }) => url});
   mask-image: url(${({ url }) => url});
   mask-repeat: no-repeat;

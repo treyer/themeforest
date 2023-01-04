@@ -4,10 +4,12 @@ export type FlexProps = {
   direction?: FlexDirection;
   justify?: FlexJustify;
   align?: FlexAlign;
-  width?: number | "auto";
-  marginTop?: number;
-  marginLeft?: number;
-  marginBottom?: number;
-  marginRight?: number;
-  children: JSX.Element | JSX.Element[];
+  width?: number | "100%";
+  marginTop?: number | null;
+  marginLeft?: number | null;
+  marginBottom?: number | null;
+  marginRight?: number | null;
+  rowGap?: "unset" | number;
+  columnGap?: "unset" | number;
+  children: JSX.Element | JSX.Element[] | string;
 };

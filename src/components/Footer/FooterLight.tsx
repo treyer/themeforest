@@ -8,7 +8,7 @@ import {
   FlexDirection,
   FlexJustify,
   LogoSize,
-  TypographyStyle,
+  TextStyle,
 } from "types/types";
 import {
   BottomBlockLight,
@@ -36,7 +36,7 @@ const FooterLight = () => {
           <Logo type={LogoSize.Large} />
           <LinksBlockLight>
             <ColumnLight>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>About</TextPrimary>
               </Typography>
               <nav>
@@ -49,7 +49,7 @@ const FooterLight = () => {
               </nav>
             </ColumnLight>
             <div>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>Information</TextPrimary>
               </Typography>
               <nav>
@@ -62,7 +62,7 @@ const FooterLight = () => {
               </nav>
             </div>
             <ColumnLight>
-              <Typography textStyle={TypographyStyle.Headline6_bold}>
+              <Typography textStyle={TextStyle.Headline6_bold}>
                 <TextPrimary>Service</TextPrimary>
               </Typography>
               <nav>
@@ -85,25 +85,25 @@ const FooterLight = () => {
             width={480}
             marginTop={40}
           >
-            <Typography textStyle={TypographyStyle.Headline6_bold}>
+            <Typography textStyle={TextStyle.Headline6_bold}>
               <TextPrimaryHeader>Contacts</TextPrimaryHeader>
             </Typography>
             <Flex>
               <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
-                <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+                <Typography textStyle={TextStyle.Paragraph3_regular}>
                   <TextSecondaryContacts>+1 601-201-5580</TextSecondaryContacts>
                 </Typography>
-                <Typography textStyle={TypographyStyle.Headline7_semibold}>
+                <Typography textStyle={TextStyle.Headline7_semibold}>
                   <TextWithArrow>ensome@info.co.us</TextWithArrow>
                 </Typography>
               </Flex>
               <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
-                <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+                <Typography textStyle={TextStyle.Paragraph3_regular}>
                   <TextSecondaryContacts>
                     1642&nbsp;Washington&nbsp;Avenue,&nbsp;Jackson,&nbsp;MS,&nbsp;39201
                   </TextSecondaryContacts>
                 </Typography>
-                <Typography textStyle={TypographyStyle.Headline7_semibold}>
+                <Typography textStyle={TextStyle.Headline7_semibold}>
                   <TextWithArrow>Driving directions</TextWithArrow>
                 </Typography>
               </Flex>
@@ -117,7 +117,7 @@ const FooterLight = () => {
             marginTop={40}
             marginRight={30}
           >
-            <Typography textStyle={TypographyStyle.Headline6_bold}>
+            <Typography textStyle={TextStyle.Headline6_bold}>
               <TextPrimaryHeader>Social</TextPrimaryHeader>
             </Typography>
             <Flex width={200}>
@@ -135,15 +135,15 @@ const FooterLight = () => {
         </MiddleBlockLight>
         <BottomBlockLight>
           <Flex width={293}>
-            <Typography textStyle={TypographyStyle.Headline7_semibold}>
+            <Typography textStyle={TextStyle.Headline7_semibold}>
               <TextWithArrowAdditional>Privacy policy</TextWithArrowAdditional>
             </Typography>
-            <Typography textStyle={TypographyStyle.Headline7_semibold}>
+            <Typography textStyle={TextStyle.Headline7_semibold}>
               <TextWithArrowAdditional>Terms of us</TextWithArrowAdditional>
             </Typography>
           </Flex>
           <Flex justify={FlexJustify.End} marginRight={25}>
-            <Typography textStyle={TypographyStyle.Paragraph3_regular}>
+            <Typography textStyle={TextStyle.Paragraph3_regular}>
               <TextAdditional>
                 © 2022 Ensome. All Rights Reserved.
               </TextAdditional>
