@@ -68,3 +68,27 @@ export const PricingCards = [
     price: { month: "Custom", year: "Custom" },
   },
 ];
+
+export const BlogCards = [
+  {
+    id: 1,
+    imgUrl: "/assets/photos/img_8.jpg",
+    date: "22 June 2022",
+    header: "ISO 13485 compliance of medical devices",
+    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/photos/img_7.jpg",
+    date: "22 June 2022",
+    header: "Business analysis helps you in finance",
+    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/photos/img_6.jpg",
+    date: "22 June 2022",
+    header: "5 web portal examples your business can learn from",
+    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...",
+  },
+];

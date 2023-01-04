@@ -21,7 +21,7 @@ export const StyledTextSpan = styled.span<TypographyProps>`
 
   ${({ marginTop }) => (marginTop ? `margin-top: ${marginTop}px;` : "")}
   ${({ marginBottom }) =>
-    marginBottom ? `margin-top: ${marginBottom}px;` : ""}
+    marginBottom ? `margin-bottom: ${marginBottom}px;` : ""}
 `;
 
 export const StyledTextDiv = styled(StyledTextSpan).attrs({

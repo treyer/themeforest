@@ -17,12 +17,14 @@ import {
   TextElement,
   TextStyle,
 } from "types/types";
+import BlogSection from "./BlogSection";
 import {
   ImageHome,
   ImageSolutions,
   LearnMoreBtnWrapper,
   TextStressed,
 } from "./components";
+import ContactUsSection from "./ContactUsSection";
 import PricingSection from "./PricingSection";
 import TestimonialsSection from "./TestimonialsSection";
 
@@ -281,6 +283,8 @@ const HomePage = () => {
 
       <TestimonialsSection />
       <PricingSection />
+      <BlogSection />
+      <ContactUsSection />
     </>
   );
 };
