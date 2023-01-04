@@ -23,6 +23,7 @@ import {
   LearnMoreBtnWrapper,
   TextStressed,
 } from "./components";
+import PricingSection from "./PricingSection";
 import TestimonialsSection from "./TestimonialsSection";
 
 const HomePage = () => {
@@ -279,6 +280,7 @@ const HomePage = () => {
       </Section>
 
       <TestimonialsSection />
+      <PricingSection />
     </>
   );
 };

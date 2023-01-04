@@ -43,6 +43,13 @@ export const typographyStyles: TypographyStyles = {
     "line-height": "40px",
     "letter-spacing": "-0.015em",
   },
+  headline3_1_extrabold: {
+    ...fontManrope,
+    "font-weight": 800,
+    "font-size": "26px",
+    "line-height": "40px",
+    "letter-spacing": "-0.015em",
+  },
   headline4_bold: {
     ...fontManrope,
     "font-weight": 700,

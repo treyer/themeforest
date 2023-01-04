@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 import { ButtonSimpleProps } from "./types";
 
-const BUTTON_SIZES = {
-  big: { width: 190, height: 54 },
-  small: { width: 137, height: 44 },
+type ButtonOutlinedProps = {
+  width: number;
+  height: number;
 };
 
-export const Button = styled.button<Omit<ButtonSimpleProps, "children">>`
+export const Button = styled.button<
+  Omit<ButtonSimpleProps, "children" | "size">
+>`
   box-sizing: border-box;
   box-shadow: ${({ theme, disabled }) =>
     disabled ? "none" : theme.shadows[0]};
 
-  width: ${({ size }) =>
-    BUTTON_SIZES[size as keyof typeof BUTTON_SIZES].width}px;
-  height: ${({ size }) =>
-    BUTTON_SIZES[size as keyof typeof BUTTON_SIZES].height}px;
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
 
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme, disabled }) =>
@@ -41,5 +41,28 @@ export const Button = styled.button<Omit<ButtonSimpleProps, "children">>`
 
     background-color: ${({ theme, disabled }) =>
       disabled ? theme.colors.grey : theme.colors.primary};
+  }
+`;
+
+export const ButtonOutlined = styled.button<ButtonOutlinedProps>`
+  box-sizing: border-box;
+
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
+
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.radiuses[0]}px;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.colors.helperBlue4};
+    opacity: 0.8;
+  }
+
+  &:active {
+    border: 1px solid ${({ theme }) => theme.colors.helperBlue4};
+    opacity: 1;
   }
 `;

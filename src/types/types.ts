@@ -13,6 +13,7 @@ export enum TextStyle {
   Headline1_extrabold = "headline1_extrabold",
   Headline2_extrabold = "headline2_extrabold",
   Headline3_extrabold = "headline3_extrabold",
+  Headline3_1_extrabold = "headline3_1_extrabold",
   Headline4_bold = "headline4_bold",
   Headline5_bold = "headline5_bold",
   Headline6_bold = "headline6_bold",
@@ -72,6 +73,7 @@ export enum SectionDirection {
 export enum ButtonSimpleSize {
   Big = "big",
   Small = "small",
+  Tap = "tap",
 }
 
 export enum ButtonRoundSize {
@@ -95,4 +97,5 @@ export enum TextElement {
 export enum IconColor {
   Secondary = "secondary",
   Primary = "primary",
+  White = "white",
 }

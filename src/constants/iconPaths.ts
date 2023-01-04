@@ -18,4 +18,5 @@ export const ICON_URLS = {
   BrainCircuit: "/assets/svg/icon_brain_circuit.svg",
   DataArea: "/assets/svg/icon_data_area.svg",
   Key: "/assets/svg/icon_key.svg",
+  CheckMark: "/assets/svg/icon_checkmark.svg",
 };

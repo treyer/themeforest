@@ -14,6 +14,9 @@ const IconImage = styled.div<IconProps>`
     if (color === IconColor.Secondary) {
       return `background-color: ${theme.colors.secondary};`;
     }
+    if (color === IconColor.White) {
+      return `background-color: ${theme.colors.white};`;
+    }
     return `background-color: ${color};`;
   }}
   -webkit-mask-image: url(${({ url }) => url});
