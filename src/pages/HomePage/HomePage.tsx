@@ -23,6 +23,7 @@ import {
   LearnMoreBtnWrapper,
   TextStressed,
 } from "./components";
+import TestimonialsSection from "./TestimonialsSection";
 
 const HomePage = () => {
   return (
@@ -276,6 +277,8 @@ const HomePage = () => {
           </Flex>
         </Flex>
       </Section>
+
+      <TestimonialsSection />
     </>
   );
 };

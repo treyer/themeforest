@@ -24,3 +24,17 @@ export const LearnMoreBtnWrapper = styled.div`
   top: -60px;
   right: 635px;
 `;
+
+export const ControlsWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+
+  width: 235px;
+  height: 60px;
+`;

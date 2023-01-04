@@ -13,6 +13,7 @@ export const ICON_URLS = {
   Twitter: "/assets/svg/icon_twitter.svg",
   Youtube: "/assets/svg/icon_youtube.svg",
   ArrowRight: "/assets/svg/icon_arrow_right.svg",
+  ArrowLeft: "/assets/svg/icon_arrow__left.svg",
   ArrowTrendingLines: "/assets/svg/icon_arrow_trending_lines.svg",
   BrainCircuit: "/assets/svg/icon_brain_circuit.svg",
   DataArea: "/assets/svg/icon_data_area.svg",

@@ -93,5 +93,6 @@ export enum TextElement {
 }
 
 export enum IconColor {
+  Secondary = "secondary",
   Primary = "primary",
 }

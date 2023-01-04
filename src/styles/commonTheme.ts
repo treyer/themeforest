@@ -14,6 +14,7 @@ const redError = "#C14040";
 const shadows = [
   "0px 12px 30px rgba(24, 92, 255, 0.18)",
   "0px 12px 30px 17px rgba(24, 92, 255, 0.04)",
+  "0px 4px 12px rgba(12, 68, 204, 0.1)",
 ];
 
 const size = {

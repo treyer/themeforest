@@ -8,8 +8,12 @@ const IconImage = styled.div<IconProps>`
   height: ${({ height }) => height}px;
   ${({ color, theme }) => {
     if (!color) return "";
-    if (color === IconColor.Primary)
+    if (color === IconColor.Primary) {
       return `background-color: ${theme.colors.primary};`;
+    }
+    if (color === IconColor.Secondary) {
+      return `background-color: ${theme.colors.secondary};`;
+    }
     return `background-color: ${color};`;
   }}
   -webkit-mask-image: url(${({ url }) => url});
