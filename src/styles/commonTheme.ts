@@ -8,8 +8,10 @@ const helperBlue4 = "#467dff";
 const black = "#292D33";
 const white = "#ffffff";
 const grey = "#9497A1";
+const lightGrey = "#ECEFF2";
 const background = "#F1F6FA";
 const redError = "#C14040";
+const lightRed = "#F6E2E2";
 
 const shadows = [
   "0px 12px 30px rgba(24, 92, 255, 0.18)",
@@ -55,7 +57,9 @@ export default {
     black,
     white,
     grey,
+    lightGrey,
     background,
     redError,
+    lightRed,
   },
 };

@@ -1,12 +1,7 @@
-import Flex from "components/elements/Flex/Flex";
+import ReadMoreButton from "components/controls/ReadMoreButton/ReadMoreButton";
+
 import Typography from "components/Typography/Typography";
-import {
-  FlexAlign,
-  FlexJustify,
-  TextColor,
-  TextElement,
-  TextStyle,
-} from "types/types";
+import { TextColor, TextElement, TextStyle } from "types/types";
 import { Wrapper } from "./components";
 import { BlogCardProps } from "./types";
 
@@ -36,19 +31,11 @@ const BlogCard = ({ imgUrl, date, header, text }: BlogCardProps) => {
         color={TextColor.Grey}
         textElement={TextElement.Div}
         marginTop={12}
+        marginBottom={20}
       >
         {text}
       </Typography>
-      <Flex justify={FlexJustify.Start} align={FlexAlign.Center}>
-        <Typography
-          textStyle={TextStyle.Headline7_semibold}
-          color={TextColor.Primary}
-          textElement={TextElement.Div}
-          marginTop={12}
-        >
-          Read more
-        </Typography>
-      </Flex>
+      <ReadMoreButton />
     </Wrapper>
   );
 };
