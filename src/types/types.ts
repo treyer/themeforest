@@ -99,3 +99,10 @@ export enum IconColor {
   Primary = "primary",
   White = "white",
 }
+
+export enum TextAlign {
+  Start = "start",
+  End = "end",
+  Center = "center",
+  Justify = "justify",
+}

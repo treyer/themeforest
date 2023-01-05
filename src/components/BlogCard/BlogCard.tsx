@@ -26,6 +26,7 @@ const BlogCard = ({ imgUrl, date, header, text }: BlogCardProps) => {
         textStyle={TextStyle.Headline4_bold}
         color={TextColor.Black}
         textElement={TextElement.Div}
+        height={66}
         marginTop={12}
       >
         {header}

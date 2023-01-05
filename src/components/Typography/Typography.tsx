@@ -4,9 +4,11 @@ import { TypographyProps } from "./types";
 
 const Typography = ({
   textStyle,
+  textAlign = null,
   color = TextColor.Default,
   textElement = TextElement.Span,
   width = null,
+  height = null,
   marginTop = null,
   marginBottom = null,
   children,
@@ -27,8 +29,10 @@ const Typography = ({
     return (
       <StyledTextDiv
         textStyle={textStyle}
+        textAlign={textAlign}
         color={color}
         width={width}
+        height={height}
         marginTop={marginTop}
         marginBottom={marginBottom}
       >

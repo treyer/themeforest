@@ -6,6 +6,7 @@ import {
   ButtonSimpleSize,
   FlexDirection,
   SectionType,
+  TextAlign,
   TextColor,
   TextElement,
   TextStyle,
@@ -24,6 +25,7 @@ const ContactUsSection = () => {
         </Typography>
         <Typography
           textStyle={TextStyle.Paragraph2_regular}
+          textAlign={TextAlign.Center}
           color={TextColor.Grey}
           textElement={TextElement.Div}
           width={540}

@@ -4,7 +4,7 @@ import { typographyStyles } from "styles/typography";
 import { TextColor } from "types/types";
 import { TypographyProps } from "./types";
 
-export const StyledTextSpan = styled.span<TypographyProps>`
+export const StyledTextSpan = styled.span<Omit<TypographyProps, "children">>`
   ${({ textStyle }) =>
     Object.entries(typographyStyles[textStyle]).map(
       (el) => `${el[0]}: ${el[1]};`,
@@ -28,4 +28,6 @@ export const StyledTextDiv = styled(StyledTextSpan).attrs({
   as: "div",
 })`
   ${({ width }) => (width ? `width: ${width}px;` : "")}
+  ${({ height }) => (height ? `height: ${height}px;` : "")}
+  ${({ textAlign }) => (textAlign ? `text-align: ${textAlign};` : "")}
 `;
