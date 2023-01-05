@@ -11,6 +11,7 @@ const Typography = ({
   height = null,
   marginTop = null,
   marginBottom = null,
+  unselected = false,
   children,
 }: TypographyProps) => {
   if (textElement === TextElement.Span) {
@@ -20,6 +21,7 @@ const Typography = ({
         color={color}
         marginTop={marginTop}
         marginBottom={marginBottom}
+        unselected={unselected}
       >
         {children}
       </StyledTextSpan>
@@ -35,6 +37,7 @@ const Typography = ({
         height={height}
         marginTop={marginTop}
         marginBottom={marginBottom}
+        unselected={unselected}
       >
         {children}
       </StyledTextDiv>

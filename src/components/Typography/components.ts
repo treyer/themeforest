@@ -12,16 +12,17 @@ export const StyledTextSpan = styled.span<Omit<TypographyProps, "children">>`
 
   ${({ color, theme }) => {
     if (!color) return "";
-    if (color === TextColor.Black) return `color: ${theme.colors.black};`;
-    if (color === TextColor.Grey) return `color: ${theme.colors.grey};`;
-    if (color === TextColor.White) return `color: ${theme.colors.white};`;
-    if (color === TextColor.Primary) return `color: ${theme.colors.primary};`;
+    if (Object.values(TextColor).includes(color as TextColor)) {
+      return `color: ${theme.colors[color]};`;
+    }
     return `color: ${color};`;
   }}
 
   ${({ marginTop }) => (marginTop ? `margin-top: ${marginTop}px;` : "")}
   ${({ marginBottom }) =>
     marginBottom ? `margin-bottom: ${marginBottom}px;` : ""}
+
+  ${({ unselected }) => (unselected ? "user-select: none;" : "")}
 `;
 
 export const StyledTextDiv = styled(StyledTextSpan).attrs({

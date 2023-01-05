@@ -19,4 +19,5 @@ export const ICON_URLS = {
   DataArea: "/assets/svg/icon_data_area.svg",
   Key: "/assets/svg/icon_key.svg",
   CheckMark: "/assets/svg/icon_checkmark.svg",
+  Divider: "/assets/svg/icon_divider.svg",
 };

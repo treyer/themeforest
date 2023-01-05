@@ -9,5 +9,6 @@ export type TypographyProps = {
   height?: number | null;
   marginTop?: number | null;
   marginBottom?: number | null;
+  unselected?: boolean;
   children: string | JSX.Element;
 };

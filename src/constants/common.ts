@@ -11,3 +11,10 @@ export const SOCIAL_NETWORK_LIST = [
   { id: 5, url: ICON_URLS.Dribbble },
   { id: 6, url: ICON_URLS.Behance },
 ];
+
+export const BREADCRUMBS_LIST = {
+  Services: [
+    { name: "Home", url: "/", isActive: false },
+    { name: "Services", url: "/services", isActive: true },
+  ],
+};

@@ -98,6 +98,7 @@ export enum IconColor {
   Secondary = "secondary",
   Primary = "primary",
   White = "white",
+  Grey = "grey",
 }
 
 export enum TextAlign {

@@ -8,14 +8,8 @@ const IconImage = styled.div<IconProps>`
   height: ${({ height }) => height}px;
   ${({ color, theme }) => {
     if (!color) return "";
-    if (color === IconColor.Primary) {
-      return `background-color: ${theme.colors.primary};`;
-    }
-    if (color === IconColor.Secondary) {
-      return `background-color: ${theme.colors.secondary};`;
-    }
-    if (color === IconColor.White) {
-      return `background-color: ${theme.colors.white};`;
+    if (Object.values(IconColor).includes(color as IconColor)) {
+      return `background-color: ${theme.colors[color]};`;
     }
     return `background-color: ${color};`;
   }}
