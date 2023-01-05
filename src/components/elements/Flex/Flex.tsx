@@ -13,6 +13,7 @@ const Flex = ({
   marginRight = null,
   rowGap = "unset",
   columnGap = "unset",
+  flexWrap = false,
   children,
 }: FlexProps) => {
   return (
@@ -27,6 +28,7 @@ const Flex = ({
       marginRight={marginRight}
       rowGap={rowGap}
       columnGap={columnGap}
+      flexWrap={flexWrap}
     >
       {children}
     </FlexElement>

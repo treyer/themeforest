@@ -9,6 +9,7 @@ export const FlexElement = styled.div<Omit<FlexProps, "children">>`
   ${({ rowGap }) => (rowGap === "unset" ? "" : `row-gap: ${rowGap}px;`)}
   ${({ columnGap }) =>
     columnGap === "unset" ? "" : `column-gap: ${columnGap}px;`}
+  ${({ flexWrap }) => (flexWrap ? "flex-wrap: wrap;" : "")}
 
   width: ${({ width }) => (width === "100%" ? "100%" : `${width}px`)};
   ${({ marginTop }) => (marginTop ? `margin-top: ${marginTop}px;` : "")}

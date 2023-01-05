@@ -11,5 +11,6 @@ export type FlexProps = {
   marginRight?: number | null;
   rowGap?: "unset" | number;
   columnGap?: "unset" | number;
+  flexWrap?: boolean;
   children: JSX.Element | JSX.Element[] | string;
 };
