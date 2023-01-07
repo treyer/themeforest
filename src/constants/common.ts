@@ -17,4 +17,8 @@ export const BREADCRUMBS_LIST = {
     { name: "Home", url: "/", isActive: false },
     { name: "Services", url: "/services", isActive: true },
   ],
+  About: [
+    { name: "Home", url: "/", isActive: false },
+    { name: "About Us", url: "/about", isActive: true },
+  ],
 };

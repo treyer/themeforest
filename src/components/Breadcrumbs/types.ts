@@ -1,3 +1,5 @@
+import { FlexJustify } from "types/types";
+
 export type BreadcrumbsLinkType = {
   name: string;
   url: string;
@@ -6,4 +8,5 @@ export type BreadcrumbsLinkType = {
 
 export type BreadcrumbsProps = {
   links: BreadcrumbsLinkType[];
+  position?: FlexJustify;
 };

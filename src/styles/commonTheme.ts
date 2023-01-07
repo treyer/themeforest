@@ -1,6 +1,6 @@
-const primary = "#185CFF"; //blue
-const secondary = "#002B4E"; //dark blue
-const tertiary = "#F0F9FF"; //light grey
+const primary = "#185CFF";
+const secondary = "#002B4E";
+const tertiary = "#F0F9FF";
 const helperBlue1 = "#194060";
 const helperBlue2 = "#607D94";
 const helperBlue3 = "#C9DCEC";
@@ -8,6 +8,7 @@ const helperBlue4 = "#467dff";
 const black = "#292D33";
 const white = "#ffffff";
 const grey = "#9497A1";
+const helperGrey1 = "#B4B6BD";
 const lightGrey = "#ECEFF2";
 const background = "#F1F6FA";
 const redError = "#C14040";
@@ -58,6 +59,7 @@ export default {
     white,
     grey,
     lightGrey,
+    helperGrey1,
     background,
     redError,
     lightRed,

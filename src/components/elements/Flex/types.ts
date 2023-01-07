@@ -5,10 +5,15 @@ export type FlexProps = {
   justify?: FlexJustify;
   align?: FlexAlign;
   width?: number | "100%";
+  height?: number | null;
   marginTop?: number | null;
-  marginLeft?: number | null;
   marginBottom?: number | null;
   marginRight?: number | null;
+  marginLeft?: number | null;
+  paddingTop?: number | null;
+  paddingBottom?: number | null;
+  paddingRight?: number | null;
+  paddingLeft?: number | null;
   rowGap?: "unset" | number;
   columnGap?: "unset" | number;
   flexWrap?: boolean;

@@ -107,3 +107,8 @@ export enum TextAlign {
   Center = "center",
   Justify = "justify",
 }
+
+export enum TextInputType {
+  Simple,
+  Labeled,
+}
