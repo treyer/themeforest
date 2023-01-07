@@ -1,9 +1,8 @@
+import Counter from "components/Counter/Counter";
 import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
 import Typography from "components/Typography/Typography";
 import {
-  FlexAlign,
-  FlexDirection,
   FlexJustify,
   SectionDirection,
   SectionType,
@@ -27,61 +26,10 @@ const OverviewSection = () => {
         </Flex>
       </Typography>
       <Flex marginTop={50}>
-        <Flex width={540}>
-          <Flex
-            direction={FlexDirection.Column}
-            columnGap={10}
-            align={FlexAlign.Start}
-          >
-            <Typography
-              textStyle={TextStyle.Paragraph0_bold}
-              color={TextColor.Primary}
-            >
-              1830+
-            </Typography>
-            <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Grey}
-            >
-              Project executed
-            </Typography>
-          </Flex>
-          <Flex
-            direction={FlexDirection.Column}
-            columnGap={10}
-            align={FlexAlign.Start}
-          >
-            <Typography
-              textStyle={TextStyle.Paragraph0_bold}
-              color={TextColor.Primary}
-            >
-              834+
-            </Typography>
-            <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Grey}
-            >
-              Satisfied customers
-            </Typography>
-          </Flex>
-          <Flex
-            direction={FlexDirection.Column}
-            columnGap={10}
-            align={FlexAlign.Start}
-          >
-            <Typography
-              textStyle={TextStyle.Paragraph0_bold}
-              color={TextColor.Primary}
-            >
-              390
-            </Typography>
-            <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Grey}
-            >
-              Data management
-            </Typography>
-          </Flex>
+        <Flex width={540} justify={FlexJustify.SpaceBetween}>
+          <Counter count="1830+" explanation="Project executed" width={159} />
+          <Counter count="834+" explanation="Satisfied customers" width={159} />
+          <Counter count="390" explanation="Data management" width={159} />
         </Flex>
         <Flex width={540}>
           <Typography
