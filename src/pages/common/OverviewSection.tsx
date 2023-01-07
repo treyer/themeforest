@@ -27,9 +27,9 @@ const OverviewSection = () => {
       </Typography>
       <Flex marginTop={50}>
         <Flex width={540} justify={FlexJustify.SpaceBetween}>
-          <Counter count="1830+" explanation="Project executed" width={159} />
-          <Counter count="834+" explanation="Satisfied customers" width={159} />
-          <Counter count="390" explanation="Data management" width={159} />
+          <Counter count="1830+" description="Project executed" width={159} />
+          <Counter count="834+" description="Satisfied customers" width={159} />
+          <Counter count="390" description="Data management" width={159} />
         </Flex>
         <Flex width={540}>
           <Typography

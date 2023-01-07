@@ -5,6 +5,8 @@ import WhoWeAreSection from "./sections/WhoWeAreSection";
 import { FlexDirection, FlexJustify, TextColor, TextStyle } from "types/types";
 import { BREADCRUMBS_LIST } from "constants/common";
 import OurMissionSection from "./sections/OurMissionSection";
+import OverviewSection from "./sections/OverviewSection";
+import CustomersSection from "./sections/CustomersSection";
 
 const AboutPage = () => {
   return (
@@ -28,6 +30,8 @@ const AboutPage = () => {
       </Flex>
       <WhoWeAreSection />
       <OurMissionSection />
+      <OverviewSection />
+      <CustomersSection />
     </>
   );
 };

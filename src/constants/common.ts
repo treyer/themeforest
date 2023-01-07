@@ -22,3 +22,12 @@ export const BREADCRUMBS_LIST = {
     { name: "About Us", url: "/about", isActive: true },
   ],
 };
+
+export const CUSTOMERS_LIST = [
+  { id: 1, src: "/assets/photos/logo_1.png", alt: "WildWood logo" },
+  { id: 2, src: "/assets/photos/logo_2.png", alt: "Apple Rush logo" },
+  { id: 3, src: "/assets/photos/logo_3.png", alt: "LLi logo" },
+  { id: 4, src: "/assets/photos/logo_4.png", alt: "AW Group logo" },
+  { id: 5, src: "/assets/photos/logo_5.png", alt: "Hard To Ignore logo" },
+  { id: 6, src: "/assets/photos/logo_6.png", alt: "FairTech logo" },
+];

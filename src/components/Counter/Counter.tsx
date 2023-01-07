@@ -5,7 +5,7 @@ import { CounterProps } from "./types";
 
 const Counter = ({
   count,
-  explanation,
+  description,
   width,
   align = FlexAlign.Start,
 }: CounterProps) => {
@@ -26,7 +26,7 @@ const Counter = ({
         textStyle={TextStyle.Paragraph2_regular}
         color={TextColor.Grey}
       >
-        {explanation}
+        {description}
       </Typography>
     </Flex>
   );
