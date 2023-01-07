@@ -5,7 +5,7 @@ import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
 import Typography from "components/Typography/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import OverviewSection from "pages/common/OverviewSection";
+import OverviewSection from "pages/common-sections/OverviewSection";
 import {
   ButtonRoundSize,
   ButtonSimpleSize,
@@ -26,7 +26,7 @@ import {
 } from "./components";
 import ContactUsSection from "./ContactUsSection";
 import PricingSection from "./PricingSection";
-import TestimonialsSection from "./TestimonialsSection";
+import TestimonialsSection from "../common-sections/TestimonialsSection";
 
 const HomePage = () => {
   return (

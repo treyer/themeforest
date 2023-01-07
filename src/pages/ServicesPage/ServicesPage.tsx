@@ -1,12 +1,12 @@
 import Breadcrumbs from "components/Breadcrumbs/Breadcrumbs";
 import Section from "components/elements/Section/Section";
 import { BREADCRUMBS_LIST } from "constants/common";
-import OverviewSection from "pages/common/OverviewSection";
+import OverviewSection from "pages/common-sections/OverviewSection";
 import ContactUsSection from "pages/HomePage/ContactUsSection";
 import { SectionType } from "types/types";
 import DescriptionSection from "./DescriptionSection";
 import ServicesCardsSection from "./ServicesCardsSection";
-import SubscribeSection from "./SubscribeSection";
+import SubscribeSection from "../common-sections/SubscribeSection";
 
 const ServicesPage = () => {
   return (

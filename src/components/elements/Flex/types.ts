@@ -10,6 +10,7 @@ export type FlexProps = {
   marginBottom?: number | null;
   marginRight?: number | null;
   marginLeft?: number | null;
+  padding?: number | null;
   paddingTop?: number | null;
   paddingBottom?: number | null;
   paddingRight?: number | null;

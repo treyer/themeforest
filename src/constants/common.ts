@@ -31,3 +31,13 @@ export const CUSTOMERS_LIST = [
   { id: 5, src: "/assets/photos/logo_5.png", alt: "Hard To Ignore logo" },
   { id: 6, src: "/assets/photos/logo_6.png", alt: "FairTech logo" },
 ];
+
+export const CONTACTS_LIST = [
+  { id: 1, name: "Email address", value: "ensome@info.co.us" },
+  { id: 2, name: "Phone number", value: "+1601-201-5580" },
+  {
+    id: 3,
+    name: "Address",
+    value: "1642 Washington Avenue, Jackson, MS, Mississippi, 39201",
+  },
+];

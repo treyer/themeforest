@@ -18,6 +18,7 @@ export const FlexElement = styled.div<Omit<FlexProps, "children">>`
   ${({ marginLeft }) => (marginLeft ? `margin-left: ${marginLeft}px;` : "")}
   ${({ marginBottom }) =>
     marginBottom ? `margin-bottom: ${marginBottom}px;` : ""}
+  ${({ padding }) => (padding ? `padding: ${padding}px;` : "")}
   ${({ paddingTop }) => (paddingTop ? `padding-top: ${paddingTop}px;` : "")}
   ${({ paddingBottom }) =>
     paddingBottom ? `padding-bottom: ${paddingBottom}px;` : ""}

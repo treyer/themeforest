@@ -12,7 +12,7 @@ import {
   TextStyle,
 } from "types/types";
 
-const OurMissionSection = () => {
+const MissionSection = () => {
   return (
     <Section type={SectionType.Narrow} columnGap={30} marginTop={120}>
       <Image
@@ -57,4 +57,4 @@ const OurMissionSection = () => {
   );
 };
 
-export default OurMissionSection;
+export default MissionSection;

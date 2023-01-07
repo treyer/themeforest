@@ -10,12 +10,19 @@ import {
   IconColor,
   SectionDirection,
   SectionType,
+  TestimonialCardVariant,
   TextColor,
   TextStyle,
 } from "types/types";
 import { ControlsWrapper } from "./components";
 
-const TestimonialsSection = () => {
+type Props = {
+  cardVariant?: TestimonialCardVariant;
+};
+
+const TestimonialsSection = ({
+  cardVariant = TestimonialCardVariant.ImgInside,
+}: Props) => {
   return (
     <Section
       type={SectionType.Narrow}
@@ -50,6 +57,7 @@ const TestimonialsSection = () => {
       <Flex columnGap={30}>
         {Persons.map((person) => (
           <TestimonialCard
+            cardVariant={cardVariant}
             key={person.id}
             imgUrl={person.imgUrl}
             personName={person.personName}
