@@ -9,9 +9,10 @@ const ReadMoreButton = () => {
   return (
     <FlexClickable>
       <Typography
+        className="text-read-more"
         textStyle={TextStyle.Headline7_semibold}
-        color={TextColor.Primary}
         textElement={TextElement.Div}
+        color={TextColor.Primary}
         width={70}
         height={24}
       >
@@ -19,6 +20,7 @@ const ReadMoreButton = () => {
       </Typography>
       <Flex width={20}>
         <Icon
+          className="icon-read-more"
           url={ICON_URLS.ArrowRight}
           width={8}
           height={14}

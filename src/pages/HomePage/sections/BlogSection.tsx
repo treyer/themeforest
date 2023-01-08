@@ -14,7 +14,7 @@ import {
   TextColor,
   TextStyle,
 } from "types/types";
-import { ControlsWrapper } from "./components";
+import { ControlsWrapper } from "../components";
 
 const BlogSection = () => {
   return (

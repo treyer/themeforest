@@ -10,5 +10,6 @@ export type TypographyProps = {
   marginTop?: number | null;
   marginBottom?: number | null;
   unselected?: boolean;
+  className?: string;
   children: string | JSX.Element | JSX.Element[];
 };

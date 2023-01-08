@@ -8,11 +8,20 @@ export const FlexClickable = styled.div`
   cursor: pointer;
   user-select: none;
 
-  &:hover {
-    opacity: 0.8;
+  &:hover,
+  &:active {
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
-  &:active {
-    opacity: 1;
+  & .text-read-more {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  &:hover .icon-read-more {
+    background-color: ${({ theme }) => theme.colors.secondary};
+  }
+
+  &:hover .text-read-more {
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;

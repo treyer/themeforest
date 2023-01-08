@@ -12,11 +12,13 @@ const Typography = ({
   marginTop = null,
   marginBottom = null,
   unselected = false,
+  className = "",
   children,
 }: TypographyProps) => {
   if (textElement === TextElement.Span) {
     return (
       <StyledTextSpan
+        className={className}
         textStyle={textStyle}
         color={color}
         marginTop={marginTop}
@@ -30,6 +32,7 @@ const Typography = ({
   if (textElement === TextElement.Div) {
     return (
       <StyledTextDiv
+        className={className}
         textStyle={textStyle}
         textAlign={textAlign}
         color={color}

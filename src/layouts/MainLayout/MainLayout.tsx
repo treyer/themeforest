@@ -18,7 +18,9 @@ const AboutPage = lazy(() => import("pages/AboutPage/AboutPage"));
 const BlogPage = lazy(() => import("pages/BlogPage/BlogPage"));
 const ContactsPage = lazy(() => import("pages/ContactsPage/ContactsPage"));
 const FAQsPage = lazy(() => import("pages/FAQsPage/FAQsPage"));
-const ServicesPage = lazy(() => import("pages/ServicesPage/ServicesPage"));
+const ServicesPage = lazy(
+  () => import("pages/ServicesPage/sections/ServicesPage"),
+);
 const TeamPage = lazy(() => import("pages/TeamPage/TeamPage"));
 
 const MainLayout = () => {
