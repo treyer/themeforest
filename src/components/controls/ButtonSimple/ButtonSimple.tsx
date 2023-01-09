@@ -1,6 +1,11 @@
 import Typography from "components/Typography/Typography";
 import { Button, ButtonOutlined } from "./components";
-import { ButtonSimpleSize, TextColor, TextStyle } from "types/types";
+import {
+  ButtonSimpleMode,
+  ButtonSimpleSize,
+  TextColor,
+  TextStyle,
+} from "types/types";
 import { ButtonSimpleProps } from "./types";
 
 const BUTTON_SIZES = {
@@ -12,6 +17,7 @@ const ButtonSimple = ({
   size = ButtonSimpleSize.Small,
   disabled = false,
   outlined = false,
+  mode = ButtonSimpleMode.Light,
   width = null,
   height = null,
   children,
@@ -25,14 +31,23 @@ const ButtonSimple = ({
 
   if (!outlined) {
     return (
-      <Button disabled={disabled} width={finalWidth} height={finalHeight}>
+      <Button
+        disabled={disabled}
+        width={finalWidth}
+        height={finalHeight}
+        mode={mode}
+      >
         <Typography
           textStyle={
             size === ButtonSimpleSize.Small
               ? TextStyle.Headline7_semibold
               : TextStyle.Headline6_bold
           }
-          color={TextColor.White}
+          color={
+            mode === ButtonSimpleMode.Light
+              ? TextColor.White
+              : TextColor.Primary
+          }
         >
           {children}
         </Typography>
@@ -41,14 +56,18 @@ const ButtonSimple = ({
   }
   if (outlined) {
     return (
-      <ButtonOutlined width={finalWidth} height={finalHeight}>
+      <ButtonOutlined width={finalWidth} height={finalHeight} mode={mode}>
         <Typography
           textStyle={
             size === ButtonSimpleSize.Small
               ? TextStyle.Headline7_semibold
               : TextStyle.Headline6_bold
           }
-          color={TextColor.Primary}
+          color={
+            mode === ButtonSimpleMode.Light
+              ? TextColor.Primary
+              : TextColor.White
+          }
         >
           {children}
         </Typography>

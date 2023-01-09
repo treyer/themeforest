@@ -117,3 +117,13 @@ export enum TestimonialCardVariant {
   ImgOutside = "outside",
   ImgInside = "inside",
 }
+
+export enum ButtonSimpleMode {
+  Light = "light",
+  Dark = "dark",
+}
+
+export enum PriceType {
+  Month = "month",
+  Year = "year",
+}

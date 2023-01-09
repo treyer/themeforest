@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { ButtonSimpleMode } from "types/types";
 
 import { ButtonSimpleProps } from "./types";
 
 type ButtonOutlinedProps = {
   width: number;
   height: number;
+  mode: ButtonSimpleMode;
 };
 
 export const Button = styled.button<
@@ -17,20 +19,31 @@ export const Button = styled.button<
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
 
-  color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme, disabled }) =>
-    disabled ? theme.colors.grey : theme.colors.primary};
+  background-color: ${({ theme, disabled, mode }) =>
+    disabled
+      ? theme.colors.grey
+      : mode === ButtonSimpleMode.Dark
+      ? theme.colors.white
+      : theme.colors.primary};
   border: 1px solid
-    ${({ theme, disabled }) =>
-      disabled ? theme.colors.grey : theme.colors.primary};
+    ${({ theme, disabled, mode }) =>
+      disabled
+        ? theme.colors.grey
+        : mode === ButtonSimpleMode.Dark
+        ? theme.colors.white
+        : theme.colors.primary};
   border-radius: ${({ theme }) => theme.radiuses[0]}px;
 
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
   user-select: none;
 
   &:hover {
-    background-color: ${({ theme, disabled }) =>
-      disabled ? theme.colors.grey : theme.colors.helperBlue4};
+    background-color: ${({ theme, disabled, mode }) =>
+      disabled
+        ? theme.colors.grey
+        : mode === ButtonSimpleMode.Dark
+        ? theme.colors.white
+        : theme.colors.helperBlue4};
     border: 1px solid
       ${({ theme, disabled }) =>
         disabled ? theme.colors.grey : theme.colors.helperBlue4};
@@ -39,8 +52,12 @@ export const Button = styled.button<
   &:active {
     box-shadow: none;
 
-    background-color: ${({ theme, disabled }) =>
-      disabled ? theme.colors.grey : theme.colors.primary};
+    background-color: ${({ theme, disabled, mode }) =>
+      disabled
+        ? theme.colors.grey
+        : mode === ButtonSimpleMode.Dark
+        ? theme.colors.white
+        : theme.colors.helperBlue4};
   }
 `;
 
@@ -50,7 +67,13 @@ export const ButtonOutlined = styled.button<ButtonOutlinedProps>`
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
 
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme, mode }) =>
+    mode === ButtonSimpleMode.Dark ? theme.colors.primary : theme.colors.white};
+  border: 1px solid
+    ${({ theme, mode }) =>
+      mode === ButtonSimpleMode.Dark
+        ? theme.colors.white
+        : theme.colors.primary};
   border-radius: ${({ theme }) => theme.radiuses[0]}px;
 
   cursor: pointer;

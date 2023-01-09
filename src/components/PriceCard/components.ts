@@ -13,7 +13,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.colors.primary : theme.colors.white};
-  border-radius: ${({ theme }) => theme.radiuses[0]};
+  border-radius: ${({ theme }) => theme.radiuses[0]}px;
 
   box-shadow: ${({ theme }) => theme.shadows[2]};
 `;
