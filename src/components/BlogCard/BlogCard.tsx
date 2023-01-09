@@ -2,13 +2,13 @@ import ReadMoreButton from "components/controls/ReadMoreButton/ReadMoreButton";
 
 import Typography from "components/Typography/Typography";
 import { TextColor, TextElement, TextStyle } from "types/types";
-import { Wrapper } from "./components";
+import { CardImage, Wrapper } from "./components";
 import { BlogCardProps } from "./types";
 
 const BlogCard = ({ imgUrl, date, header, text }: BlogCardProps) => {
   return (
     <Wrapper>
-      <img src={imgUrl} width={350} height={200} />
+      <CardImage src={imgUrl} width={350} height={200} />
       <Typography
         textStyle={TextStyle.Paragraph3_regular}
         color={TextColor.Grey}

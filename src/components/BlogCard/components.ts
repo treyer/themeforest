@@ -5,4 +5,6 @@ export const Wrapper = styled.div`
   height: 482px;
 `;
 
-export const CardImage = styled.img``;
+export const CardImage = styled.img`
+  display: block;
+`;

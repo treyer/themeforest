@@ -99,6 +99,7 @@ export enum IconColor {
   Primary = "primary",
   White = "white",
   Grey = "grey",
+  HelperBlue3 = "helperBlue3",
 }
 
 export enum TextAlign {
@@ -126,4 +127,19 @@ export enum ButtonSimpleMode {
 export enum PriceType {
   Month = "month",
   Year = "year",
+}
+
+export type SliderHandle = {
+  forward: () => void;
+  backward: () => void;
+};
+
+export enum DirectionControlType {
+  Desktop = "desktop",
+  Mobile = "mobile",
+}
+
+export enum Direction {
+  Left = "left",
+  Right = "right",
 }

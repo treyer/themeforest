@@ -1,40 +1,57 @@
 import BlogCard from "components/BlogCard/BlogCard";
+import DirectionControl from "components/controls/DirectionControl/DirectionControl";
 import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
-import Icon from "components/Icon/Icon";
+import Slider from "components/Slider/Slider";
 import Typography from "components/Typography/Typography";
 import { BlogCards } from "constants/data";
-import { ICON_URLS } from "constants/iconPaths";
+import { useRef } from "react";
 import {
+  Direction,
   FlexAlign,
   FlexDirection,
   FlexJustify,
-  IconColor,
   SectionType,
+  SliderHandle,
   TextColor,
   TextStyle,
 } from "types/types";
 import { ControlsWrapper } from "../components";
 
 const BlogSection = () => {
+  const sliderEl = useRef<SliderHandle>(null);
+  const itemsToShow = 3;
+
+  const handleForwardClick = () => {
+    if (sliderEl.current) {
+      sliderEl.current.forward();
+    }
+  };
+
+  const handleBackwardClick = () => {
+    if (sliderEl.current) {
+      sliderEl.current.backward();
+    }
+  };
+
   return (
     <Section type={SectionType.Narrow} marginTop={120}>
       <ControlsWrapper>
         <Flex justify={FlexJustify.Center}>
-          <Icon
-            url={ICON_URLS.ArrowLeft}
-            width={12}
-            height={21}
-            color={IconColor.Secondary}
-          />
+          <div onClick={handleBackwardClick}>
+            <DirectionControl
+              direction={Direction.Left}
+              disabled={BlogCards.length <= itemsToShow}
+            />
+          </div>
         </Flex>
         <Flex justify={FlexJustify.Center}>
-          <Icon
-            url={ICON_URLS.ArrowRight}
-            width={12}
-            height={21}
-            color={IconColor.Secondary}
-          />
+          <div onClick={handleForwardClick}>
+            <DirectionControl
+              direction={Direction.Right}
+              disabled={BlogCards.length <= itemsToShow}
+            />
+          </div>
         </Flex>
       </ControlsWrapper>
       <Flex direction={FlexDirection.Column} align={FlexAlign.Start}>
@@ -44,16 +61,23 @@ const BlogSection = () => {
         >
           Our blog
         </Typography>
-        <Flex columnGap={30} marginTop={50}>
-          {BlogCards.map((card) => (
-            <BlogCard
-              key={card.id}
-              date={card.date}
-              header={card.header}
-              imgUrl={card.imgUrl}
-              text={card.text}
-            />
-          ))}
+        <Flex marginTop={50}>
+          <Slider
+            height={482}
+            itemsToShow={itemsToShow}
+            columnGap={30}
+            ref={sliderEl}
+          >
+            {BlogCards.map((card) => (
+              <BlogCard
+                key={card.id}
+                date={card.date}
+                header={card.header}
+                imgUrl={card.imgUrl}
+                text={card.text}
+              />
+            ))}
+          </Slider>
         </Flex>
       </Flex>
     </Section>

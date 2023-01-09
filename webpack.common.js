@@ -33,6 +33,7 @@ module.exports = {
       types: path.resolve(__dirname, "src/types"),
       pages: path.resolve(__dirname, "src/pages"),
       constants: path.resolve(__dirname, "src/constants"),
+      helpers: path.resolve(__dirname, "src/helpers"),
     },
   },
   plugins: [

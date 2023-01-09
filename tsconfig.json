@@ -32,7 +32,8 @@
       "context/*": ["src/context/*"],
       "types/*": ["src/types/*"],
       "pages/*": ["src/pages/*"],
-      "constants/*": ["src/constants/*"]
+      "constants/*": ["src/constants/*"],
+      "helpers/*": ["src/helpers/*"]
     },
     "module": "ES2022",
     "moduleResolution": "node",

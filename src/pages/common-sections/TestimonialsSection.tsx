@@ -1,15 +1,17 @@
+import DirectionControl from "components/controls/DirectionControl/DirectionControl";
 import Flex from "components/elements/Flex/Flex";
 import Section from "components/elements/Section/Section";
-import Icon from "components/Icon/Icon";
+import Slider from "components/Slider/Slider";
 import TestimonialCard from "components/TestimonialCard/TestimonialCard";
 import Typography from "components/Typography/Typography";
 import { Persons } from "constants/data";
-import { ICON_URLS } from "constants/iconPaths";
+import { useRef } from "react";
 import {
+  Direction,
   FlexJustify,
-  IconColor,
   SectionDirection,
   SectionType,
+  SliderHandle,
   TestimonialCardVariant,
   TextColor,
   TextStyle,
@@ -23,6 +25,21 @@ type Props = {
 const TestimonialsSection = ({
   cardVariant = TestimonialCardVariant.ImgInside,
 }: Props) => {
+  const sliderEl = useRef<SliderHandle>(null);
+  const itemsToShow = cardVariant === TestimonialCardVariant.ImgInside ? 3 : 2;
+
+  const handleForwardClick = () => {
+    if (sliderEl.current) {
+      sliderEl.current.forward();
+    }
+  };
+
+  const handleBackwardClick = () => {
+    if (sliderEl.current) {
+      sliderEl.current.backward();
+    }
+  };
+
   return (
     <Section
       type={SectionType.Narrow}
@@ -31,20 +48,20 @@ const TestimonialsSection = ({
     >
       <ControlsWrapper>
         <Flex justify={FlexJustify.Center}>
-          <Icon
-            url={ICON_URLS.ArrowLeft}
-            width={12}
-            height={21}
-            color={IconColor.Secondary}
-          />
+          <div onClick={handleBackwardClick}>
+            <DirectionControl
+              direction={Direction.Left}
+              disabled={Persons.length <= itemsToShow}
+            />
+          </div>
         </Flex>
         <Flex justify={FlexJustify.Center}>
-          <Icon
-            url={ICON_URLS.ArrowRight}
-            width={12}
-            height={21}
-            color={IconColor.Secondary}
-          />
+          <div onClick={handleForwardClick}>
+            <DirectionControl
+              direction={Direction.Right}
+              disabled={Persons.length <= itemsToShow}
+            />
+          </div>
         </Flex>
       </ControlsWrapper>
 
@@ -54,18 +71,25 @@ const TestimonialsSection = ({
       >
         Testimonials
       </Typography>
-      <Flex columnGap={30}>
-        {Persons.map((person) => (
-          <TestimonialCard
-            cardVariant={cardVariant}
-            key={person.id}
-            imgUrl={person.imgUrl}
-            personName={person.personName}
-            personPosition={person.personPosition}
-          >
-            {person.about}
-          </TestimonialCard>
-        ))}
+      <Flex>
+        <Slider
+          height={cardVariant === TestimonialCardVariant.ImgInside ? 371 : 349}
+          itemsToShow={itemsToShow}
+          columnGap={30}
+          ref={sliderEl}
+        >
+          {Persons.map((person) => (
+            <TestimonialCard
+              cardVariant={cardVariant}
+              key={person.id}
+              imgUrl={person.imgUrl}
+              personName={person.personName}
+              personPosition={person.personPosition}
+            >
+              {person.about}
+            </TestimonialCard>
+          ))}
+        </Slider>
       </Flex>
     </Section>
   );
