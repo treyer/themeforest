@@ -1,6 +1,6 @@
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import {
   FlexDirection,
   SectionType,
@@ -8,7 +8,7 @@ import {
   TextColor,
   TextElement,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const DescriptionSection = () => {
   return (
@@ -32,7 +32,7 @@ const DescriptionSection = () => {
         </Typography>
         <Typography
           textStyle={TextStyle.Paragraph1_regular}
-          color={TextColor.Grey}
+          color={TextColor.Gray}
           textElement={TextElement.Div}
           textAlign={TextAlign.Center}
           width={730}

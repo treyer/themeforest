@@ -1,4 +1,4 @@
-import { SectionDirection, SectionType } from "types/types";
+import { SectionDirection, SectionType } from "types/index";
 
 export type SectionProps = {
   type: SectionType;

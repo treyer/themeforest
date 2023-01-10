@@ -1,5 +1,5 @@
 import { Ref } from "react";
-import { SliderHandle } from "types/types";
+import { SliderHandle } from "types/index";
 
 export type SliderProps = {
   height: number;

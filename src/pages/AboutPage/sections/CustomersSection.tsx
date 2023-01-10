@@ -1,7 +1,7 @@
-import Flex from "components/elements/Flex/Flex";
-import Image from "components/elements/Image/Image";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import Flex from "components/elements/Flex";
+import Image from "components/elements/Image";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import { CUSTOMERS_LIST } from "constants/common";
 import {
   FlexAlign,
@@ -10,7 +10,7 @@ import {
   TextColor,
   TextElement,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const CustomersSection = () => {
   return (
@@ -30,7 +30,7 @@ const CustomersSection = () => {
           textStyle={TextStyle.Paragraph1_regular}
           textElement={TextElement.Div}
           width={445}
-          color={TextColor.Grey}
+          color={TextColor.Gray}
         >
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudan, totam rem aperiam.

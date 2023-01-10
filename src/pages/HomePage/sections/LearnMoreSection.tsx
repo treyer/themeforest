@@ -1,7 +1,7 @@
-import ButtonRound from "components/controls/ButtonRound/ButtonRound";
-import Section from "components/elements/Section/Section";
-import { ButtonRoundSize, SectionType } from "types/types";
-import { ImageHome, LearnMoreBtnWrapper } from "../components";
+import ButtonRound from "components/controls/ButtonRound";
+import Section from "components/elements/Section";
+import { ButtonRoundSize, SectionType } from "types/index";
+import { ImageHome, LearnMoreBtnWrapper } from "../styled";
 
 const LearnMoreSection = () => {
   return (

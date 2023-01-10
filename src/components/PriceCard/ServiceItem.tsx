@@ -1,8 +1,8 @@
-import Flex from "components/elements/Flex/Flex";
-import Icon from "components/Icon/Icon";
-import Typography from "components/Typography/Typography";
+import Flex from "components/elements/Flex";
+import Icon from "components/Icon";
+import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { FlexJustify, IconColor, TextColor, TextStyle } from "types/types";
+import { FlexJustify, IconColor, TextColor, TextStyle } from "types/index";
 import { ServiceItemProps } from "./types";
 
 const ServiceItem = ({ isCardActive, text }: ServiceItemProps) => {

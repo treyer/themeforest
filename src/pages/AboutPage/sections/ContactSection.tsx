@@ -1,8 +1,8 @@
-import ButtonSimple from "components/controls/ButtonSimple/ButtonSimple";
-import TextInput from "components/controls/TextInput/TextInput";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import ButtonSimple from "components/controls/ButtonSimple";
+import TextInput from "components/controls/TextInput";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import { CONTACTS_LIST } from "constants/common";
 
 import {
@@ -13,7 +13,7 @@ import {
   TextColor,
   TextInputType,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const ContactSection = () => {
   return (
@@ -30,7 +30,7 @@ const ContactSection = () => {
             </Typography>
             <Typography
               textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Grey}
+              color={TextColor.Gray}
             >
               Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
@@ -46,7 +46,7 @@ const ContactSection = () => {
               >
                 <Typography
                   textStyle={TextStyle.Paragraph2_regular}
-                  color={TextColor.Grey}
+                  color={TextColor.Gray}
                 >
                   {contact.name}
                 </Typography>

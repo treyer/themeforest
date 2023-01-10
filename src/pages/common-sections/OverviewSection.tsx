@@ -1,14 +1,14 @@
-import Counter from "components/Counter/Counter";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import Counter from "components/Counter";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import {
   FlexJustify,
   SectionDirection,
   SectionType,
   TextColor,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const OverviewSection = () => {
   return (
@@ -34,7 +34,7 @@ const OverviewSection = () => {
         <Flex width={540}>
           <Typography
             textStyle={TextStyle.Paragraph1_regular}
-            color={TextColor.Grey}
+            color={TextColor.Gray}
           >
             Sed ut perspiciatis unde omnis iste natus error sit voluptat
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

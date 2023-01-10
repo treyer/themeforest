@@ -7,9 +7,9 @@ const helperBlue3 = "#C9DCEC";
 const helperBlue4 = "#467dff";
 const black = "#292D33";
 const white = "#ffffff";
-const grey = "#9497A1";
-const helperGrey1 = "#B4B6BD";
-const lightGrey = "#ECEFF2";
+const gray = "#9497A1";
+const helperGray1 = "#B4B6BD";
+const lightGray = "#ECEFF2";
 const background = "#F1F6FA";
 const redError = "#C14040";
 const lightRed = "#F6E2E2";
@@ -57,9 +57,9 @@ export default {
     helperBlue4,
     black,
     white,
-    grey,
-    lightGrey,
-    helperGrey1,
+    gray,
+    lightGray,
+    helperGray1,
     background,
     redError,
     lightRed,

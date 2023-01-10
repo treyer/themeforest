@@ -1,7 +1,7 @@
-import ButtonSimple from "components/controls/ButtonSimple/ButtonSimple";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import ButtonSimple from "components/controls/ButtonSimple";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import {
   ButtonSimpleSize,
   FlexDirection,
@@ -10,7 +10,7 @@ import {
   TextColor,
   TextElement,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const ContactUsSection = () => {
   return (
@@ -26,7 +26,7 @@ const ContactUsSection = () => {
         <Typography
           textStyle={TextStyle.Paragraph2_regular}
           textAlign={TextAlign.Center}
-          color={TextColor.Grey}
+          color={TextColor.Gray}
           textElement={TextElement.Div}
           width={540}
           marginTop={30}

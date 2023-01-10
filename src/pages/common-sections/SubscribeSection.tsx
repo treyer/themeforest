@@ -1,15 +1,15 @@
-import TextInputWithButton from "components/controls/TextInputWithButton/TextInputWithButton";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import TextInputWithButton from "components/controls/TextInputWithButton";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import {
   FlexAlign,
   FlexDirection,
   SectionType,
   TextColor,
   TextStyle,
-} from "types/types";
-import { Wrapper } from "./components";
+} from "types/index";
+import { Wrapper } from "./styled";
 
 const SubscribeSection = () => {
   return (

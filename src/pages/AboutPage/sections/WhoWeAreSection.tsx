@@ -1,8 +1,8 @@
-import Flex from "components/elements/Flex/Flex";
-import Image from "components/elements/Image/Image";
-import Section from "components/elements/Section/Section";
-import TypographyP from "components/elements/TypographyP/TypographyP";
-import Typography from "components/Typography/Typography";
+import Flex from "components/elements/Flex";
+import Image from "components/elements/Image";
+import Section from "components/elements/Section";
+import TypographyP from "components/elements/TypographyP";
+import Typography from "components/Typography";
 import {
   FlexAlign,
   FlexDirection,
@@ -10,7 +10,7 @@ import {
   SectionType,
   TextColor,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const WhoWeAreSection = () => {
   return (
@@ -30,7 +30,7 @@ const WhoWeAreSection = () => {
         </Typography>
         <Typography
           textStyle={TextStyle.Paragraph1_regular}
-          color={TextColor.Grey}
+          color={TextColor.Gray}
         >
           <TypographyP>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

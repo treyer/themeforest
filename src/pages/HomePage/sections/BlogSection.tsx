@@ -1,9 +1,9 @@
-import BlogCard from "components/BlogCard/BlogCard";
-import DirectionControl from "components/controls/DirectionControl/DirectionControl";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Slider from "components/Slider/Slider";
-import Typography from "components/Typography/Typography";
+import BlogCard from "components/BlogCard";
+import DirectionControl from "components/controls/DirectionControl";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Slider from "components/Slider";
+import Typography from "components/Typography";
 import { BlogCards } from "constants/data";
 import { useRef } from "react";
 import {
@@ -15,8 +15,8 @@ import {
   SliderHandle,
   TextColor,
   TextStyle,
-} from "types/types";
-import { ControlsWrapper } from "../components";
+} from "types/index";
+import { ControlsWrapper } from "../styled";
 
 const BlogSection = () => {
   const sliderEl = useRef<SliderHandle>(null);

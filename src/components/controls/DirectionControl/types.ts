@@ -1,4 +1,4 @@
-import { DirectionControlType, Direction } from "types/types";
+import { DirectionControlType, Direction } from "types/index";
 
 export type DirectionControlProps = {
   direction: Direction;

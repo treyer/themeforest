@@ -1,4 +1,4 @@
-import { FlexAlign, FlexDirection, FlexJustify } from "types/types";
+import { FlexAlign, FlexDirection, FlexJustify } from "types/index";
 
 export type FlexProps = {
   direction?: FlexDirection;

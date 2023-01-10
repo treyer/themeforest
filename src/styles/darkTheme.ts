@@ -1,4 +1,4 @@
-import { Theme } from "types/types";
+import { Theme } from "types/index";
 
 const fontColorMain = "#ffffff";
 const fontColorMenuButton = "#ffffff";

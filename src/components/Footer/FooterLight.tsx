@@ -1,7 +1,7 @@
-import FooterLink from "components/controls/FooterLink/FooterLink";
-import Flex from "components/elements/Flex/Flex";
-import Logo from "components/Logo/Logo";
-import Typography from "components/Typography/Typography";
+import FooterLink from "components/controls/FooterLink";
+import Flex from "components/elements/Flex";
+import Logo from "components/Logo";
+import Typography from "components/Typography";
 import { SOCIAL_NETWORK_LIST } from "constants/common";
 import {
   FlexAlign,
@@ -9,7 +9,7 @@ import {
   FlexJustify,
   LogoSize,
   TextStyle,
-} from "types/types";
+} from "types/index";
 import {
   BottomBlockLight,
   ColumnDataWrapperLight,
@@ -26,7 +26,7 @@ import {
   TextWithArrowAdditional,
   UpBlockLight,
   Wrapper,
-} from "./components";
+} from "./styled";
 
 const FooterLight = () => {
   return (

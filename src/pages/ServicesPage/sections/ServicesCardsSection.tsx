@@ -1,8 +1,8 @@
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import ServiceCard from "components/ServiceCard/ServiceCard";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import ServiceCard from "components/ServiceCard";
 import { ServicesCards } from "constants/data";
-import { SectionType } from "types/types";
+import { SectionType } from "types/index";
 
 const ServicesCardsSection = () => {
   return (

@@ -1,9 +1,9 @@
-import Icon from "components/Icon/Icon";
-import Typography from "components/Typography/Typography";
-import { IconColor, TextColor, TextStyle } from "types/types";
+import Icon from "components/Icon";
+import Typography from "components/Typography";
+import { IconColor, TextColor, TextStyle } from "types/index";
 import { BreadcrumbsLinkType } from "./types";
 import { ICON_URLS } from "constants/iconPaths";
-import { Link } from "./components";
+import { Link } from "./styled";
 
 const BreadcrumbLink = ({ link }: { link: BreadcrumbsLinkType }) => {
   if (link.isActive) {
@@ -22,7 +22,7 @@ const BreadcrumbLink = ({ link }: { link: BreadcrumbsLinkType }) => {
         <Link to={link.url}>
           <Typography
             textStyle={TextStyle.Headline7_medium}
-            color={TextColor.Grey}
+            color={TextColor.Gray}
           >
             {link.name}
           </Typography>
@@ -31,7 +31,7 @@ const BreadcrumbLink = ({ link }: { link: BreadcrumbsLinkType }) => {
           url={ICON_URLS.Divider}
           width={2}
           height={14}
-          color={IconColor.Grey}
+          color={IconColor.Gray}
         />
       </>
     );

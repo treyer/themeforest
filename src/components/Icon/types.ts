@@ -1,4 +1,4 @@
-import { IconColor } from "types/types";
+import { IconColor } from "types/index";
 
 export type IconProps = {
   url: string;

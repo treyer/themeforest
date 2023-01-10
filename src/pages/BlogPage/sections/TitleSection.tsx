@@ -1,7 +1,7 @@
-import Breadcrumbs from "components/Breadcrumbs/Breadcrumbs";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import Breadcrumbs from "components/Breadcrumbs";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import { BREADCRUMBS_LIST } from "constants/common";
 import {
   FlexDirection,
@@ -11,7 +11,7 @@ import {
   TextColor,
   TextElement,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const TitleSection = () => {
   return (

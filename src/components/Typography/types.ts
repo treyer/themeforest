@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { TextAlign, TextColor, TextElement, TextStyle } from "types/types";
+import { TextAlign, TextColor, TextElement, TextStyle } from "types/index";
 
 export type TypographyProps = {
   textStyle: TextStyle;

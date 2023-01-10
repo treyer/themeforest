@@ -1,7 +1,7 @@
-import ButtonSimple from "components/controls/ButtonSimple/ButtonSimple";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import ButtonSimple from "components/controls/ButtonSimple";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 
 import {
   ButtonSimpleSize,
@@ -11,8 +11,8 @@ import {
   SectionType,
   TextColor,
   TextStyle,
-} from "types/types";
-import { ImageSolutions, TextStressed } from "../components";
+} from "types/index";
+import { ImageSolutions, TextStressed } from "../styled";
 
 const FeaturesSection = () => {
   return (
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
         >
           <Typography
             textStyle={TextStyle.Paragraph1_regular}
-            color={TextColor.Grey}
+            color={TextColor.Gray}
           >
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
             </Flex>
             <Typography
               textStyle={TextStyle.Paragraph1_regular}
-              color={TextColor.Grey}
+              color={TextColor.Gray}
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

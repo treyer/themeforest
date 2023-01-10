@@ -1,4 +1,4 @@
-import { ButtonSimpleMode, ButtonSimpleSize } from "types/types";
+import { ButtonSimpleMode, ButtonSimpleSize } from "types/index";
 
 export type ButtonSimpleProps = {
   size?: ButtonSimpleSize;

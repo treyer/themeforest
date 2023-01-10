@@ -1,4 +1,4 @@
-import { TextInputType } from "types/types";
+import { TextInputType } from "types/index";
 
 export type TextInputProps = {
   type: TextInputType;

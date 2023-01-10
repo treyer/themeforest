@@ -1,7 +1,7 @@
-import BenefitsCard from "components/BenefitsCard/BenefitsCard";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
+import BenefitsCard from "components/BenefitsCard";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
 import {
   FlexAlign,
@@ -9,7 +9,7 @@ import {
   SectionType,
   TextColor,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const BenefitsSection = () => {
   return (
@@ -30,7 +30,7 @@ const BenefitsSection = () => {
             </Typography>
             <Typography
               textStyle={TextStyle.Paragraph1_regular}
-              color={TextColor.Grey}
+              color={TextColor.Gray}
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

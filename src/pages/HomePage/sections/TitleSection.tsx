@@ -1,7 +1,7 @@
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Typography from "components/Typography/Typography";
-import { TextStressed } from "../components";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Typography from "components/Typography";
+import { TextStressed } from "../styled";
 
 import {
   FlexJustify,
@@ -9,7 +9,7 @@ import {
   TextColor,
   TextElement,
   TextStyle,
-} from "types/types";
+} from "types/index";
 
 const TitleSection = () => {
   return (
@@ -28,7 +28,7 @@ const TitleSection = () => {
       <Flex justify={FlexJustify.Start}>
         <Typography
           textStyle={TextStyle.Paragraph2_regular}
-          color={TextColor.Grey}
+          color={TextColor.Gray}
           textElement={TextElement.Div}
           width={350}
         >

@@ -1,4 +1,4 @@
-import { TestimonialCardVariant } from "types/types";
+import { TestimonialCardVariant } from "types/index";
 
 export type TestimonialCardProps = {
   imgUrl: string;

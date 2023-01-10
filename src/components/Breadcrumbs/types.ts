@@ -1,4 +1,4 @@
-import { FlexJustify } from "types/types";
+import { FlexJustify } from "types/index";
 
 export type BreadcrumbsLinkType = {
   name: string;

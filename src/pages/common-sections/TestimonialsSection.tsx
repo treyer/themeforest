@@ -1,9 +1,9 @@
-import DirectionControl from "components/controls/DirectionControl/DirectionControl";
-import Flex from "components/elements/Flex/Flex";
-import Section from "components/elements/Section/Section";
-import Slider from "components/Slider/Slider";
-import TestimonialCard from "components/TestimonialCard/TestimonialCard";
-import Typography from "components/Typography/Typography";
+import DirectionControl from "components/controls/DirectionControl";
+import Flex from "components/elements/Flex";
+import Section from "components/elements/Section";
+import Slider from "components/Slider";
+import TestimonialCard from "components/TestimonialCard";
+import Typography from "components/Typography";
 import { Persons } from "constants/data";
 import { useRef } from "react";
 import {
@@ -15,8 +15,8 @@ import {
   TestimonialCardVariant,
   TextColor,
   TextStyle,
-} from "types/types";
-import { ControlsWrapper } from "./components";
+} from "types/index";
+import { ControlsWrapper } from "./styled";
 
 type Props = {
   cardVariant?: TestimonialCardVariant;

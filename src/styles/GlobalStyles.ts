@@ -141,7 +141,7 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .color-grey {
+  .color-gray {
     color: #9497A1;
   }
 
