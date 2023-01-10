@@ -12,9 +12,6 @@ import {
   FlexJustify,
   IconColor,
   SectionType,
-  TextColor,
-  TextElement,
-  TextStyle,
 } from "types/index";
 import TitleSection from "./sections/TitleSection";
 
@@ -43,10 +40,7 @@ const BlogPage = () => {
                   height={11}
                   color={IconColor.Gray}
                 />
-                <Typography
-                  textStyle={TextStyle.Paragraph3_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph3_regular" color="gray">
                   22 June 2020
                 </Typography>
               </Flex>
@@ -57,25 +51,18 @@ const BlogPage = () => {
                   height={11}
                   color={IconColor.Gray}
                 />
-                <Typography
-                  textStyle={TextStyle.Paragraph3_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph3_regular" color="gray">
                   William Pond
                 </Typography>
               </Flex>
             </Flex>
-            <Typography
-              textStyle={TextStyle.Headline3_extrabold}
-              color={TextColor.Black}
-              marginTop={40}
-            >
+            <Typography variant="headline3_extrabold" marginTop={40}>
               2022 software development trends <br />
               explained with benefits
             </Typography>
             <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Gray}
+              variant="paragraph2_regular"
+              color="gray"
               marginTop={30}
             >
               <TypographyP>
@@ -105,9 +92,8 @@ const BlogPage = () => {
             </Typography>
             <Flex justify={FlexJustify.End}>
               <Typography
-                textStyle={TextStyle.Paragraph1_regular}
-                color={TextColor.Black}
-                textElement={TextElement.Div}
+                variant="paragraph1_regular"
+                element="div"
                 width={506}
                 marginTop={30}
                 marginBottom={30}
@@ -118,14 +104,11 @@ const BlogPage = () => {
                 auctor orci. Sed quis lobortis eros. Fusce id commodo libero”
               </Typography>
             </Flex>
-            <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Gray}
-            >
+            <Typography variant="paragraph2_regular" color="gray">
               <TypographyP>
                 Mauris purus diam, iaculis non leo nec, ultricies fringilla
                 odio. Fusce feugiat elit facilisis volutpat venenatis.
-                <Typography textStyle={TextStyle.Paragraph2_bold}>
+                <Typography variant="paragraph2_bold">
                   Vestibulum tempor ligula vel orci consectetur, eu euismod
                   augue bibendum. In volutpat libero velit, et mattis tortor
                   placerat eget.
@@ -145,10 +128,7 @@ const BlogPage = () => {
                   height={11}
                   color={IconColor.Gray}
                 />
-                <Typography
-                  textStyle={TextStyle.Paragraph3_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph3_regular" color="gray">
                   481 Views
                 </Typography>
               </Flex>
@@ -159,10 +139,7 @@ const BlogPage = () => {
                   height={11}
                   color={IconColor.Gray}
                 />
-                <Typography
-                  textStyle={TextStyle.Paragraph3_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph3_regular" color="gray">
                   Share:
                 </Typography>
                 <Icon
@@ -203,10 +180,7 @@ const BlogPage = () => {
                   height={13}
                   color={IconColor.Gray}
                 />
-                <Typography
-                  textStyle={TextStyle.Paragraph3_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph3_regular" color="gray">
                   Tags:
                 </Typography>
               </Flex>

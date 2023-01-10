@@ -3,14 +3,7 @@ import Image from "components/elements/Image";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { CUSTOMERS_LIST } from "constants/common";
-import {
-  FlexAlign,
-  FlexDirection,
-  SectionType,
-  TextColor,
-  TextElement,
-  TextStyle,
-} from "types/index";
+import { FlexAlign, FlexDirection, SectionType } from "types/index";
 
 const CustomersSection = () => {
   return (
@@ -20,17 +13,12 @@ const CustomersSection = () => {
         align={FlexAlign.Start}
         rowGap={30}
       >
+        <Typography variant="headline1_extrabold">Our customers</Typography>
         <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-        >
-          Our customers
-        </Typography>
-        <Typography
-          textStyle={TextStyle.Paragraph1_regular}
-          textElement={TextElement.Div}
+          variant="paragraph1_regular"
+          element="div"
           width={445}
-          color={TextColor.Gray}
+          color="gray"
         >
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudan, totam rem aperiam.

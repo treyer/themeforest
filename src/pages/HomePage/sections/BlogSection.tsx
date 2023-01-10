@@ -13,8 +13,6 @@ import {
   FlexJustify,
   SectionType,
   SliderHandle,
-  TextColor,
-  TextStyle,
 } from "types/index";
 import { ControlsWrapper } from "../styled";
 
@@ -55,12 +53,7 @@ const BlogSection = () => {
         </Flex>
       </ControlsWrapper>
       <Flex direction={FlexDirection.Column} align={FlexAlign.Start}>
-        <Typography
-          textStyle={TextStyle.Headline2_extrabold}
-          color={TextColor.Black}
-        >
-          Our blog
-        </Typography>
+        <Typography variant="headline2_extrabold">Our blog</Typography>
         <Flex marginTop={50}>
           <Slider
             height={482}

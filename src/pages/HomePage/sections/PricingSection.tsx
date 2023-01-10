@@ -4,12 +4,7 @@ import PriceCard from "components/PriceCard";
 import Typography from "components/Typography";
 import { PricingCards } from "constants/data";
 import { useState } from "react";
-import {
-  SectionDirection,
-  SectionType,
-  TextColor,
-  TextStyle,
-} from "types/index";
+import { SectionDirection, SectionType } from "types/index";
 
 const PricingSection = () => {
   const [cardChosenIndex, setCardChosenIndex] = useState(2);
@@ -24,12 +19,7 @@ const PricingSection = () => {
       direction={SectionDirection.Column}
       marginTop={120}
     >
-      <Typography
-        textStyle={TextStyle.Headline2_extrabold}
-        color={TextColor.Black}
-      >
-        Our pricing
-      </Typography>
+      <Typography variant="headline2_extrabold">Our pricing</Typography>
       <Flex columnGap={30}>
         {PricingCards.map((card, index) => (
           <PriceCard

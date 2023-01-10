@@ -2,7 +2,7 @@ import Flex from "components/elements/Flex";
 import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { FlexJustify, IconColor, TextColor, TextStyle } from "types/index";
+import { FlexJustify, IconColor } from "types/index";
 import { ServiceItemProps } from "./types";
 
 const ServiceItem = ({ isCardActive, text }: ServiceItemProps) => {
@@ -15,8 +15,8 @@ const ServiceItem = ({ isCardActive, text }: ServiceItemProps) => {
         color={isCardActive ? IconColor.White : IconColor.Primary}
       ></Icon>
       <Typography
-        textStyle={TextStyle.Paragraph3_regular}
-        color={isCardActive ? TextColor.White : TextColor.Black}
+        variant="paragraph3_regular"
+        color={isCardActive ? "white" : "black"}
       >
         {text}
       </Typography>

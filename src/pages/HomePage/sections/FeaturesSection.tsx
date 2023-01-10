@@ -9,8 +9,6 @@ import {
   FlexDirection,
   FlexJustify,
   SectionType,
-  TextColor,
-  TextStyle,
 } from "types/index";
 import { ImageSolutions, TextStressed } from "../styled";
 
@@ -19,14 +17,9 @@ const FeaturesSection = () => {
     <>
       <Section type={SectionType.Narrow} marginTop={120}>
         <Flex width={540}>
-          <Typography
-            textStyle={TextStyle.Headline0_extrabold}
-            color={TextColor.Black}
-          >
-            <div>
-              The <TextStressed>newest</TextStressed>
-              <br /> business analytics platform
-            </div>
+          <Typography variant="headline0_extrabold">
+            The <TextStressed>newest</TextStressed>
+            <br /> business analytics platform
           </Typography>
         </Flex>
         <Flex
@@ -34,10 +27,7 @@ const FeaturesSection = () => {
           align={FlexAlign.Start}
           width={540}
         >
-          <Typography
-            textStyle={TextStyle.Paragraph1_regular}
-            color={TextColor.Gray}
-          >
+          <Typography variant="paragraph1_regular" color="gray">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis etquasi architecto beatae vitae
@@ -62,19 +52,13 @@ const FeaturesSection = () => {
             rowGap={30}
           >
             <Flex width="100%">
-              <Typography
-                textStyle={TextStyle.Headline2_extrabold}
-                color={TextColor.Black}
-              >
+              <Typography variant="headline2_extrabold">
                 <div>
                   Radically new solutions <br /> for data
                 </div>
               </Typography>
             </Flex>
-            <Typography
-              textStyle={TextStyle.Paragraph1_regular}
-              color={TextColor.Gray}
-            >
+            <Typography variant="paragraph1_regular" color="gray">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae

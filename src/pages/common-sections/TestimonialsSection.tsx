@@ -13,8 +13,6 @@ import {
   SectionType,
   SliderHandle,
   TestimonialCardVariant,
-  TextColor,
-  TextStyle,
 } from "types/index";
 import { ControlsWrapper } from "./styled";
 
@@ -65,12 +63,7 @@ const TestimonialsSection = ({
         </Flex>
       </ControlsWrapper>
 
-      <Typography
-        textStyle={TextStyle.Headline2_extrabold}
-        color={TextColor.Black}
-      >
-        Testimonials
-      </Typography>
+      <Typography variant="headline2_extrabold">Testimonials</Typography>
       <Flex>
         <Slider
           height={cardVariant === TestimonialCardVariant.ImgInside ? 371 : 349}

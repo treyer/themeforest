@@ -1,12 +1,6 @@
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
-import {
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  TextColor,
-  TextStyle,
-} from "types/index";
+import { FlexAlign, FlexDirection, FlexJustify } from "types/index";
 import { PersonDataBlockProps } from "./types";
 
 const PersonDataBlock = ({
@@ -20,10 +14,8 @@ const PersonDataBlock = ({
       justify={FlexJustify.Center}
       align={FlexAlign.Start}
     >
-      <Typography textStyle={TextStyle.Headline6_bold} color={TextColor.Black}>
-        {personName}
-      </Typography>
-      <Typography textStyle={TextStyle.Headline7_medium} color={TextColor.Gray}>
+      <Typography variant="headline6_bold">{personName}</Typography>
+      <Typography variant="headline7_medium" color="gray">
         {personPosition}
       </Typography>
     </Flex>

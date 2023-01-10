@@ -8,8 +8,6 @@ import {
   FlexDirection,
   FlexJustify,
   SectionType,
-  TextColor,
-  TextStyle,
 } from "types/index";
 
 const MissionSection = () => {
@@ -29,16 +27,8 @@ const MissionSection = () => {
         justify={FlexJustify.Start}
         align={FlexAlign.Start}
       >
-        <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-        >
-          Our mission
-        </Typography>
-        <Typography
-          textStyle={TextStyle.Paragraph1_regular}
-          color={TextColor.Gray}
-        >
+        <Typography variant="headline1_extrabold">Our mission</Typography>
+        <Typography variant="paragraph1_regular" color="gray">
           <TypographyP>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

@@ -3,13 +3,7 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import {
-  FlexAlign,
-  FlexDirection,
-  SectionType,
-  TextColor,
-  TextStyle,
-} from "types/index";
+import { FlexAlign, FlexDirection, SectionType } from "types/index";
 
 const BenefitsSection = () => {
   return (
@@ -22,16 +16,10 @@ const BenefitsSection = () => {
             align={FlexAlign.Start}
             rowGap={30}
           >
-            <Typography
-              textStyle={TextStyle.Headline2_extrabold}
-              color={TextColor.Black}
-            >
+            <Typography variant="headline2_extrabold">
               The benefits of Ensome
             </Typography>
-            <Typography
-              textStyle={TextStyle.Paragraph1_regular}
-              color={TextColor.Gray}
-            >
+            <Typography variant="paragraph1_regular" color="gray">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae

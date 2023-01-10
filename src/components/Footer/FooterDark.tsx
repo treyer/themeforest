@@ -1,6 +1,6 @@
 import Logo from "components/Logo";
 import Typography from "components/Typography";
-import { LogoSize, TextStyle } from "types/index";
+import { LogoSize } from "types/index";
 import {
   AdditionalData,
   ColumnDataWrapper,
@@ -29,7 +29,7 @@ function FooterDark() {
           <LeftBlock>
             <Logo type={LogoSize.Large} />
             <DescriptionWrapper>
-              <Typography textStyle={TextStyle.Paragraph3_regular}>
+              <Typography variant="paragraph3_regular">
                 <TextSecondary>
                   Ut enim ad minima veniam, quis nostrum exercitationem ullam
                   corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
@@ -50,7 +50,7 @@ function FooterDark() {
           </LeftBlock>
           <RightBlock>
             <div>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>Quick Link</TextPrimary>
               </Typography>
               <nav>
@@ -67,7 +67,7 @@ function FooterDark() {
               </nav>
             </div>
             <div>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>Service</TextPrimary>
               </Typography>
               <nav>
@@ -81,17 +81,17 @@ function FooterDark() {
               </nav>
             </div>
             <div>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>Contact Info</TextPrimary>
               </Typography>
               <ColumnDataWrapper>
-                <Typography textStyle={TextStyle.Paragraph3_regular}>
+                <Typography variant="paragraph3_regular">
                   <TextSecondary>ensome@co.us</TextSecondary>
                 </Typography>
-                <Typography textStyle={TextStyle.Paragraph3_regular}>
+                <Typography variant="paragraph3_regular">
                   <TextSecondary> +1 601-201-5580</TextSecondary>
                 </Typography>
-                <Typography textStyle={TextStyle.Paragraph3_regular}>
+                <Typography variant="paragraph3_regular">
                   <TextSecondary>
                     1642 Washington Avenue, Jackson, MS, Mississippi, 39201
                   </TextSecondary>
@@ -102,15 +102,15 @@ function FooterDark() {
         </MainData>
         <AdditionalData>
           <div>
-            <Typography textStyle={TextStyle.Paragraph3_regular}>
+            <Typography variant="paragraph3_regular">
               <TextAdditional>Ensome© 2022 All Rights Reserved</TextAdditional>
             </Typography>
           </div>
           <PolicyBlock>
-            <Typography textStyle={TextStyle.Paragraph3_regular}>
+            <Typography variant="paragraph3_regular">
               <TextAdditional>Privacy policy</TextAdditional>
             </Typography>
-            <Typography textStyle={TextStyle.Paragraph3_regular}>
+            <Typography variant="paragraph3_regular">
               <TextAdditional>Terms of us</TextAdditional>
             </Typography>
           </PolicyBlock>

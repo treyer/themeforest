@@ -1,12 +1,6 @@
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
-import {
-  FlexDirection,
-  TestimonialCardVariant,
-  TextColor,
-  TextElement,
-  TextStyle,
-} from "types/index";
+import { FlexDirection, TestimonialCardVariant } from "types/index";
 import { PersonImg, Wrapper } from "./styled";
 import PersonDataBlock from "./PersonDataBlock";
 import { TestimonialCardProps } from "./types";
@@ -35,11 +29,7 @@ const TestimonialCard = ({
             <></>
           )}
         </Flex>
-        <Typography
-          textStyle={TextStyle.Paragraph2_regular}
-          color={TextColor.Gray}
-          textElement={TextElement.Div}
-        >
+        <Typography variant="paragraph2_regular" color="gray" element="div">
           {children}
         </Typography>
         {cardVariant === TestimonialCardVariant.ImgOutside ? (

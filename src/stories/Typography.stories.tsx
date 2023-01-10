@@ -2,28 +2,31 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Typography from "components/Typography";
-import { TextStyle } from "types/index";
 
 export default {
   title: "Components/Typography",
   component: Typography,
   argTypes: {
     color: { control: "color" },
-    textStyle: {
+    variant: {
       options: [
-        TextStyle.Headline1_extrabold,
-        TextStyle.Headline2_extrabold,
-        TextStyle.Headline3_extrabold,
-        TextStyle.Headline4_bold,
-        TextStyle.Headline5_bold,
-        TextStyle.Headline6_bold,
-        TextStyle.Headline7_medium,
-        TextStyle.Headline7_semibold,
-        TextStyle.Paragraph1_regular,
-        TextStyle.Paragraph2_bold,
-        TextStyle.Paragraph2_regular,
-        TextStyle.Paragraph3_regular,
-        TextStyle.Paragraph3_semibold,
+        "headline0_extrabold",
+        "headline1_extrabold",
+        "headline2_extrabold",
+        "headline3_extrabold",
+        "headline3_1_extrabold",
+        "headline4_bold",
+        "headline5_bold",
+        "headline6_bold",
+        "headline7_semibold",
+        "headline7_medium",
+        "headline8_semibold",
+        "paragraph0_bold",
+        "paragraph1_regular",
+        "paragraph2_regular",
+        "paragraph2_bold",
+        "paragraph3_regular",
+        "paragraph3_semibold",
       ],
       control: { type: "select" },
     },
@@ -38,6 +41,6 @@ export const Text = Template.bind({});
 
 Text.args = {
   color: "#000000",
-  textStyle: TextStyle.Headline1_extrabold,
+  variant: "headline1_extrabold",
   children: "Some text example",
 };

@@ -1,5 +1,5 @@
 import Typography from "components/Typography";
-import { ButtonRoundSize, TextColor, TextStyle } from "types/index";
+import { ButtonRoundSize } from "types/index";
 import { Button } from "./styled";
 import { ButtonRoundProps } from "./types";
 
@@ -11,12 +11,12 @@ const ButtonRound = ({
   return (
     <Button size={size} disabled={disabled}>
       <Typography
-        textStyle={
+        variant={
           size === ButtonRoundSize.Small
-            ? TextStyle.Headline8_semibold
-            : TextStyle.Headline7_semibold
+            ? "headline8_semibold"
+            : "headline7_semibold"
         }
-        color={TextColor.White}
+        color="white"
       >
         {children}
       </Typography>

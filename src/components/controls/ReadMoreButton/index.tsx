@@ -2,7 +2,7 @@ import Flex from "components/elements/Flex";
 import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { IconColor, TextColor, TextElement, TextStyle } from "types/index";
+import { IconColor } from "types/index";
 import { FlexClickable } from "./styled";
 
 const ReadMoreButton = () => {
@@ -10,9 +10,9 @@ const ReadMoreButton = () => {
     <FlexClickable>
       <Typography
         className="text-read-more"
-        textStyle={TextStyle.Headline7_semibold}
-        textElement={TextElement.Div}
-        color={TextColor.Primary}
+        variant="headline7_semibold"
+        element="div"
+        color="primary"
         width={70}
         height={24}
       >

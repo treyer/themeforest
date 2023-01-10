@@ -7,9 +7,6 @@ import {
   FlexAlign,
   FlexDirection,
   PriceType,
-  TextColor,
-  TextElement,
-  TextStyle,
 } from "types/index";
 import { Wrapper } from "./styled";
 import ServiceItem from "./ServiceItem";
@@ -42,16 +39,16 @@ const PriceCard = ({
     <Wrapper isActive={isActive}>
       <Flex direction={FlexDirection.Column} align={FlexAlign.Start}>
         <Typography
-          textStyle={TextStyle.Headline6_bold}
-          color={isActive ? TextColor.White : TextColor.Black}
+          variant="headline6_bold"
+          color={isActive ? "white" : "black"}
         >
           {name}
         </Typography>
         <Flex>
           <Typography
-            textStyle={TextStyle.Headline3_1_extrabold}
-            color={isActive ? TextColor.White : TextColor.Black}
-            textElement={TextElement.Div}
+            variant="headline3_1_extrabold"
+            color={isActive ? "white" : "black"}
+            element="div"
             width={123}
           >
             {priceType === PriceType.Month ? priceMonth : priceYear}

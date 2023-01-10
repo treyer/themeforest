@@ -2,13 +2,7 @@ import Counter from "components/Counter";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import {
-  FlexJustify,
-  SectionDirection,
-  SectionType,
-  TextColor,
-  TextStyle,
-} from "types/index";
+import { FlexJustify, SectionDirection, SectionType } from "types/index";
 
 const OverviewSection = () => {
   return (
@@ -17,10 +11,7 @@ const OverviewSection = () => {
       marginTop={120}
       direction={SectionDirection.Column}
     >
-      <Typography
-        textStyle={TextStyle.Headline2_extrabold}
-        color={TextColor.Black}
-      >
+      <Typography variant="headline2_extrabold">
         <Flex justify={FlexJustify.Center}>
           We provide services that guarantee your success
         </Flex>
@@ -32,10 +23,7 @@ const OverviewSection = () => {
           <Counter count="390" description="Data management" width={159} />
         </Flex>
         <Flex width={540}>
-          <Typography
-            textStyle={TextStyle.Paragraph1_regular}
-            color={TextColor.Gray}
-          >
+          <Typography variant="paragraph1_regular" color="gray">
             Sed ut perspiciatis unde omnis iste natus error sit voluptat
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quaeab illo inventore. Donec tincidunt tempor quam, non mollis quam

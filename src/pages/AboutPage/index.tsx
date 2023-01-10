@@ -11,8 +11,6 @@ import {
   FlexDirection,
   FlexJustify,
   TestimonialCardVariant,
-  TextColor,
-  TextStyle,
 } from "types/index";
 import { BREADCRUMBS_LIST } from "constants/common";
 import ContactSection from "./sections/ContactSection";
@@ -27,12 +25,7 @@ const AboutPage = () => {
         paddingTop={100}
         paddingBottom={160}
       >
-        <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-        >
-          About Us
-        </Typography>
+        <Typography variant="headline1_extrabold">About Us</Typography>
         <Breadcrumbs
           links={BREADCRUMBS_LIST.About}
           position={FlexJustify.Center}

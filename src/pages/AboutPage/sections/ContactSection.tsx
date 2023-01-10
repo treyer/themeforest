@@ -10,9 +10,7 @@ import {
   FlexDirection,
   FlexJustify,
   SectionType,
-  TextColor,
   TextInputType,
-  TextStyle,
 } from "types/index";
 
 const ContactSection = () => {
@@ -21,17 +19,11 @@ const ContactSection = () => {
       <Flex paddingTop={120} paddingBottom={170} align={FlexAlign.Start}>
         <Flex direction={FlexDirection.Column} width={540} rowGap={80}>
           <Flex direction={FlexDirection.Column} rowGap={24}>
-            <Typography
-              textStyle={TextStyle.Headline2_extrabold}
-              color={TextColor.Black}
-            >
+            <Typography variant="headline2_extrabold">
               Left questions? Contacts us now for a free consultation and free
               trial!
             </Typography>
-            <Typography
-              textStyle={TextStyle.Paragraph2_regular}
-              color={TextColor.Gray}
-            >
+            <Typography variant="paragraph2_regular" color="gray">
               Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
             </Typography>
@@ -44,16 +36,10 @@ const ContactSection = () => {
                 align={FlexAlign.Start}
                 rowGap={2}
               >
-                <Typography
-                  textStyle={TextStyle.Paragraph2_regular}
-                  color={TextColor.Gray}
-                >
+                <Typography variant="paragraph2_regular" color="gray">
                   {contact.name}
                 </Typography>
-                <Typography
-                  textStyle={TextStyle.Paragraph2_bold}
-                  color={TextColor.Black}
-                >
+                <Typography variant="paragraph2_bold">
                   {contact.value}
                 </Typography>
               </Flex>
@@ -68,9 +54,7 @@ const ContactSection = () => {
           align={FlexAlign.Start}
           rowGap={30}
         >
-          <Typography textStyle={TextStyle.Headline3_extrabold}>
-            Contact Us
-          </Typography>
+          <Typography variant="headline3_extrabold">Contact Us</Typography>
           <Flex
             direction={FlexDirection.Column}
             align={FlexAlign.Start}

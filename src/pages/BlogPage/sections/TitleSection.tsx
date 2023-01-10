@@ -3,15 +3,7 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { BREADCRUMBS_LIST } from "constants/common";
-import {
-  FlexDirection,
-  FlexJustify,
-  SectionType,
-  TextAlign,
-  TextColor,
-  TextElement,
-  TextStyle,
-} from "types/index";
+import { FlexDirection, FlexJustify, SectionType } from "types/index";
 
 const TitleSection = () => {
   return (
@@ -23,11 +15,10 @@ const TitleSection = () => {
         paddingBottom={100}
       >
         <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-          textElement={TextElement.Div}
+          variant="headline1_extrabold"
+          element="div"
           width={730}
-          textAlign={TextAlign.Center}
+          textAlign="center"
         >
           2022 software development <br />
           trends explained with benefits

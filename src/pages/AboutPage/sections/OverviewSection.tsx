@@ -2,13 +2,7 @@ import Counter from "components/Counter";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import {
-  FlexAlign,
-  FlexDirection,
-  SectionType,
-  TextColor,
-  TextStyle,
-} from "types/index";
+import { FlexAlign, FlexDirection, SectionType } from "types/index";
 
 const OverviewSection = () => {
   return (
@@ -19,12 +13,7 @@ const OverviewSection = () => {
         paddingTop={100}
         paddingBottom={100}
       >
-        <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-        >
-          Ensome in numbers
-        </Typography>
+        <Typography variant="headline1_extrabold">Ensome in numbers</Typography>
         <Flex height={244}>
           <Counter
             count="1830+"

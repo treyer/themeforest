@@ -3,22 +3,13 @@ import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { TextStressed } from "../styled";
 
-import {
-  FlexJustify,
-  SectionType,
-  TextColor,
-  TextElement,
-  TextStyle,
-} from "types/index";
+import { FlexJustify, SectionType } from "types/index";
 
 const TitleSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={75} columnGap={30}>
       <Flex>
-        <Typography
-          textStyle={TextStyle.Headline1_extrabold}
-          color={TextColor.Black}
-        >
+        <Typography variant="headline1_extrabold">
           <div>
             Find true power in your data with{" "}
             <TextStressed>Ensome</TextStressed>
@@ -27,9 +18,9 @@ const TitleSection = () => {
       </Flex>
       <Flex justify={FlexJustify.Start}>
         <Typography
-          textStyle={TextStyle.Paragraph2_regular}
-          color={TextColor.Gray}
-          textElement={TextElement.Div}
+          variant="paragraph2_regular"
+          color="gray"
+          element="div"
           width={350}
         >
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem

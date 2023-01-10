@@ -1,6 +1,6 @@
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
-import { FlexAlign, FlexDirection, TextColor, TextStyle } from "types/index";
+import { FlexAlign, FlexDirection } from "types/index";
 import { CounterProps } from "./types";
 
 const Counter = ({
@@ -16,16 +16,10 @@ const Counter = ({
       align={align}
       width={width}
     >
-      <Typography
-        textStyle={TextStyle.Paragraph0_bold}
-        color={TextColor.Primary}
-      >
+      <Typography variant="paragraph0_bold" color="primary">
         {count}
       </Typography>
-      <Typography
-        textStyle={TextStyle.Paragraph2_regular}
-        color={TextColor.Gray}
-      >
+      <Typography variant="paragraph2_regular" color="gray">
         {description}
       </Typography>
     </Flex>

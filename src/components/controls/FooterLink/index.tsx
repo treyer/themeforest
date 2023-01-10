@@ -1,5 +1,4 @@
 import Typography from "components/Typography";
-import { TextStyle } from "types/index";
 import { SecondaryText, StyledNavLink, Wrapper } from "./styled";
 
 type Props = {
@@ -11,7 +10,7 @@ const FooterLink = ({ to, children }: Props) => {
   return (
     <Wrapper>
       <StyledNavLink to={to}>
-        <Typography textStyle={TextStyle.Paragraph3_regular}>
+        <Typography variant="paragraph3_regular">
           <SecondaryText className="link-text">{children}</SecondaryText>
         </Typography>
       </StyledNavLink>

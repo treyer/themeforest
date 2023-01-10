@@ -3,13 +3,7 @@ import Flex from "components/elements/Flex";
 import Logo from "components/Logo";
 import Typography from "components/Typography";
 import { SOCIAL_NETWORK_LIST } from "constants/common";
-import {
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  LogoSize,
-  TextStyle,
-} from "types/index";
+import { FlexAlign, FlexDirection, FlexJustify, LogoSize } from "types/index";
 import {
   BottomBlockLight,
   ColumnDataWrapperLight,
@@ -36,7 +30,7 @@ const FooterLight = () => {
           <Logo type={LogoSize.Large} />
           <LinksBlockLight>
             <ColumnLight>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>About</TextPrimary>
               </Typography>
               <nav>
@@ -49,7 +43,7 @@ const FooterLight = () => {
               </nav>
             </ColumnLight>
             <div>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>Information</TextPrimary>
               </Typography>
               <nav>
@@ -62,7 +56,7 @@ const FooterLight = () => {
               </nav>
             </div>
             <ColumnLight>
-              <Typography textStyle={TextStyle.Headline6_bold}>
+              <Typography variant="headline6_bold">
                 <TextPrimary>Service</TextPrimary>
               </Typography>
               <nav>
@@ -85,25 +79,25 @@ const FooterLight = () => {
             width={480}
             marginTop={40}
           >
-            <Typography textStyle={TextStyle.Headline6_bold}>
+            <Typography variant="headline6_bold">
               <TextPrimaryHeader>Contacts</TextPrimaryHeader>
             </Typography>
             <Flex>
               <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
-                <Typography textStyle={TextStyle.Paragraph3_regular}>
+                <Typography variant="paragraph3_regular">
                   <TextSecondaryContacts>+1 601-201-5580</TextSecondaryContacts>
                 </Typography>
-                <Typography textStyle={TextStyle.Headline7_semibold}>
+                <Typography variant="headline7_semibold">
                   <TextWithArrow>ensome@info.co.us</TextWithArrow>
                 </Typography>
               </Flex>
               <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
-                <Typography textStyle={TextStyle.Paragraph3_regular}>
+                <Typography variant="paragraph3_regular">
                   <TextSecondaryContacts>
                     1642&nbsp;Washington&nbsp;Avenue,&nbsp;Jackson,&nbsp;MS,&nbsp;39201
                   </TextSecondaryContacts>
                 </Typography>
-                <Typography textStyle={TextStyle.Headline7_semibold}>
+                <Typography variant="headline7_semibold">
                   <TextWithArrow>Driving directions</TextWithArrow>
                 </Typography>
               </Flex>
@@ -117,7 +111,7 @@ const FooterLight = () => {
             marginTop={40}
             marginRight={30}
           >
-            <Typography textStyle={TextStyle.Headline6_bold}>
+            <Typography variant="headline6_bold">
               <TextPrimaryHeader>Social</TextPrimaryHeader>
             </Typography>
             <Flex width={200}>
@@ -135,15 +129,15 @@ const FooterLight = () => {
         </MiddleBlockLight>
         <BottomBlockLight>
           <Flex width={293}>
-            <Typography textStyle={TextStyle.Headline7_semibold}>
+            <Typography variant="headline7_semibold">
               <TextWithArrowAdditional>Privacy policy</TextWithArrowAdditional>
             </Typography>
-            <Typography textStyle={TextStyle.Headline7_semibold}>
+            <Typography variant="headline7_semibold">
               <TextWithArrowAdditional>Terms of us</TextWithArrowAdditional>
             </Typography>
           </Flex>
           <Flex justify={FlexJustify.End} marginRight={25}>
-            <Typography textStyle={TextStyle.Paragraph3_regular}>
+            <Typography variant="paragraph3_regular">
               <TextAdditional>
                 © 2022 Ensome. All Rights Reserved.
               </TextAdditional>

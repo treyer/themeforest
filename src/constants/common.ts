@@ -1,8 +1,5 @@
 import { ICON_URLS } from "./iconPaths";
 
-export const LOADER_WIDTH = 100;
-export const LOADER_HEIGHT = 70;
-
 export const SOCIAL_NETWORK_LIST = [
   { id: 1, url: ICON_URLS.Facebook },
   { id: 2, url: ICON_URLS.Twitter },
