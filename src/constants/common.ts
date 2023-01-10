@@ -21,6 +21,10 @@ export const BREADCRUMBS_LIST = {
     { name: "Home", url: "/", isActive: false },
     { name: "About Us", url: "/about", isActive: true },
   ],
+  Blog: [
+    { name: "Home", url: "/", isActive: false },
+    { name: "2022 software development trends", url: "/blog", isActive: true },
+  ],
 };
 
 export const CUSTOMERS_LIST = [

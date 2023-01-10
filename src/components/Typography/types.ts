@@ -1,7 +1,10 @@
+import { ReactNode } from "react";
 import { TextAlign, TextColor, TextElement, TextStyle } from "types/types";
 
 export type TypographyProps = {
   textStyle: TextStyle;
+  children: ReactNode;
+  className?: string;
   textAlign?: TextAlign | null;
   color?: string | TextColor;
   textElement?: TextElement;
@@ -10,6 +13,5 @@ export type TypographyProps = {
   marginTop?: number | null;
   marginBottom?: number | null;
   unselected?: boolean;
-  className?: string;
-  children: string | JSX.Element | JSX.Element[];
+  isQuote?: boolean;
 };

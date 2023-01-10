@@ -13,6 +13,7 @@ const Typography = ({
   marginBottom = null,
   unselected = false,
   className = "",
+  isQuote = false,
   children,
 }: TypographyProps) => {
   if (textElement === TextElement.Span) {
@@ -41,6 +42,7 @@ const Typography = ({
         marginTop={marginTop}
         marginBottom={marginBottom}
         unselected={unselected}
+        isQuote={isQuote}
       >
         {children}
       </StyledTextDiv>

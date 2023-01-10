@@ -28,7 +28,27 @@ export const StyledTextSpan = styled.span<Omit<TypographyProps, "children">>`
 export const StyledTextDiv = styled(StyledTextSpan).attrs({
   as: "div",
 })`
+  position: relative;
+
   ${({ width }) => (width ? `width: ${width}px;` : "")}
   ${({ height }) => (height ? `height: ${height}px;` : "")}
   ${({ textAlign }) => (textAlign ? `text-align: ${textAlign};` : "")}
+
+  ${({ isQuote, theme }) => {
+    if (isQuote) {
+      return `&::before {
+        content: "";
+
+        position: absolute;
+        left: -34px;
+        top: 10%;
+
+        width: 4px;
+        height: 80%;
+
+        background-color: ${theme.colors.primary};
+      }`;
+    }
+    return "";
+  }}
 `;

@@ -20,4 +20,9 @@ export const ICON_URLS = {
   Key: "/assets/svg/icon_key.svg",
   CheckMark: "/assets/svg/icon_checkmark.svg",
   Divider: "/assets/svg/icon_divider.svg",
+  Person: "/assets/svg/icon_person.svg",
+  Calendar: "/assets/svg/icon_calendar.svg",
+  DataLine: "/assets/svg/icon_data_line.svg",
+  Share: "/assets/svg/icon_share.svg",
+  Tag: "/assets/svg/icon_tag.svg",
 };

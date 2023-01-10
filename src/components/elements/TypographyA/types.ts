@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
-export type StyledPProps = {
+export type TypographyAProps = {
+  href: string;
   children: ReactNode;
 };
