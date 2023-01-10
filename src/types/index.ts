@@ -25,11 +25,6 @@ export enum SectionType {
   Narrow = "narrow",
 }
 
-export enum SectionDirection {
-  Raw = "raw",
-  Column = "column",
-}
-
 export enum ButtonSimpleSize {
   Big = "big",
   Small = "small",
@@ -39,14 +34,6 @@ export enum ButtonSimpleSize {
 export enum ButtonRoundSize {
   Big = "big",
   Small = "small",
-}
-
-export enum IconColor {
-  Secondary = "secondary",
-  Primary = "primary",
-  White = "white",
-  Gray = "gray",
-  HelperBlue3 = "helperBlue3",
 }
 
 export enum TextAlign {

@@ -2,7 +2,6 @@ import Flex from "components/elements/Flex";
 import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { IconColor } from "types/index";
 import { ServiceItemProps } from "./types";
 
 const ServiceItem = ({ isCardActive, text }: ServiceItemProps) => {
@@ -12,8 +11,8 @@ const ServiceItem = ({ isCardActive, text }: ServiceItemProps) => {
         width={17}
         height={12}
         url={ICON_URLS.CheckMark}
-        color={isCardActive ? IconColor.White : IconColor.Primary}
-      ></Icon>
+        color={isCardActive ? "white" : "primary"}
+      />
       <Typography
         variant="paragraph3_regular"
         color={isCardActive ? "white" : "black"}

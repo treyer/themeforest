@@ -2,15 +2,11 @@ import Counter from "components/Counter";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import { SectionDirection, SectionType } from "types/index";
+import { SectionType } from "types/index";
 
 const OverviewSection = () => {
   return (
-    <Section
-      type={SectionType.Narrow}
-      marginTop={120}
-      direction={SectionDirection.Column}
-    >
+    <Section type={SectionType.Narrow} marginTop={120} direction="column">
       <Typography variant="headline2_extrabold">
         <Flex justify="center">
           We provide services that guarantee your success

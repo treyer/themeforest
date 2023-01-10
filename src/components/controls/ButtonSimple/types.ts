@@ -9,3 +9,9 @@ export type ButtonSimpleProps = {
   height?: number | null;
   children: string;
 };
+
+export type ButtonOutlinedProps = {
+  width: number;
+  height: number;
+  mode: ButtonSimpleMode;
+};

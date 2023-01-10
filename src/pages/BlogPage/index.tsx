@@ -6,7 +6,7 @@ import TypographyP from "components/elements/TypographyP";
 import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { IconColor, SectionType } from "types/index";
+import { SectionType } from "types/index";
 import TitleSection from "./sections/TitleSection";
 
 const BlogPage = () => {
@@ -28,7 +28,7 @@ const BlogPage = () => {
                   url={ICON_URLS.Calendar}
                   width={11}
                   height={11}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Typography variant="paragraph3_regular" color="gray">
                   22 June 2020
@@ -39,7 +39,7 @@ const BlogPage = () => {
                   url={ICON_URLS.Person}
                   width={11}
                   height={11}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Typography variant="paragraph3_regular" color="gray">
                   William Pond
@@ -116,7 +116,7 @@ const BlogPage = () => {
                   url={ICON_URLS.DataLine}
                   width={13}
                   height={11}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Typography variant="paragraph3_regular" color="gray">
                   481 Views
@@ -127,7 +127,7 @@ const BlogPage = () => {
                   url={ICON_URLS.Share}
                   width={13}
                   height={11}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Typography variant="paragraph3_regular" color="gray">
                   Share:
@@ -136,40 +136,35 @@ const BlogPage = () => {
                   url={ICON_URLS.LinkedIn}
                   width={15}
                   height={15}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Icon
                   url={ICON_URLS.Facebook}
                   width={15}
                   height={15}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Icon
                   url={ICON_URLS.Twitter}
                   width={15}
                   height={15}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Icon
                   url={ICON_URLS.Google}
                   width={15}
                   height={15}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
                 <Icon
                   url={ICON_URLS.Youtube}
                   width={15}
                   height={15}
-                  color={IconColor.Gray}
+                  color="gray"
                 />
               </Flex>
               <Flex columnGap={10} justify="start">
-                <Icon
-                  url={ICON_URLS.Tag}
-                  width={13}
-                  height={13}
-                  color={IconColor.Gray}
-                />
+                <Icon url={ICON_URLS.Tag} width={13} height={13} color="gray" />
                 <Typography variant="paragraph3_regular" color="gray">
                   Tags:
                 </Typography>

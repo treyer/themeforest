@@ -1,11 +1,15 @@
-import { SectionDirection, SectionType } from "types/index";
+import { ReactNode } from "react";
+
+import { SectionType } from "types/index";
+
+type SectionDirection = "raw" | "column";
 
 export type SectionProps = {
   type: SectionType;
-  direction?: SectionDirection;
-  marginTop?: number;
-  marginBottom?: number;
-  rowGap?: "unset" | number;
-  columnGap?: "unset" | number;
-  children?: JSX.Element | JSX.Element[];
+  direction?: SectionDirection | undefined;
+  marginTop?: number | undefined;
+  marginBottom?: number | undefined;
+  rowGap?: number | undefined;
+  columnGap?: number | undefined;
+  children?: ReactNode;
 };

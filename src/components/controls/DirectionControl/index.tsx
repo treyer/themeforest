@@ -1,5 +1,5 @@
 import { ICON_URLS } from "constants/iconPaths";
-import { Direction, DirectionControlType, IconColor } from "types/index";
+import { Direction, DirectionControlType } from "types/index";
 import { StyledIcon } from "./styled";
 import { DirectionControlProps } from "./types";
 
@@ -23,7 +23,7 @@ const DirectionControl = ({
       }
       width={IconDimensions[type].width}
       height={IconDimensions[type].height}
-      color={disabled ? IconColor.HelperBlue3 : IconColor.Secondary}
+      color={disabled ? "helperBlue3" : "secondary"}
       disabled={disabled}
     />
   );

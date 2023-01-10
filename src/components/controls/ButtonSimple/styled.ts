@@ -1,13 +1,7 @@
 import styled from "styled-components";
+
 import { ButtonSimpleMode } from "types/index";
-
-import { ButtonSimpleProps } from "./types";
-
-type ButtonOutlinedProps = {
-  width: number;
-  height: number;
-  mode: ButtonSimpleMode;
-};
+import { ButtonOutlinedProps, ButtonSimpleProps } from "./types";
 
 export const Button = styled.button<
   Omit<ButtonSimpleProps, "children" | "size">

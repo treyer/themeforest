@@ -8,7 +8,6 @@ import { Persons } from "constants/data";
 import { useRef } from "react";
 import {
   Direction,
-  SectionDirection,
   SectionType,
   SliderHandle,
   TestimonialCardVariant,
@@ -38,11 +37,7 @@ const TestimonialsSection = ({
   };
 
   return (
-    <Section
-      type={SectionType.Narrow}
-      direction={SectionDirection.Column}
-      marginTop={120}
-    >
+    <Section type={SectionType.Narrow} direction="column" marginTop={120}>
       <ControlsWrapper>
         <Flex justify="center">
           <div onClick={handleBackwardClick}>
