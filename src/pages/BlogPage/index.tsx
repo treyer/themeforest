@@ -6,13 +6,7 @@ import TypographyP from "components/elements/TypographyP";
 import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import {
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  IconColor,
-  SectionType,
-} from "types/index";
+import { IconColor, SectionType } from "types/index";
 import TitleSection from "./sections/TitleSection";
 
 const BlogPage = () => {
@@ -21,11 +15,7 @@ const BlogPage = () => {
       <TitleSection />
       <Section type={SectionType.Narrow} marginTop={120}>
         <Flex columnGap={30}>
-          <Flex
-            direction={FlexDirection.Column}
-            width={635}
-            align={FlexAlign.Start}
-          >
+          <Flex direction="column" width={635} align="start">
             <Image
               src="/assets/photos/img_5.jpg"
               alt="Blogs"
@@ -90,7 +80,7 @@ const BlogPage = () => {
                 maximus suscipit.
               </TypographyP>
             </Typography>
-            <Flex justify={FlexJustify.End}>
+            <Flex justify="end">
               <Typography
                 variant="paragraph1_regular"
                 element="div"
@@ -120,8 +110,8 @@ const BlogPage = () => {
                 odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam.
               </TypographyP>
             </Typography>
-            <Flex justify={FlexJustify.Start} columnGap={32}>
-              <Flex justify={FlexJustify.Start} columnGap={10}>
+            <Flex justify="start" columnGap={32}>
+              <Flex justify="start" columnGap={10}>
                 <Icon
                   url={ICON_URLS.DataLine}
                   width={13}
@@ -132,7 +122,7 @@ const BlogPage = () => {
                   481 Views
                 </Typography>
               </Flex>
-              <Flex justify={FlexJustify.Start} columnGap={10}>
+              <Flex justify="start" columnGap={10}>
                 <Icon
                   url={ICON_URLS.Share}
                   width={13}
@@ -173,7 +163,7 @@ const BlogPage = () => {
                   color={IconColor.Gray}
                 />
               </Flex>
-              <Flex columnGap={10} justify={FlexJustify.Start}>
+              <Flex columnGap={10} justify="start">
                 <Icon
                   url={ICON_URLS.Tag}
                   width={13}
@@ -187,7 +177,7 @@ const BlogPage = () => {
             </Flex>
           </Flex>
 
-          <Flex direction={FlexDirection.Column} width={445}>
+          <Flex direction="column" width={445}>
             dfg
           </Flex>
         </Flex>

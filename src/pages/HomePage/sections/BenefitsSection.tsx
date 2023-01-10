@@ -3,19 +3,14 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
-import { FlexAlign, FlexDirection, SectionType } from "types/index";
+import { SectionType } from "types/index";
 
 const BenefitsSection = () => {
   return (
     <Section type={SectionType.Narrow}>
-      <Flex align={FlexAlign.Start}>
+      <Flex align="start">
         <Flex width={540}>
-          <Flex
-            marginTop={302}
-            direction={FlexDirection.Column}
-            align={FlexAlign.Start}
-            rowGap={30}
-          >
+          <Flex marginTop={302} direction="column" align="start" rowGap={30}>
             <Typography variant="headline2_extrabold">
               The benefits of Ensome
             </Typography>
@@ -28,12 +23,7 @@ const BenefitsSection = () => {
           </Flex>
         </Flex>
         <Flex width={540}>
-          <Flex
-            direction={FlexDirection.Column}
-            marginTop={120}
-            rowGap={30}
-            columnGap={30}
-          >
+          <Flex direction="column" marginTop={120} rowGap={30} columnGap={30}>
             <BenefitsCard
               iconUrl={ICON_URLS.BrainCircuit}
               headerText="Machine learning"
@@ -46,7 +36,7 @@ const BenefitsSection = () => {
               blandit praesentium voluptatum ipsa quae ab illo.
             </BenefitsCard>
           </Flex>
-          <Flex direction={FlexDirection.Column} marginTop={176} rowGap={30}>
+          <Flex direction="column" marginTop={176} rowGap={30}>
             <BenefitsCard
               iconUrl={ICON_URLS.ArrowTrendingLines}
               headerText="Embed analytics"

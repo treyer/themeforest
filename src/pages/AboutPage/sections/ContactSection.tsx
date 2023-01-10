@@ -5,20 +5,14 @@ import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { CONTACTS_LIST } from "constants/common";
 
-import {
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  SectionType,
-  TextInputType,
-} from "types/index";
+import { SectionType, TextInputType } from "types/index";
 
 const ContactSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={120}>
-      <Flex paddingTop={120} paddingBottom={170} align={FlexAlign.Start}>
-        <Flex direction={FlexDirection.Column} width={540} rowGap={80}>
-          <Flex direction={FlexDirection.Column} rowGap={24}>
+      <Flex paddingTop={120} paddingBottom={170} align="start">
+        <Flex direction="column" width={540} rowGap={80}>
+          <Flex direction="column" rowGap={24}>
             <Typography variant="headline2_extrabold">
               Left questions? Contacts us now for a free consultation and free
               trial!
@@ -28,12 +22,12 @@ const ContactSection = () => {
               corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
             </Typography>
           </Flex>
-          <Flex direction={FlexDirection.Column} rowGap={24}>
+          <Flex direction="column" rowGap={24}>
             {CONTACTS_LIST.map((contact) => (
               <Flex
                 key={contact.id}
-                direction={FlexDirection.Column}
-                align={FlexAlign.Start}
+                direction="column"
+                align="start"
                 rowGap={2}
               >
                 <Typography variant="paragraph2_regular" color="gray">
@@ -47,19 +41,15 @@ const ContactSection = () => {
           </Flex>
         </Flex>
         <Flex
-          direction={FlexDirection.Column}
+          direction="column"
           width={345}
           padding={50}
-          justify={FlexJustify.Start}
-          align={FlexAlign.Start}
+          justify="start"
+          align="start"
           rowGap={30}
         >
           <Typography variant="headline3_extrabold">Contact Us</Typography>
-          <Flex
-            direction={FlexDirection.Column}
-            align={FlexAlign.Start}
-            rowGap={20}
-          >
+          <Flex direction="column" align="start" rowGap={20}>
             <TextInput
               type={TextInputType.Labeled}
               label="Name"
@@ -81,7 +71,7 @@ const ContactSection = () => {
               placeholder="Message"
             />
           </Flex>
-          <Flex justify={FlexJustify.End}>
+          <Flex justify="end">
             <ButtonSimple>Send</ButtonSimple>
           </Flex>
         </Flex>

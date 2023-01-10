@@ -1,17 +1,17 @@
 import styled from "styled-components";
+
 import { FlexProps } from "./types";
 
-export const FlexElement = styled.div<Omit<FlexProps, "children">>`
+export const FlexElement = styled.div<FlexProps>`
   display: flex;
-  flex-direction: ${({ direction }) => direction};
-  justify-content: ${({ justify }) => justify};
-  align-items: ${({ align }) => align};
-  ${({ rowGap }) => (rowGap === "unset" ? "" : `row-gap: ${rowGap}px;`)}
-  ${({ columnGap }) =>
-    columnGap === "unset" ? "" : `column-gap: ${columnGap}px;`}
+  ${({ direction }) => (direction ? `flex-direction: ${direction};` : "")};
+  ${({ justify }) => (justify ? `justify-content: ${justify};` : "")};
+  ${({ align }) => (align ? `align-items: ${align};` : "")}
+  ${({ rowGap }) => (rowGap ? `row-gap: ${rowGap}px;` : "")}
+  ${({ columnGap }) => (columnGap ? `column-gap: ${columnGap}px;` : "")}
   ${({ flexWrap }) => (flexWrap ? "flex-wrap: wrap;" : "")}
-
-  width: ${({ width }) => (width === "100%" ? "100%" : `${width}px`)};
+  ${({ width }) =>
+    !width ? "" : width === "100%" ? "width: 100%;" : `width: ${width}px;`}
   ${({ height }) => (height ? `height: ${height}px;` : "")};
   ${({ marginTop }) => (marginTop ? `margin-top: ${marginTop}px;` : "")}
   ${({ marginRight }) => (marginRight ? `margin-right: ${marginRight}px;` : "")}

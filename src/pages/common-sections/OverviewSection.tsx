@@ -2,7 +2,7 @@ import Counter from "components/Counter";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import { FlexJustify, SectionDirection, SectionType } from "types/index";
+import { SectionDirection, SectionType } from "types/index";
 
 const OverviewSection = () => {
   return (
@@ -12,12 +12,12 @@ const OverviewSection = () => {
       direction={SectionDirection.Column}
     >
       <Typography variant="headline2_extrabold">
-        <Flex justify={FlexJustify.Center}>
+        <Flex justify="center">
           We provide services that guarantee your success
         </Flex>
       </Typography>
       <Flex marginTop={50}>
-        <Flex width={540} justify={FlexJustify.SpaceBetween}>
+        <Flex width={540}>
           <Counter count="1830+" description="Project executed" width={159} />
           <Counter count="834+" description="Satisfied customers" width={159} />
           <Counter count="390" description="Data management" width={159} />

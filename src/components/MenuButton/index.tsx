@@ -26,7 +26,7 @@ const MenuButton = ({ to, children, isSubmenu, theme }: Props) => {
     <>
       {to !== null && (
         <Button to={to}>
-          <Typography variant="headline7_medium" color="black">
+          <Typography variant="headline7_medium" color="white">
             {children}
           </Typography>
         </Button>
@@ -37,14 +37,14 @@ const MenuButton = ({ to, children, isSubmenu, theme }: Props) => {
           currentTheme={theme.currentTheme}
           onClick={handleButtonSubmenuClick}
         >
-          <Typography variant="headline7_medium" color="black">
+          <Typography variant="headline7_medium" color="white">
             {children}
           </Typography>
         </ButtonSubmenu>
       )}
       {to === null && !isSubmenu && (
         <ButtonSimple>
-          <Typography variant="headline7_medium" color="black">
+          <Typography variant="headline7_medium" color="white">
             {children}
           </Typography>
         </ButtonSimple>

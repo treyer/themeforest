@@ -1,12 +1,12 @@
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import { FlexDirection, SectionType } from "types/index";
+import { SectionType } from "types/index";
 
 const DescriptionSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={56}>
-      <Flex direction={FlexDirection.Column} rowGap={15}>
+      <Flex direction="column" rowGap={15}>
         <Typography
           variant="headline6_bold"
           color="primary"

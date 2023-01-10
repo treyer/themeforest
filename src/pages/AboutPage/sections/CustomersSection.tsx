@@ -3,16 +3,12 @@ import Image from "components/elements/Image";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { CUSTOMERS_LIST } from "constants/common";
-import { FlexAlign, FlexDirection, SectionType } from "types/index";
+import { SectionType } from "types/index";
 
 const CustomersSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={120}>
-      <Flex
-        direction={FlexDirection.Column}
-        align={FlexAlign.Start}
-        rowGap={30}
-      >
+      <Flex direction="column" align="start" rowGap={30}>
         <Typography variant="headline1_extrabold">Our customers</Typography>
         <Typography
           variant="paragraph1_regular"

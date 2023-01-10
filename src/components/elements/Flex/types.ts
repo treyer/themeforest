@@ -1,22 +1,28 @@
-import { FlexAlign, FlexDirection, FlexJustify } from "types/index";
+import { ReactNode } from "react";
+
+type FlexDirection = "row" | "column";
+
+type FlexJustify = "start" | "center" | "end" | "space-between";
+
+type FlexAlign = "start" | "center" | "end";
 
 export type FlexProps = {
-  direction?: FlexDirection;
-  justify?: FlexJustify;
-  align?: FlexAlign;
-  width?: number | "100%";
-  height?: number | null;
-  marginTop?: number | null;
-  marginBottom?: number | null;
-  marginRight?: number | null;
-  marginLeft?: number | null;
-  padding?: number | null;
-  paddingTop?: number | null;
-  paddingBottom?: number | null;
-  paddingRight?: number | null;
-  paddingLeft?: number | null;
-  rowGap?: "unset" | number;
-  columnGap?: "unset" | number;
-  flexWrap?: boolean;
-  children: JSX.Element | JSX.Element[] | string;
+  direction?: FlexDirection | undefined;
+  justify?: FlexJustify | undefined;
+  align?: FlexAlign | undefined;
+  width?: number | "100%" | undefined;
+  height?: number | undefined;
+  marginTop?: number | undefined;
+  marginBottom?: number | undefined;
+  marginRight?: number | undefined;
+  marginLeft?: number | undefined;
+  padding?: number | undefined;
+  paddingTop?: number | undefined;
+  paddingBottom?: number | undefined;
+  paddingRight?: number | undefined;
+  paddingLeft?: number | undefined;
+  rowGap?: number | undefined;
+  columnGap?: number | undefined;
+  flexWrap?: boolean | undefined;
+  children: ReactNode;
 };

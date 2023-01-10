@@ -3,13 +3,7 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 
-import {
-  ButtonSimpleSize,
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  SectionType,
-} from "types/index";
+import { ButtonSimpleSize, SectionType } from "types/index";
 import { ImageSolutions, TextStressed } from "../styled";
 
 const FeaturesSection = () => {
@@ -22,18 +16,14 @@ const FeaturesSection = () => {
             <br /> business analytics platform
           </Typography>
         </Flex>
-        <Flex
-          direction={FlexDirection.Column}
-          align={FlexAlign.Start}
-          width={540}
-        >
+        <Flex direction="column" align="start" width={540}>
           <Typography variant="paragraph1_regular" color="gray">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis etquasi architecto beatae vitae
             dicta sunt explicabo.
           </Typography>
-          <Flex justify={FlexJustify.Start} marginTop={30}>
+          <Flex justify="start" marginTop={30}>
             <ButtonSimple size={ButtonSimpleSize.Big}>
               Discover more
             </ButtonSimple>
@@ -43,10 +33,10 @@ const FeaturesSection = () => {
 
       <Section type={SectionType.Wide} marginTop={120} columnGap={46}>
         <ImageSolutions />
-        <Flex justify={FlexJustify.Start} align={FlexAlign.Center}>
+        <Flex justify="start" align="center">
           <Flex
-            direction={FlexDirection.Column}
-            justify={FlexJustify.Start}
+            direction="column"
+            justify="start"
             width={540}
             marginLeft={46}
             rowGap={30}

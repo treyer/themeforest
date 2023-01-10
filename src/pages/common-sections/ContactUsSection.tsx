@@ -2,12 +2,12 @@ import ButtonSimple from "components/controls/ButtonSimple";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
-import { ButtonSimpleSize, FlexDirection, SectionType } from "types/index";
+import { ButtonSimpleSize, SectionType } from "types/index";
 
 const ContactUsSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={120} marginBottom={100}>
-      <Flex direction={FlexDirection.Column}>
+      <Flex direction="column">
         <Typography variant="headline2_extrabold" marginTop={100}>
           Do you need help?
         </Typography>

@@ -1,4 +1,4 @@
-import { FlexAlign } from "types/index";
+type FlexAlign = "start" | "center" | "end";
 
 export type CounterProps = {
   count: string;

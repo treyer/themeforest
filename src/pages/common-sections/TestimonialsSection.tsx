@@ -8,7 +8,6 @@ import { Persons } from "constants/data";
 import { useRef } from "react";
 import {
   Direction,
-  FlexJustify,
   SectionDirection,
   SectionType,
   SliderHandle,
@@ -45,7 +44,7 @@ const TestimonialsSection = ({
       marginTop={120}
     >
       <ControlsWrapper>
-        <Flex justify={FlexJustify.Center}>
+        <Flex justify="center">
           <div onClick={handleBackwardClick}>
             <DirectionControl
               direction={Direction.Left}
@@ -53,7 +52,7 @@ const TestimonialsSection = ({
             />
           </div>
         </Flex>
-        <Flex justify={FlexJustify.Center}>
+        <Flex justify="center">
           <div onClick={handleForwardClick}>
             <DirectionControl
               direction={Direction.Right}

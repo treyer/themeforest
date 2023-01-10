@@ -1,6 +1,6 @@
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
-import { FlexDirection, TestimonialCardVariant } from "types/index";
+import { TestimonialCardVariant } from "types/index";
 import { PersonImg, Wrapper } from "./styled";
 import PersonDataBlock from "./PersonDataBlock";
 import { TestimonialCardProps } from "./types";
@@ -16,7 +16,7 @@ const TestimonialCard = ({
     <Wrapper>
       <Flex
         rowGap={cardVariant === TestimonialCardVariant.ImgOutside ? 35 : 25}
-        direction={FlexDirection.Column}
+        direction="column"
       >
         <Flex columnGap={25}>
           <PersonImg src={imgUrl} />

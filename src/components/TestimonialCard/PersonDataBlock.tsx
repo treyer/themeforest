@@ -1,6 +1,5 @@
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
-import { FlexAlign, FlexDirection, FlexJustify } from "types/index";
 import { PersonDataBlockProps } from "./types";
 
 const PersonDataBlock = ({
@@ -8,12 +7,7 @@ const PersonDataBlock = ({
   personPosition,
 }: PersonDataBlockProps) => {
   return (
-    <Flex
-      direction={FlexDirection.Column}
-      rowGap={4}
-      justify={FlexJustify.Center}
-      align={FlexAlign.Start}
-    >
+    <Flex direction="column" rowGap={4} justify="center" align="start">
       <Typography variant="headline6_bold">{personName}</Typography>
       <Typography variant="headline7_medium" color="gray">
         {personPosition}

@@ -3,7 +3,7 @@ import Flex from "components/elements/Flex";
 import Logo from "components/Logo";
 import Typography from "components/Typography";
 import { SOCIAL_NETWORK_LIST } from "constants/common";
-import { FlexAlign, FlexDirection, FlexJustify, LogoSize } from "types/index";
+import { LogoSize } from "types/index";
 import {
   BottomBlockLight,
   ColumnDataWrapperLight,
@@ -73,9 +73,9 @@ const FooterLight = () => {
         </UpBlockLight>
         <MiddleBlockLight>
           <Flex
-            direction={FlexDirection.Column}
-            justify={FlexJustify.Start}
-            align={FlexAlign.Left}
+            direction="column"
+            justify="start"
+            align="start"
             width={480}
             marginTop={40}
           >
@@ -83,7 +83,7 @@ const FooterLight = () => {
               <TextPrimaryHeader>Contacts</TextPrimaryHeader>
             </Typography>
             <Flex>
-              <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
+              <Flex direction="column" align="start">
                 <Typography variant="paragraph3_regular">
                   <TextSecondaryContacts>+1 601-201-5580</TextSecondaryContacts>
                 </Typography>
@@ -91,7 +91,7 @@ const FooterLight = () => {
                   <TextWithArrow>ensome@info.co.us</TextWithArrow>
                 </Typography>
               </Flex>
-              <Flex direction={FlexDirection.Column} align={FlexAlign.Left}>
+              <Flex direction="column" align="start">
                 <Typography variant="paragraph3_regular">
                   <TextSecondaryContacts>
                     1642&nbsp;Washington&nbsp;Avenue,&nbsp;Jackson,&nbsp;MS,&nbsp;39201
@@ -104,9 +104,9 @@ const FooterLight = () => {
             </Flex>
           </Flex>
           <Flex
-            direction={FlexDirection.Column}
-            justify={FlexJustify.Start}
-            align={FlexAlign.Left}
+            direction="column"
+            justify="start"
+            align="start"
             width={225}
             marginTop={40}
             marginRight={30}
@@ -136,7 +136,7 @@ const FooterLight = () => {
               <TextWithArrowAdditional>Terms of us</TextWithArrowAdditional>
             </Typography>
           </Flex>
-          <Flex justify={FlexJustify.End} marginRight={25}>
+          <Flex justify="end" marginRight={25}>
             <Typography variant="paragraph3_regular">
               <TextAdditional>
                 © 2022 Ensome. All Rights Reserved.

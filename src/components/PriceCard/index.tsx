@@ -2,12 +2,7 @@ import ButtonSimple from "components/controls/ButtonSimple";
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
 import React, { useState } from "react";
-import {
-  ButtonSimpleMode,
-  FlexAlign,
-  FlexDirection,
-  PriceType,
-} from "types/index";
+import { ButtonSimpleMode, PriceType } from "types/index";
 import { Wrapper } from "./styled";
 import ServiceItem from "./ServiceItem";
 import { PriceCardProps } from "./types";
@@ -37,7 +32,7 @@ const PriceCard = ({
 
   return (
     <Wrapper isActive={isActive}>
-      <Flex direction={FlexDirection.Column} align={FlexAlign.Start}>
+      <Flex direction="column" align="start">
         <Typography
           variant="headline6_bold"
           color={isActive ? "white" : "black"}
@@ -87,7 +82,7 @@ const PriceCard = ({
             </ButtonSimple>
           </div>
         </Flex>
-        <Flex direction={FlexDirection.Column} marginTop={30} rowGap={16}>
+        <Flex direction="column" marginTop={30} rowGap={16}>
           {services.map((service, index) => (
             <ServiceItem key={index} isCardActive={isActive} text={service} />
           ))}

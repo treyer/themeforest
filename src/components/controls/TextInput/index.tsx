@@ -1,7 +1,7 @@
 import { useId } from "react";
 
 import Flex from "components/elements/Flex";
-import { FlexAlign, FlexDirection, TextInputType } from "types/index";
+import { TextInputType } from "types/index";
 import { StyledInputLabeled, StyledInputSimple, StyledLabel } from "./styled";
 import { TextInputProps } from "./types";
 
@@ -24,11 +24,7 @@ const TextInput = ({
     );
   } else {
     return (
-      <Flex
-        direction={FlexDirection.Column}
-        align={FlexAlign.Start}
-        width={345}
-      >
+      <Flex direction="column" align="start" width={345}>
         <StyledLabel htmlFor={id} disabled={disabled} isError={isError}>
           {label}
         </StyledLabel>

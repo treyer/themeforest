@@ -6,14 +6,7 @@ import Slider from "components/Slider";
 import Typography from "components/Typography";
 import { BlogCards } from "constants/data";
 import { useRef } from "react";
-import {
-  Direction,
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  SectionType,
-  SliderHandle,
-} from "types/index";
+import { Direction, SectionType, SliderHandle } from "types/index";
 import { ControlsWrapper } from "../styled";
 
 const BlogSection = () => {
@@ -35,7 +28,7 @@ const BlogSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={120}>
       <ControlsWrapper>
-        <Flex justify={FlexJustify.Center}>
+        <Flex justify="center">
           <div onClick={handleBackwardClick}>
             <DirectionControl
               direction={Direction.Left}
@@ -43,7 +36,7 @@ const BlogSection = () => {
             />
           </div>
         </Flex>
-        <Flex justify={FlexJustify.Center}>
+        <Flex justify="center">
           <div onClick={handleForwardClick}>
             <DirectionControl
               direction={Direction.Right}
@@ -52,7 +45,7 @@ const BlogSection = () => {
           </div>
         </Flex>
       </ControlsWrapper>
-      <Flex direction={FlexDirection.Column} align={FlexAlign.Start}>
+      <Flex direction="column" align="start">
         <Typography variant="headline2_extrabold">Our blog</Typography>
         <Flex marginTop={50}>
           <Slider

@@ -7,11 +7,7 @@ import CustomersSection from "./sections/CustomersSection";
 import OverviewSection from "./sections/OverviewSection";
 import TestimonialsSection from "pages/common-sections/TestimonialsSection";
 
-import {
-  FlexDirection,
-  FlexJustify,
-  TestimonialCardVariant,
-} from "types/index";
+import { TestimonialCardVariant } from "types/index";
 import { BREADCRUMBS_LIST } from "constants/common";
 import ContactSection from "./sections/ContactSection";
 import SubscribeSection from "pages/common-sections/SubscribeSection";
@@ -20,16 +16,13 @@ const AboutPage = () => {
   return (
     <>
       <Flex
-        direction={FlexDirection.Column}
-        justify={FlexJustify.Start}
+        direction="column"
+        justify="start"
         paddingTop={100}
         paddingBottom={160}
       >
         <Typography variant="headline1_extrabold">About Us</Typography>
-        <Breadcrumbs
-          links={BREADCRUMBS_LIST.About}
-          position={FlexJustify.Center}
-        />
+        <Breadcrumbs links={BREADCRUMBS_LIST.About} position="center" />
       </Flex>
       <WhoWeAreSection />
       <MissionSection />

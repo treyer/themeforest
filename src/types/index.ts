@@ -20,26 +20,6 @@ export enum ButtonType {
   Round = "round",
 }
 
-export enum FlexDirection {
-  Raw = "raw",
-  Column = "column",
-}
-
-export enum FlexJustify {
-  Start = "start",
-  SpaceBetween = "space-between",
-  Center = "center",
-  End = "end",
-}
-
-export enum FlexAlign {
-  Center = "center",
-  Start = "start",
-  End = "end",
-  Left = "left",
-  Right = "right",
-}
-
 export enum SectionType {
   Wide = "wide",
   Narrow = "narrow",

@@ -3,12 +3,7 @@ import Image from "components/elements/Image";
 import Section from "components/elements/Section";
 import TypographyP from "components/elements/TypographyP";
 import Typography from "components/Typography";
-import {
-  FlexAlign,
-  FlexDirection,
-  FlexJustify,
-  SectionType,
-} from "types/index";
+import { SectionType } from "types/index";
 
 const WhoWeAreSection = () => {
   return (
@@ -16,9 +11,9 @@ const WhoWeAreSection = () => {
       <Flex
         width={445}
         rowGap={30}
-        direction={FlexDirection.Column}
-        justify={FlexJustify.Start}
-        align={FlexAlign.Start}
+        direction="column"
+        justify="start"
+        align="start"
       >
         <Typography variant="headline1_extrabold">Who we are</Typography>
         <Typography variant="paragraph1_regular" color="gray">
