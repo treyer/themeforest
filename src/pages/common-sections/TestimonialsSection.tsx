@@ -40,20 +40,18 @@ const TestimonialsSection = ({
     <Section type={SectionType.Narrow} direction="column" marginTop={120}>
       <ControlsWrapper>
         <Flex justify="center">
-          <div onClick={handleBackwardClick}>
-            <DirectionControl
-              direction={Direction.Left}
-              disabled={Persons.length <= itemsToShow}
-            />
-          </div>
+          <DirectionControl
+            direction={Direction.Left}
+            disabled={Persons.length <= itemsToShow}
+            onClickCallback={handleBackwardClick}
+          />
         </Flex>
         <Flex justify="center">
-          <div onClick={handleForwardClick}>
-            <DirectionControl
-              direction={Direction.Right}
-              disabled={Persons.length <= itemsToShow}
-            />
-          </div>
+          <DirectionControl
+            direction={Direction.Right}
+            disabled={Persons.length <= itemsToShow}
+            onClickCallback={handleForwardClick}
+          />
         </Flex>
       </ControlsWrapper>
 

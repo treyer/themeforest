@@ -29,20 +29,18 @@ const BlogSection = () => {
     <Section type={SectionType.Narrow} marginTop={120}>
       <ControlsWrapper>
         <Flex justify="center">
-          <div onClick={handleBackwardClick}>
-            <DirectionControl
-              direction={Direction.Left}
-              disabled={BlogCards.length <= itemsToShow}
-            />
-          </div>
+          <DirectionControl
+            direction={Direction.Left}
+            disabled={BlogCards.length <= itemsToShow}
+            onClickCallback={handleBackwardClick}
+          />
         </Flex>
         <Flex justify="center">
-          <div onClick={handleForwardClick}>
-            <DirectionControl
-              direction={Direction.Right}
-              disabled={BlogCards.length <= itemsToShow}
-            />
-          </div>
+          <DirectionControl
+            direction={Direction.Right}
+            disabled={BlogCards.length <= itemsToShow}
+            onClickCallback={handleForwardClick}
+          />
         </Flex>
       </ControlsWrapper>
       <Flex direction="column" align="start">

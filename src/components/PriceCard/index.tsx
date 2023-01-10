@@ -18,15 +18,13 @@ const PriceCard = ({
 }: PriceCardProps) => {
   const [priceType, setPriceType] = useState(PriceType.Month);
 
-  const handlePriceTypeChange = (event: React.SyntheticEvent<EventTarget>) => {
-    event.stopPropagation();
-    if (!(event.currentTarget instanceof HTMLDivElement)) {
-      return;
-    }
-    const type = event.currentTarget.dataset["type"];
-    if (type && type !== priceType) {
-      if (type === PriceType.Month) setPriceType(PriceType.Month);
-      if (type === PriceType.Year) setPriceType(PriceType.Year);
+  const selectCard = () => {
+    setCardSelectCallback(index);
+  };
+
+  const handlePriceTypeChange = (type: PriceType) => () => {
+    if (type !== priceType) {
+      setPriceType(type);
     }
   };
 
@@ -49,38 +47,36 @@ const PriceCard = ({
             {priceType === PriceType.Month ? priceMonth : priceYear}
           </Typography>
           <Flex width={92}>
-            <div data-type={PriceType.Month} onClick={handlePriceTypeChange}>
-              <ButtonSimple
-                width={41}
-                height={32}
-                mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
-                outlined={priceType === PriceType.Year}
-              >
-                Mo
-              </ButtonSimple>
-            </div>
-            <div data-type={PriceType.Year} onClick={handlePriceTypeChange}>
-              <ButtonSimple
-                width={41}
-                height={32}
-                mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
-                outlined={priceType === PriceType.Month}
-              >
-                Yr
-              </ButtonSimple>
-            </div>
+            <ButtonSimple
+              width={41}
+              height={32}
+              mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
+              outlined={priceType === PriceType.Year}
+              onClickCallback={handlePriceTypeChange(PriceType.Month)}
+            >
+              Mo
+            </ButtonSimple>
+
+            <ButtonSimple
+              width={41}
+              height={32}
+              mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
+              outlined={priceType === PriceType.Month}
+              onClickCallback={handlePriceTypeChange(PriceType.Year)}
+            >
+              Yr
+            </ButtonSimple>
           </Flex>
         </Flex>
         <Flex marginTop={40}>
-          <div onClick={() => setCardSelectCallback(index)}>
-            <ButtonSimple
-              width={215}
-              height={44}
-              mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
-            >
-              Choose plan
-            </ButtonSimple>
-          </div>
+          <ButtonSimple
+            width={215}
+            height={44}
+            mode={isActive ? ButtonSimpleMode.Dark : ButtonSimpleMode.Light}
+            onClickCallback={selectCard}
+          >
+            Choose plan
+          </ButtonSimple>
         </Flex>
         <Flex direction="column" marginTop={30} rowGap={16}>
           {services.map((service, index) => (

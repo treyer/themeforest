@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 import { IconProps } from "components/Icon/types";
 
+export const Wrapper = styled.div``;
+
 export const StyledIcon = styled(Icon)<IconProps & { disabled: boolean }>`
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 

@@ -9,13 +9,14 @@ const BUTTON_SIZES = {
 };
 
 const ButtonSimple = ({
-  size = ButtonSimpleSize.Small,
-  disabled = false,
-  outlined = false,
-  mode = ButtonSimpleMode.Light,
-  width = null,
-  height = null,
+  size,
+  disabled,
+  outlined,
+  mode,
+  width,
+  height,
   children,
+  onClickCallback,
 }: ButtonSimpleProps) => {
   const finalWidth = width
     ? width
@@ -24,44 +25,55 @@ const ButtonSimple = ({
     ? height
     : BUTTON_SIZES[size as keyof typeof BUTTON_SIZES].height;
 
-  if (!outlined) {
-    return (
-      <Button
-        disabled={disabled}
-        width={finalWidth}
-        height={finalHeight}
-        mode={mode}
-      >
-        <Typography
-          variant={
-            size === ButtonSimpleSize.Small
-              ? "headline7_semibold"
-              : "headline6_bold"
-          }
-          color={mode === ButtonSimpleMode.Light ? "white" : "primary"}
+  return (
+    <>
+      {outlined ? (
+        <ButtonOutlined
+          width={finalWidth}
+          height={finalHeight}
+          mode={mode}
+          onClick={onClickCallback}
         >
-          {children}
-        </Typography>
-      </Button>
-    );
-  }
-  if (outlined) {
-    return (
-      <ButtonOutlined width={finalWidth} height={finalHeight} mode={mode}>
-        <Typography
-          variant={
-            size === ButtonSimpleSize.Small
-              ? "headline7_semibold"
-              : "headline6_bold"
-          }
-          color={mode === ButtonSimpleMode.Light ? "primary" : "white"}
+          <Typography
+            variant={
+              size === ButtonSimpleSize.Small
+                ? "headline7_semibold"
+                : "headline6_bold"
+            }
+            color={mode === ButtonSimpleMode.Light ? "primary" : "white"}
+          >
+            {children}
+          </Typography>
+        </ButtonOutlined>
+      ) : (
+        <Button
+          disabled={disabled}
+          width={finalWidth}
+          height={finalHeight}
+          mode={mode}
+          onClick={onClickCallback}
         >
-          {children}
-        </Typography>
-      </ButtonOutlined>
-    );
-  }
-  return null;
+          <Typography
+            variant={
+              size === ButtonSimpleSize.Small
+                ? "headline7_semibold"
+                : "headline6_bold"
+            }
+            color={mode === ButtonSimpleMode.Light ? "white" : "primary"}
+          >
+            {children}
+          </Typography>
+        </Button>
+      )}
+    </>
+  );
+};
+
+ButtonSimple.defaultProps = {
+  size: ButtonSimpleSize.Small,
+  disabled: false,
+  outlined: false,
+  mode: ButtonSimpleMode.Light,
 };
 
 export default ButtonSimple;
