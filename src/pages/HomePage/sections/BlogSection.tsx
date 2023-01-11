@@ -6,7 +6,7 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Slider from "components/Slider";
 import Typography from "components/Typography";
-import { BlogCards } from "./mocks";
+import { BlogCards } from "../mocks";
 import { Direction, SectionType, SliderHandle } from "types/index";
 import { ControlsWrapper } from "../styled";
 

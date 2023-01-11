@@ -14,3 +14,27 @@ export const tagList = [
   { id: 13, text: "Information security", active: false },
   { id: 14, text: "Proxy", active: false },
 ];
+
+export const relatedPosts = [
+  {
+    id: 1,
+    imgUrl: "/assets/photos/img_1.jpg",
+    date: "22 June 2022",
+    header: "Sed ut perspiciatis unde omnis at vero blanditils",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/photos/img_2.jpg",
+    date: "22 June 2022",
+    header: "Sed ut perspiciatis unde omnis at vero blanditils",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/photos/img_3.jpg",
+    date: "22 June 2022",
+    header: "Sed ut perspiciatis unde omnis at vero blanditils",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+];

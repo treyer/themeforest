@@ -4,7 +4,7 @@ import PriceCard from "components/PriceCard";
 import Typography from "components/Typography";
 import { useState } from "react";
 import { SectionType } from "types/index";
-import { PricingCards } from "./mocks";
+import { PricingCards } from "../mocks";
 
 const PricingSection = () => {
   const [cardChosenIndex, setCardChosenIndex] = useState(2);
