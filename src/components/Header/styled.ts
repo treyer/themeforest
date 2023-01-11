@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
+import { Theme } from "types/index";
+
 export const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) =>
+    (theme.currentTheme as Theme) === Theme.Dark
+      ? theme.colors.secondary
+      : theme.colors.white};
   padding: 0 10px;
 `;
 

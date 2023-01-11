@@ -1,10 +1,10 @@
 import Button from "components/Button";
 import Logo from "components/Logo";
+import MenuButton from "components/controls/MenuButton";
+import { Wrapper, Inner, ButtonsBlock } from "./styled";
 
-import MenuButton from "components/MenuButton";
 import { ICON_URLS } from "constants/iconPaths";
 import { LogoSize } from "types/index";
-import { Wrapper, Inner, ButtonsBlock } from "./styled";
 
 const Header = () => {
   return (
@@ -12,14 +12,12 @@ const Header = () => {
       <Inner>
         <Logo type={LogoSize.Large} />
         <ButtonsBlock>
-          <MenuButton to="/">Home</MenuButton>
-          <MenuButton to="/solutions">Solutions</MenuButton>
-          <MenuButton to={null} isSubmenu>
-            Pages
-          </MenuButton>
-          <MenuButton to="/elements">Elements</MenuButton>
-          <MenuButton to="/blog">Blog</MenuButton>
-          <MenuButton to="/contacts">Contacts</MenuButton>
+          <MenuButton link="/">Home</MenuButton>
+          <MenuButton link="/solutions">Solutions</MenuButton>
+          <MenuButton link="pages">Pages</MenuButton>
+          <MenuButton link="/elements">Elements</MenuButton>
+          <MenuButton link="/blog">Blog</MenuButton>
+          <MenuButton link="/contacts">Contacts</MenuButton>
         </ButtonsBlock>
         <Button iconUrl={ICON_URLS.IconPlayCircle}>Watch the demo</Button>
       </Inner>
