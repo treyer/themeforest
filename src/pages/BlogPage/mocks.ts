@@ -38,3 +38,34 @@ export const relatedPosts = [
     text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
   },
 ];
+
+export const popularPosts = [
+  {
+    id: 1,
+    imgUrl: "/assets/photos/img_13.jpg",
+    date: "22 June 2022",
+    header: "ISO 13485 compliance of medical devices",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/photos/img_14.jpg",
+    date: "22 June 2022",
+    header: "Business analysis helps you  in finance",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/photos/img_15.jpg",
+    date: "22 June 2022",
+    header: "Benefits of telemedicine in nursing homes",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/photos/img_16.jpg",
+    date: "22 June 2022",
+    header: "5 web portal examples your business can learn from",
+    text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
+  },
+];
