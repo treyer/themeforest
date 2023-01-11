@@ -2,9 +2,9 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import PriceCard from "components/PriceCard";
 import Typography from "components/Typography";
-import { PricingCards } from "constants/data";
 import { useState } from "react";
 import { SectionType } from "types/index";
+import { PricingCards } from "./mocks";
 
 const PricingSection = () => {
   const [cardChosenIndex, setCardChosenIndex] = useState(2);

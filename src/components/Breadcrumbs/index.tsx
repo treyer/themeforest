@@ -5,8 +5,8 @@ import { BreadcrumbsProps } from "./types";
 const Breadcrumbs = ({ links, position }: BreadcrumbsProps) => {
   return (
     <Flex columnGap={9} justify={position} marginTop={20}>
-      {links.map((link, index) => (
-        <BreadcrumbLink key={index} link={link} />
+      {links.map((link) => (
+        <BreadcrumbLink key={link.name} link={link} />
       ))}
     </Flex>
   );

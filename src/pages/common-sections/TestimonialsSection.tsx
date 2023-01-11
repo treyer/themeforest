@@ -4,7 +4,7 @@ import Section from "components/elements/Section";
 import Slider from "components/Slider";
 import TestimonialCard from "components/TestimonialCard";
 import Typography from "components/Typography";
-import { Persons } from "constants/data";
+
 import { useRef } from "react";
 import {
   Direction,
@@ -12,6 +12,7 @@ import {
   SliderHandle,
   TestimonialCardVariant,
 } from "types/index";
+import { Persons } from "./mocks";
 import { ControlsWrapper } from "./styled";
 
 type Props = {

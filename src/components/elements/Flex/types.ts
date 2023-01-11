@@ -24,5 +24,6 @@ export type FlexProps = {
   rowGap?: number | undefined;
   columnGap?: number | undefined;
   flexWrap?: boolean | undefined;
+  onClickCallback?: () => void;
   children: ReactNode;
 };

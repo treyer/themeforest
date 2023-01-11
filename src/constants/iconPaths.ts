@@ -25,4 +25,6 @@ export const ICON_URLS = {
   DataLine: "/assets/svg/icon_data_line.svg",
   Share: "/assets/svg/icon_share.svg",
   Tag: "/assets/svg/icon_tag.svg",
+  ChevronUp: "/assets/svg/icon_chevron_up.svg",
+  ChevronDown: "/assets/svg/icon_chevron_down.svg",
 };

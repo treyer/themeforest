@@ -1,8 +1,12 @@
 import { FlexElement } from "./styled";
 import { FlexProps } from "./types";
 
-const Flex = ({ children, ...rest }: FlexProps) => {
-  return <FlexElement {...rest}>{children}</FlexElement>;
+const Flex = ({ children, onClickCallback, ...rest }: FlexProps) => {
+  return (
+    <FlexElement {...rest} onClick={onClickCallback}>
+      {children}
+    </FlexElement>
+  );
 };
 
 Flex.defaultProps = {

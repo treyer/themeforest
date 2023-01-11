@@ -11,16 +11,21 @@ export const SOCIAL_NETWORK_LIST = [
 
 export const BREADCRUMBS_LIST = {
   Services: [
-    { name: "Home", url: "/", isActive: false },
-    { name: "Services", url: "/services", isActive: true },
+    { id: 1, name: "Home", url: "/", isActive: false },
+    { id: 2, name: "Services", url: "/services", isActive: true },
   ],
   About: [
-    { name: "Home", url: "/", isActive: false },
-    { name: "About Us", url: "/about", isActive: true },
+    { id: 1, name: "Home", url: "/", isActive: false },
+    { id: 2, name: "About Us", url: "/about", isActive: true },
   ],
   Blog: [
-    { name: "Home", url: "/", isActive: false },
-    { name: "2022 software development trends", url: "/blog", isActive: true },
+    { id: 1, name: "Home", url: "/", isActive: false },
+    {
+      id: 2,
+      name: "2022 software development trends",
+      url: "/blog",
+      isActive: true,
+    },
   ],
 };
 

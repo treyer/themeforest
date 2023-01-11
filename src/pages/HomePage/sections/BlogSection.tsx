@@ -1,11 +1,12 @@
+import { useRef } from "react";
+
 import BlogCard from "components/BlogCard";
 import DirectionControl from "components/controls/DirectionControl";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Slider from "components/Slider";
 import Typography from "components/Typography";
-import { BlogCards } from "constants/data";
-import { useRef } from "react";
+import { BlogCards } from "./mocks";
 import { Direction, SectionType, SliderHandle } from "types/index";
 import { ControlsWrapper } from "../styled";
 
