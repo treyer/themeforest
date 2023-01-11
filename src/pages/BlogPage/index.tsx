@@ -1,3 +1,4 @@
+import Tag from "components/controls/Tag";
 import Flex from "components/elements/Flex";
 import Image from "components/elements/Image";
 import Section from "components/elements/Section";
@@ -7,6 +8,7 @@ import Icon from "components/Icon";
 import Typography from "components/Typography";
 import { ICON_URLS } from "constants/iconPaths";
 import { SectionType } from "types/index";
+import { tagList } from "./mocks";
 import TitleSection from "./sections/TitleSection";
 
 const BlogPage = () => {
@@ -110,7 +112,7 @@ const BlogPage = () => {
                 odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam.
               </TypographyP>
             </Typography>
-            <Flex justify="start" columnGap={32}>
+            <Flex justify="start" columnGap={32} width={520}>
               <Flex justify="start" columnGap={10}>
                 <Icon
                   url={ICON_URLS.DataLine}
@@ -163,17 +165,33 @@ const BlogPage = () => {
                   color="gray"
                 />
               </Flex>
-              <Flex columnGap={10} justify="start">
-                <Icon url={ICON_URLS.Tag} width={13} height={13} color="gray" />
-                <Typography variant="paragraph3_regular" color="gray">
-                  Tags:
-                </Typography>
+              <Flex columnGap={8} justify="start">
+                <Flex columnGap={10} justify="start">
+                  <Icon
+                    url={ICON_URLS.Tag}
+                    width={13}
+                    height={13}
+                    color="gray"
+                  />
+                  <Typography variant="paragraph3_regular" color="gray">
+                    Tags:
+                  </Typography>
+                </Flex>
+
+                <Tag>Data</Tag>
+                <Tag>Future</Tag>
               </Flex>
             </Flex>
           </Flex>
 
           <Flex direction="column" width={445}>
-            dfg
+            <Flex columnGap={10} rowGap={10} flexWrap>
+              {tagList.map((el) => (
+                <Tag key={el.id} active={el.active}>
+                  {el.text}
+                </Tag>
+              ))}
+            </Flex>
           </Flex>
         </Flex>
       </Section>

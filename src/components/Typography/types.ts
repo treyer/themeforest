@@ -9,6 +9,7 @@ export type TypographyVariant =
   | "headline4_bold"
   | "headline5_bold"
   | "headline6_bold"
+  | "headline7_bold"
   | "headline7_semibold"
   | "headline7_medium"
   | "headline8_semibold"

@@ -9,13 +9,13 @@ import DropDownMenu from "components/controls/DropdownMenu";
 
 const DropdownButtons = [
   { id: 1, link: "/", description: "Home" },
-  { id: 1, link: "/solutions", description: "Solutions" },
-  { id: 2, link: "/blog", description: "Blog" },
-  { id: 3, link: "/contacts", description: "Contacts" },
-  { id: 3, link: "/team", description: "Our Team" },
-  { id: 3, link: "/about", description: "About Us" },
-  { id: 4, link: "/services", description: "Services" },
-  { id: 4, link: "/faqs", description: "FAQ" },
+  { id: 2, link: "/solutions", description: "Solutions" },
+  { id: 3, link: "/blog", description: "Blog" },
+  { id: 4, link: "/contacts", description: "Contacts" },
+  { id: 5, link: "/team", description: "Our Team" },
+  { id: 6, link: "/about", description: "About Us" },
+  { id: 7, link: "/services", description: "Services" },
+  { id: 8, link: "/faqs", description: "FAQ" },
 ];
 
 const Header = () => {

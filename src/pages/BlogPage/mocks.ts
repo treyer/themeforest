@@ -1,0 +1,16 @@
+export const tagList = [
+  { id: 1, text: "All topics", active: true },
+  { id: 2, text: "App", active: false },
+  { id: 3, text: "Management", active: false },
+  { id: 4, text: "CMR", active: false },
+  { id: 5, text: "Big data", active: false },
+  { id: 6, text: "Media", active: false },
+  { id: 7, text: "Future", active: false },
+  { id: 8, text: "CIO", active: false },
+  { id: 9, text: "Startup", active: false },
+  { id: 10, text: "Team", active: false },
+  { id: 11, text: "Data", active: false },
+  { id: 12, text: "Data analytics", active: false },
+  { id: 13, text: "Information security", active: false },
+  { id: 14, text: "Proxy", active: false },
+];

@@ -22,7 +22,7 @@ const DropDownMenu = ({ description, buttonsList }: DropDownMenuProps) => {
   return (
     <DropDownMenuWrapper width={45}>
       <MenuButtonWrapper onClick={toggleShowMenu}>
-        <MenuButton link="" disabled>
+        <MenuButton link="/someNotExistingLink" disabled>
           {description}
         </MenuButton>
         <IconDropdown

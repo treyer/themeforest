@@ -105,6 +105,13 @@ const typographyStyles = {
     "line-height": "24px",
     "letter-spacing": "-0.015em",
   },
+  headline7_bold: {
+    ...fontManrope,
+    "font-weight": 800,
+    "font-size": "14px",
+    "line-height": "24px",
+    "letter-spacing": "-0.015em",
+  },
   headline7_semibold: {
     ...fontManrope,
     "font-weight": 600,
