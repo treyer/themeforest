@@ -1,5 +1,3 @@
-import { forwardRef } from "react";
-
 import Flex from "components/elements/Flex";
 import { ICON_URLS } from "constants/iconPaths";
 import MenuButton from "../MenuButton";
@@ -27,4 +25,4 @@ const Dropdown = ({ buttonsList, onClickCallback }: DropdownProps) => {
   );
 };
 
-export default forwardRef(Dropdown);
+export default Dropdown;
