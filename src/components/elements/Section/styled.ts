@@ -18,4 +18,8 @@ export const StyledDiv = styled.section<Omit<SectionProps, "children">>`
   min-width: ${({ theme }) => theme.size.mobileM};
   margin: ${({ marginTop, marginBottom }) =>
     `${marginTop}px auto ${marginBottom}px`};
+  ${({ backgroundColor, theme }) =>
+    backgroundColor
+      ? `background-color: ${theme.colors[backgroundColor]};`
+      : ""}
 `;

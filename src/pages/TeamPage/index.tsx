@@ -1,5 +1,15 @@
+import SubscribeSection from "pages/common-sections/SubscribeSection";
+import TeamSection from "./sections/TeamSection";
+import TitleSection from "./sections/TitleSection";
+
 const TeamPage = () => {
-  return <div>Team Page</div>;
+  return (
+    <>
+      <TitleSection />
+      <TeamSection />
+      <SubscribeSection />
+    </>
+  );
 };
 
 export default TeamPage;

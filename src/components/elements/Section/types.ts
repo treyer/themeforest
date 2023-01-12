@@ -4,6 +4,8 @@ import { SectionType } from "types/index";
 
 type SectionDirection = "raw" | "column";
 
+type BackgroundColor = "secondary";
+
 export type SectionProps = {
   type: SectionType;
   direction?: SectionDirection | undefined;
@@ -12,4 +14,5 @@ export type SectionProps = {
   rowGap?: number | undefined;
   columnGap?: number | undefined;
   children?: ReactNode;
+  backgroundColor?: BackgroundColor | undefined;
 };

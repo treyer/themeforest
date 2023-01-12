@@ -1,14 +1,18 @@
 import Icon from "components/Icon";
 import Typography from "components/Typography";
-import { BreadcrumbsLinkType } from "./types";
+import { BreadcrumbsLinkProps } from "./types";
 import { ICON_URLS } from "constants/iconPaths";
 import { Link } from "./styled";
 
-const BreadcrumbLink = ({ link }: { link: BreadcrumbsLinkType }) => {
+const BreadcrumbLink = ({ link, mode }: BreadcrumbsLinkProps) => {
   return (
     <>
       {link.isActive ? (
-        <Typography variant="headline7_semibold" unselected>
+        <Typography
+          color={mode === "dark" ? "white" : "gray"}
+          variant="headline7_semibold"
+          unselected
+        >
           {link.name}
         </Typography>
       ) : (
