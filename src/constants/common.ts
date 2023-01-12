@@ -27,6 +27,10 @@ export const BREADCRUMBS_LIST = {
       isActive: true,
     },
   ],
+  Contacts: [
+    { id: 1, name: "Home", url: "/", isActive: false },
+    { id: 2, name: "Contacts", url: "/contacts", isActive: true },
+  ],
 };
 
 export const CUSTOMERS_LIST = [

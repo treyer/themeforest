@@ -1,9 +1,13 @@
-import { TextInputType } from "types/index";
+type TextInputType = "simple" | "labeled";
+
+type TextInputElement = "input" | "textarea";
 
 export type TextInputProps = {
-  type: TextInputType;
   placeholder: string;
-  label?: string;
-  disabled?: boolean;
-  isError?: boolean;
+  type?: TextInputType;
+  label?: string | undefined;
+  disabled?: boolean | undefined;
+  isError?: boolean | undefined;
+  bordered?: boolean | undefined;
+  element?: TextInputElement | undefined;
 };

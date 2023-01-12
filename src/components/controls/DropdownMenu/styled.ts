@@ -2,6 +2,7 @@ import Flex from "components/elements/Flex";
 import Icon from "components/Icon";
 import styled from "styled-components";
 import { Theme } from "types/index";
+import { MenuButtonWrapperProps } from "./types";
 
 export const IconDropdown = styled(Icon)`
   background-color: ${({ theme }) =>
@@ -16,11 +17,11 @@ export const DropDownMenuWrapper = styled(Flex)`
   user-select: none;
 `;
 
-export const MenuButtonWrapper = styled.div`
+export const MenuButtonWrapper = styled.div<MenuButtonWrapperProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 6px;
+  column-gap: ${({ gap }) => gap}px;
 `;
 
 export const DropdownWrapper = styled(Flex)`

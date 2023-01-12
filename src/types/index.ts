@@ -43,11 +43,6 @@ export enum TextAlign {
   Justify = "justify",
 }
 
-export enum TextInputType {
-  Simple,
-  Labeled,
-}
-
 export enum TestimonialCardVariant {
   ImgOutside = "outside",
   ImgInside = "inside",

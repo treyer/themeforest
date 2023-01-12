@@ -1,42 +1,56 @@
 import { useId } from "react";
 
 import Flex from "components/elements/Flex";
-import { TextInputType } from "types/index";
-import { StyledInputLabeled, StyledInputSimple, StyledLabel } from "./styled";
+import { StyledInput, StyledLabel, StyledTextarea } from "./styled";
 import { TextInputProps } from "./types";
 
 const TextInput = ({
-  type = TextInputType.Simple,
+  type,
   placeholder,
-  label = "",
-  disabled = false,
-  isError = false,
+  label,
+  disabled,
+  isError,
+  bordered,
+  element,
 }: TextInputProps) => {
   const id = useId();
 
-  if (type === TextInputType.Simple) {
-    return (
-      <StyledInputSimple
-        disabled={disabled}
-        isError={isError}
-        placeholder={placeholder}
-      />
-    );
-  } else {
-    return (
-      <Flex direction="column" align="start" width={345}>
+  return (
+    <Flex direction="column" align="start">
+      {type === "labeled" && (
         <StyledLabel htmlFor={id} disabled={disabled} isError={isError}>
           {label}
         </StyledLabel>
-        <StyledInputLabeled
+      )}
+      {element === "input" && (
+        <StyledInput
           id={id}
           placeholder={placeholder}
           disabled={disabled}
           isError={isError}
-        ></StyledInputLabeled>
-      </Flex>
-    );
-  }
+          bordered={bordered}
+        />
+      )}
+      {element === "textarea" && (
+        <StyledTextarea
+          id={id}
+          placeholder={placeholder}
+          disabled={disabled}
+          isError={isError}
+          bordered={bordered}
+        />
+      )}
+    </Flex>
+  );
+};
+
+TextInput.defaultProps = {
+  type: "labeled",
+  label: "",
+  disabled: false,
+  isError: false,
+  bordered: false,
+  element: "input",
 };
 
 export default TextInput;

@@ -21,15 +21,15 @@ const DropDownMenu = ({ description, buttonsList }: DropDownMenuProps) => {
 
   return (
     <DropDownMenuWrapper width={45}>
-      <MenuButtonWrapper onClick={toggleShowMenu}>
-        <MenuButton link="/someNotExistingLink" disabled>
+      <MenuButtonWrapper onClick={toggleShowMenu} gap={isMenuOpened ? 8 : 6}>
+        <MenuButton link="/notExistingLink" disabled>
           {description}
         </MenuButton>
-        <IconDropdown
-          url={isMenuOpened ? ICON_URLS.ChevronUp : ICON_URLS.ChevronDown}
-          width={10}
-          height={6}
-        />
+        {isMenuOpened ? (
+          <IconDropdown url={ICON_URLS.ChevronUp} width={10} height={6} />
+        ) : (
+          <IconDropdown url={ICON_URLS.ChevronDown} width={15} height={15} />
+        )}
       </MenuButtonWrapper>
       {isMenuOpened && (
         <Dropdown buttonsList={buttonsList} onClickCallback={toggleShowMenu} />

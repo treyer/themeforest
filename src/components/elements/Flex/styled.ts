@@ -4,6 +4,7 @@ import { FlexProps } from "./types";
 
 export const FlexElement = styled.div<FlexProps>`
   display: flex;
+  position: relative;
   ${({ direction }) => (direction ? `flex-direction: ${direction};` : "")};
   ${({ justify }) => (justify ? `justify-content: ${justify};` : "")};
   ${({ align }) => (align ? `align-items: ${align};` : "")}

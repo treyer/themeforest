@@ -5,7 +5,7 @@ import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { CONTACTS_LIST } from "constants/common";
 
-import { SectionType, TextInputType } from "types/index";
+import { SectionType } from "types/index";
 
 const ContactSection = () => {
   return (
@@ -50,26 +50,10 @@ const ContactSection = () => {
         >
           <Typography variant="headline3_extrabold">Contact Us</Typography>
           <Flex direction="column" align="start" rowGap={20}>
-            <TextInput
-              type={TextInputType.Labeled}
-              label="Name"
-              placeholder="Name"
-            />
-            <TextInput
-              type={TextInputType.Labeled}
-              label="Email"
-              placeholder="Email"
-            />
-            <TextInput
-              type={TextInputType.Labeled}
-              label="Theme"
-              placeholder="Theme"
-            />
-            <TextInput
-              type={TextInputType.Labeled}
-              label="Message"
-              placeholder="Message"
-            />
+            <TextInput label="Name" placeholder="Name" />
+            <TextInput label="Email" placeholder="Email" />
+            <TextInput label="Theme" placeholder="Theme" />
+            <TextInput label="Message" placeholder="Message" />
           </Flex>
           <Flex justify="end">
             <ButtonSimple>Send</ButtonSimple>

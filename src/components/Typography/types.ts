@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 export type TypographyVariant =
+  | "headline0_large_extrabold"
   | "headline0_extrabold"
   | "headline1_extrabold"
   | "headline2_extrabold"

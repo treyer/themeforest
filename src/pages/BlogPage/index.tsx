@@ -9,6 +9,7 @@ import Section from "components/elements/Section";
 import { SectionType } from "types/index";
 import PopularPostsSection from "./sections/PopularPostsSection";
 import CategoriesSection from "./sections/CategoriesSection";
+import SearchSection from "./sections/SearchSection";
 
 const BlogPage = () => {
   return (
@@ -22,6 +23,7 @@ const BlogPage = () => {
           </Flex>
 
           <Flex direction="column" width={445}>
+            <SearchSection />
             <PopularPostsSection />
             <CategoriesSection />
             <TagSection />

@@ -13,3 +13,7 @@ export type DropdownProps = {
   buttonsList: ButtonData[];
   onClickCallback: () => void;
 };
+
+export interface MenuButtonWrapperProps {
+  gap: number;
+}

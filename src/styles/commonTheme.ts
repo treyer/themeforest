@@ -49,6 +49,13 @@ const fontOpenSans = {
 };
 
 const typographyStyles = {
+  headline0_large_extrabold: {
+    ...fontManrope,
+    "font-weight": 800,
+    "font-size": "80px",
+    "line-height": "88px",
+    "letter-spacing": "-0.015em",
+  },
   headline0_extrabold: {
     ...fontManrope,
     "font-weight": 800,

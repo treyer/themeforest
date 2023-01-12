@@ -1,19 +1,8 @@
 import styled from "styled-components";
+
 import { TextInputProps } from "./types";
 
-type StyledLabelProps = {
-  disabled: boolean;
-  isError: boolean;
-};
-
-type StyledInputLabeled = {
-  disabled: boolean;
-  isError: boolean;
-};
-
-export const StyledInputSimple = styled.input<Omit<TextInputProps, "type">>``;
-
-export const StyledLabel = styled.label<StyledLabelProps>`
+export const StyledLabel = styled.label<Omit<TextInputProps, "placeholder">>`
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
@@ -27,18 +16,15 @@ export const StyledLabel = styled.label<StyledLabelProps>`
       : theme.colors.gray};
 `;
 
-export const StyledInputLabeled = styled.input<StyledInputLabeled>`
+export const StyledInput = styled.input<TextInputProps>`
   box-sizing: border-box;
-
-  width: 345px;
-  height: 35px;
-  padding: 0 20px 0 0;
-
+  width: 100%;
+  height: ${({ bordered }) => (bordered ? "54" : "35")}px;
+  padding: ${({ bordered }) => `0 25px 0 ${bordered ? "25px" : "0"}`};
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-
   color: ${({ theme, disabled, isError }) =>
     disabled
       ? theme.colors.helperGray1
@@ -47,23 +33,28 @@ export const StyledInputLabeled = styled.input<StyledInputLabeled>`
       : theme.colors.black};
   background-color: ${({ theme }) => theme.colors.white};
   border: none;
-  border-bottom: 1px solid
-    ${({ theme, disabled, isError }) =>
+  ${({ bordered, theme }) =>
+    bordered ? `border-radius: ${theme.radiuses[0]}px;` : ""}
+  ${({ bordered, theme, disabled, isError }) =>
+    `border${bordered ? "" : "-bottom"}: 1px solid ${
       disabled
         ? theme.colors.helperGray1
         : isError
         ? theme.colors.redError
-        : theme.colors.gray};
+        : theme.colors.gray
+    };`}
 
   &:hover,
   &:focus {
-    border-bottom: 1px solid
-      ${({ theme, disabled, isError }) =>
+    ${({ bordered, theme, disabled, isError }) =>
+      `border${bordered ? "" : "-bottom"}: 1px solid ${
         disabled
           ? theme.colors.helperGray1
           : isError
           ? theme.colors.redError
-          : theme.colors.primary};
+          : theme.colors.primary
+      };`}
+
     outline: none;
   }
 
@@ -84,4 +75,9 @@ export const StyledInputLabeled = styled.input<StyledInputLabeled>`
         ? theme.colors.redError
         : theme.colors.gray};
   }
+`;
+
+export const StyledTextarea = styled(StyledInput).attrs({ as: "textarea" })`
+  height: 140px;
+  padding-top: 15px;
 `;
