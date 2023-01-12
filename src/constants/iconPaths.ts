@@ -27,4 +27,5 @@ export const ICON_URLS = {
   Tag: "/assets/svg/icon_tag.svg",
   ChevronUp: "/assets/svg/icon_chevron_up.svg",
   ChevronDown: "/assets/svg/icon_chevron_down.svg",
+  ChevronRight: "/assets/svg/icon_chevron_right.svg",
 };

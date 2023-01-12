@@ -1,4 +1,10 @@
-type IconColor = "secondary" | "primary" | "white" | "gray" | "helperBlue3";
+type IconColor =
+  | "secondary"
+  | "primary"
+  | "white"
+  | "gray"
+  | "helperBlue3"
+  | "black";
 
 export type IconProps = {
   url: string;

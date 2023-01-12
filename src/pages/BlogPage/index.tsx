@@ -8,6 +8,7 @@ import Section from "components/elements/Section";
 
 import { SectionType } from "types/index";
 import PopularPostsSection from "./sections/PopularPostsSection";
+import CategoriesSection from "./sections/CategoriesSection";
 
 const BlogPage = () => {
   return (
@@ -22,6 +23,7 @@ const BlogPage = () => {
 
           <Flex direction="column" width={445}>
             <PopularPostsSection />
+            <CategoriesSection />
             <TagSection />
           </Flex>
         </Flex>

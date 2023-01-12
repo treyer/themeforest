@@ -69,3 +69,36 @@ export const popularPosts = [
     text: "Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, euismod augue bibendum...",
   },
 ];
+
+export const blogCategories = [
+  {
+    id: 1,
+    title: "Software development",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. ",
+  },
+  {
+    id: 2,
+    title: "Information security",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. ",
+  },
+  {
+    id: 3,
+    title: "Internet of things",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. ",
+  },
+  {
+    id: 4,
+    title: "Digital transformation",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. ",
+  },
+  {
+    id: 5,
+    title: "Healthcare it",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. ",
+  },
+];
