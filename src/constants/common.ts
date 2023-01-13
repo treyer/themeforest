@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import { ICON_URLS } from "./iconPaths";
 
 export const SOCIAL_NETWORK_LIST = [
@@ -47,11 +48,25 @@ export const CUSTOMERS_LIST = [
 ];
 
 export const CONTACTS_LIST = [
-  { id: 1, name: "Email address", value: "ensome@info.co.us" },
-  { id: 2, name: "Phone number", value: "+1601-201-5580" },
+  {
+    id: 1,
+    iconUrl: ICON_URLS.Mail,
+    name: "Email address",
+    value: "ensome@info.co.us",
+    valueShort: "ensome@info.co.us",
+  },
+  {
+    id: 2,
+    iconUrl: ICON_URLS.Call,
+    name: "Phone number",
+    value: "+1601-201-5580",
+    valueShort: "+1601-201-5580",
+  },
   {
     id: 3,
+    iconUrl: ICON_URLS.Location,
     name: "Address",
     value: "1642 Washington Avenue, Jackson, MS, Mississippi, 39201",
+    valueShort: `1642 Washington Avenue, Jackson, MS`,
   },
 ];

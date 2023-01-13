@@ -28,4 +28,7 @@ export const ICON_URLS = {
   ChevronUp: "/assets/svg/icon_chevron_up.svg",
   ChevronDown: "/assets/svg/icon_chevron_down.svg",
   ChevronRight: "/assets/svg/icon_chevron_right.svg",
+  Call: "/assets/svg/icon_call.svg",
+  Location: "/assets/svg/icon_location.svg",
+  Mail: "/assets/svg/icon_mail.svg",
 };

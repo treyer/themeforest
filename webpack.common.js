@@ -2,6 +2,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { ProvidePlugin } = require("webpack");
+const Dotenv = require("dotenv-webpack");
 
 const path = require("path");
 
@@ -53,5 +54,6 @@ module.exports = {
     new ProvidePlugin({
       React: "react",
     }),
+    new Dotenv(),
   ],
 };
