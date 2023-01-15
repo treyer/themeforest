@@ -21,6 +21,7 @@ const ContactsPage = lazy(() => import("pages/ContactsPage"));
 const FAQsPage = lazy(() => import("pages/FAQsPage"));
 const ServicesPage = lazy(() => import("pages/ServicesPage"));
 const TeamPage = lazy(() => import("pages/TeamPage"));
+const SolutionsPage = lazy(() => import("pages/SolutionsPage"));
 
 const MainLayout = () => {
   const [theme, setTheme] = useState(Theme.Light);
@@ -45,6 +46,7 @@ const MainLayout = () => {
               <Route path="/faqs" element={<FAQsPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/team" element={<TeamPage />} />
+              <Route path="/solutions" element={<SolutionsPage />} />
             </Routes>
           </Suspense>
         </MainWrapper>

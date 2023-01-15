@@ -1,4 +1,4 @@
-import Dropdown from "components/controls/Accordion";
+import Dropdown from "components/Accordion";
 import Flex from "components/elements/Flex";
 import Typography from "components/Typography";
 import { blogCategories } from "../mocks";

@@ -1,4 +1,4 @@
-import Accordion from "components/controls/Accordion";
+import Accordion from "components/Accordion";
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import { SectionType } from "types/index";
