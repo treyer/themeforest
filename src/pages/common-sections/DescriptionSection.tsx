@@ -2,8 +2,13 @@ import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
 import Typography from "components/Typography";
 import { SectionType } from "types/index";
+import { DescriptionSectionProps } from "./types";
 
-const DescriptionSection = () => {
+const DescriptionSection = ({
+  preHead,
+  head,
+  text,
+}: DescriptionSectionProps) => {
   return (
     <Section type={SectionType.Narrow} marginTop={56}>
       <Flex direction="column" rowGap={15}>
@@ -13,14 +18,14 @@ const DescriptionSection = () => {
           element="div"
           textAlign="center"
         >
-          Services
+          {preHead}
         </Typography>
         <Typography
           variant="headline1_extrabold"
           element="div"
           textAlign="center"
         >
-          Data Analytics Services
+          {head}
         </Typography>
         <Typography
           variant="paragraph1_regular"
@@ -29,9 +34,7 @@ const DescriptionSection = () => {
           textAlign="center"
           width={730}
         >
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-          quaeab illo inventore.
+          {text}
         </Typography>
       </Flex>
     </Section>

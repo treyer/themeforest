@@ -36,6 +36,14 @@ export const BREADCRUMBS_LIST = {
     { id: 1, name: "Home", url: "/", isActive: false },
     { id: 2, name: "Our team", url: "/team", isActive: true },
   ],
+  FAQs: [
+    { id: 1, name: "Home", url: "/", isActive: false },
+    { id: 2, name: "FAQs", url: "/faqs", isActive: true },
+  ],
+  Solutions: [
+    { id: 1, name: "Home", url: "/", isActive: false },
+    { id: 2, name: "Solutions", url: "/solutions", isActive: true },
+  ],
 };
 
 export const CUSTOMERS_LIST = [

@@ -31,4 +31,6 @@ export const ICON_URLS = {
   Call: "/assets/svg/icon_call.svg",
   Location: "/assets/svg/icon_location.svg",
   Mail: "/assets/svg/icon_mail.svg",
+  PLus: "/assets/svg/icon_plus.svg",
+  Minus: "/assets/svg/icon_minus.svg",
 };
