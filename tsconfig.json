@@ -33,7 +33,9 @@
       "types/*": ["src/types/*"],
       "pages/*": ["src/pages/*"],
       "constants/*": ["src/constants/*"],
-      "helpers/*": ["src/helpers/*"]
+      "helpers/*": ["src/helpers/*"],
+      "sagas/*": ["src/sagas/*"],
+      "store/*": ["src/store/*"]
     },
     "module": "ES2022",
     "moduleResolution": "node",

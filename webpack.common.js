@@ -35,6 +35,8 @@ module.exports = {
       pages: path.resolve(__dirname, "src/pages"),
       constants: path.resolve(__dirname, "src/constants"),
       helpers: path.resolve(__dirname, "src/helpers"),
+      sagas: path.resolve(__dirname, "src/sagas"),
+      store: path.resolve(__dirname, "src/store"),
     },
   },
   plugins: [
