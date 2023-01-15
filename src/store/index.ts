@@ -6,6 +6,7 @@ import rootReducer from "./reducers/rootReducer";
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers =
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (window && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware));
 const store = createStore(rootReducer, enhancer);
