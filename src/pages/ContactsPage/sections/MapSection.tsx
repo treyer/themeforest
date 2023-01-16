@@ -5,11 +5,11 @@ import Map, { Source, Layer } from "react-map-gl";
 import Section from "components/elements/Section";
 import { SectionType } from "types/index";
 import Flex from "components/elements/Flex";
-import { mapPoints } from "constants/common";
+import { MAP_POINTS } from "constants/common";
 
 const geojson = {
   type: "FeatureCollection",
-  features: mapPoints,
+  features: MAP_POINTS,
 };
 
 const layerStyle = {

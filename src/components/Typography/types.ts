@@ -21,7 +21,7 @@ export type TypographyVariant =
   | "paragraph3_regular"
   | "paragraph3_semibold";
 
-export type TextColor = "black" | "gray" | "primary" | "white";
+export type TextColor = "black" | "gray" | "primary" | "secondary" | "white";
 
 export type TextElement = "span" | "div";
 

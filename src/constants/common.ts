@@ -1,6 +1,17 @@
 /* eslint-disable no-irregular-whitespace */
 import { ICON_URLS } from "./iconPaths";
 
+export const DROPDOWN_BUTTONS = [
+  { id: 1, link: "/", description: "Home" },
+  { id: 2, link: "/solutions", description: "Solutions" },
+  { id: 3, link: "/blog", description: "Blog" },
+  { id: 4, link: "/contacts", description: "Contacts" },
+  { id: 5, link: "/team", description: "Our Team" },
+  { id: 6, link: "/about", description: "About Us" },
+  { id: 7, link: "/services", description: "Services" },
+  { id: 8, link: "/faqs", description: "FAQ" },
+];
+
 export const SOCIAL_NETWORK_LIST = [
   { id: 1, url: ICON_URLS.Facebook },
   { id: 2, url: ICON_URLS.Twitter },
@@ -79,7 +90,7 @@ export const CONTACTS_LIST = [
   },
 ];
 
-export const mapPoints = [
+export const MAP_POINTS = [
   {
     type: "Feature",
     geometry: { type: "Point", coordinates: [23.7637, 52.0997] },
