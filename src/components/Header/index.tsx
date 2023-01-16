@@ -1,3 +1,5 @@
+import YouTube from "react-youtube";
+
 import Logo from "components/Logo";
 import MenuButton from "components/controls/MenuButton";
 import { Wrapper, Inner, ButtonsBlock } from "./styled";
@@ -20,6 +22,18 @@ const Header = () => {
     setIsModalOpen(false);
   };
 
+  const onPlayerReady = (event: { target: { playVideo: () => void } }) => {
+    event.target.playVideo();
+  };
+
+  const playerOptions = {
+    width: "700",
+    height: "500",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   return (
     <Wrapper>
       <Inner>
@@ -35,8 +49,13 @@ const Header = () => {
         <ButtonVideo clickCallback={openModal}>Watch the demo</ButtonVideo>
       </Inner>
       {isModalOpen && (
-        <Modal width={200} height={200} closeCallback={closeModal}>
-          Video
+        <Modal width={700} height={500} closeCallback={closeModal}>
+          <YouTube
+            videoId="vTEKeUrEDjw"
+            opts={playerOptions}
+            onReady={onPlayerReady}
+          />
+          ;
         </Modal>
       )}
     </Wrapper>
