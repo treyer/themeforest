@@ -9,11 +9,11 @@ import { selectTheme } from "store/selectors/selectors";
 import { Theme } from "types/index";
 import Typography from "components/Typography";
 
-const ButtonVideo = ({ callback, children }: ButtonVideoProps) => {
+const ButtonVideo = ({ clickCallback, children }: ButtonVideoProps) => {
   const theme = useSelector((state: RootState) => selectTheme(state));
 
   return (
-    <ButtonWrapper onClick={callback}>
+    <ButtonWrapper onClick={clickCallback}>
       <Icon
         className="button-icon"
         url={ICON_URLS.IconPlayCircle}

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 import Flex from "components/elements/Flex";
 import Section from "components/elements/Section";
-import TeamCard from "components/TeamCard/TeamCard";
+import TeamCard from "components/TeamCard";
 import { SectionType } from "types/index";
 import {
   selectEmployees,

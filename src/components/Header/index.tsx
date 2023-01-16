@@ -6,8 +6,20 @@ import { LogoSize } from "types/index";
 import DropDownMenu from "components/controls/DropdownMenu";
 import { DROPDOWN_BUTTONS } from "constants/common";
 import ButtonVideo from "components/controls/ButtonVideo";
+import Modal from "components/Modal";
+import { useState } from "react";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Wrapper>
       <Inner>
@@ -20,8 +32,13 @@ const Header = () => {
           <MenuButton link="/blog">Blog</MenuButton>
           <MenuButton link="/contacts">Contacts</MenuButton>
         </ButtonsBlock>
-        <ButtonVideo>Watch the demo</ButtonVideo>
+        <ButtonVideo clickCallback={openModal}>Watch the demo</ButtonVideo>
       </Inner>
+      {isModalOpen && (
+        <Modal width={200} height={200} closeCallback={closeModal}>
+          Video
+        </Modal>
+      )}
     </Wrapper>
   );
 };

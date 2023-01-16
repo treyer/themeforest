@@ -34,4 +34,5 @@ export const ICON_URLS = {
   DataPie: "/assets/svg/icon_data_pie.svg",
   DataWhisker: "/assets/svg/icon_data_whisker.svg",
   Database: "/assets/svg/icon_database.svg",
+  Dismiss: "/assets/svg/icon_dismiss.svg",
 };
