@@ -1,26 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import Map, { Source, Layer } from "react-map-gl";
 
 import Section from "components/elements/Section";
 import { SectionType } from "types/index";
 import Flex from "components/elements/Flex";
+import { mapPoints } from "constants/common";
 
 const geojson = {
   type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [23.7637, 52.0997] },
-    },
-    {
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [21.0122, 52.2297] },
-    },
-    {
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [14.4378, 50.0755] },
-    },
-  ],
+  features: mapPoints,
 };
 
 const layerStyle = {

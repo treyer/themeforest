@@ -13,11 +13,13 @@ const TeamCard = ({
   name,
   position,
   verticalOffset,
+  callback,
 }: TeamCardProps) => {
   return (
     <ImageWrapper
       width={IMG_DIMENSIONS[type ? type : "standard"].width}
       verticalOffset={verticalOffset}
+      ref={callback}
     >
       <Image
         src={imgUrl}

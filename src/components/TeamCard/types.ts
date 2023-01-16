@@ -6,6 +6,7 @@ export interface TeamCardProps {
   name: string;
   position: string;
   verticalOffset?: number | undefined;
+  callback?: any;
 }
 
 export interface ImageWrapperProps {

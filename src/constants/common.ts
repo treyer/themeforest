@@ -78,3 +78,18 @@ export const CONTACTS_LIST = [
     valueShort: `1642 Washington Avenue, Jackson, MS`,
   },
 ];
+
+export const mapPoints = [
+  {
+    type: "Feature",
+    geometry: { type: "Point", coordinates: [23.7637, 52.0997] },
+  },
+  {
+    type: "Feature",
+    geometry: { type: "Point", coordinates: [21.0122, 52.2297] },
+  },
+  {
+    type: "Feature",
+    geometry: { type: "Point", coordinates: [14.4378, 50.0755] },
+  },
+];

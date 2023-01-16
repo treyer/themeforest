@@ -72,3 +72,10 @@ export enum Direction {
   Left = "left",
   Right = "right",
 }
+
+export interface Employee {
+  id: number;
+  imgUrl: string;
+  name: string;
+  position: string;
+}

@@ -13,7 +13,7 @@ import { Theme } from "types/index";
 import commonTheme from "styles/commonTheme";
 import darkTheme from "styles/darkTheme";
 import lightTheme from "styles/lightTheme";
-import { selectTheme } from "store/selectors/selectors";
+import { selectIsLoaderShown, selectTheme } from "store/selectors/selectors";
 import { RootState } from "store/index";
 
 const HomePage = lazy(() => import("pages/HomePage"));
@@ -27,6 +27,9 @@ const SolutionsPage = lazy(() => import("pages/SolutionsPage"));
 
 const MainLayout = () => {
   const theme = useSelector((state: RootState) => selectTheme(state));
+  const isLoaderShown = useSelector((store: RootState) =>
+    selectIsLoaderShown(store),
+  );
 
   return (
     <ThemeProvider
@@ -52,6 +55,7 @@ const MainLayout = () => {
         </Suspense>
       </MainWrapper>
       {theme === Theme.Dark ? <FooterDark /> : <FooterLight />}
+      {isLoaderShown && <Loader />}
     </ThemeProvider>
   );
 };
