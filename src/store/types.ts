@@ -1,4 +1,4 @@
-import { Employee, Post, Tag, Theme } from "types/index";
+import { Employee, Post, TagType, Theme } from "types/index";
 
 export interface AppState {
   currentTheme: Theme;
@@ -21,7 +21,7 @@ export interface DataAction {
 
 export interface PostsState {
   list: Post[];
-  tagList: Tag[];
+  tagList: TagType[];
   activeTag: string;
 }
 export interface PostsAction {

@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export enum LogoSize {
   Large,
   Small,
@@ -87,13 +85,20 @@ export interface Post {
   imgUrl: string;
   date: string;
   header: string;
-  text: ReactNode;
+  text: string;
   author: string;
   views: number;
-  tags: string[];
+  tags: TagType[];
+  socialLinks: SocialLink[];
 }
 
-export interface Tag {
+export interface TagType {
   id: number;
   text: string;
+}
+
+export interface SocialLink {
+  id: number;
+  iconUrl: string;
+  link: string;
 }

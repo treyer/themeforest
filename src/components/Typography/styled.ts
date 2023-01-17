@@ -12,6 +12,48 @@ export const StyledTextSpan = styled.span<Omit<TypographyProps, "children">>`
   ${({ marginBottom }) =>
     marginBottom ? `margin-bottom: ${marginBottom}px;` : ""}
   ${({ unselected }) => (unselected ? "user-select: none;" : "")}
+
+  & p {
+    position: relative;
+    margin-top: 0;
+  }
+
+  & p:last-child {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  & a {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  & b {
+    ${({ theme }) =>
+      Object.entries(theme.typographyStyles.paragraph2_bold).map(
+        (el) => `${el[0]}: ${el[1]};`,
+      )}
+    color: ${({ theme }) => theme.colors.black};
+  }
+
+  & q {
+    margin-left: 125px;
+    display: block;
+    ${({ theme }) =>
+      Object.entries(theme.typographyStyles.paragraph1_regular).map(
+        (el) => `${el[0]}: ${el[1]};`,
+      )}
+    color: ${({ theme }) => theme.colors.black};
+  }
+
+  & q::before {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 10%;
+    width: 4px;
+    height: 80%;
+    background-color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const StyledTextDiv = styled(StyledTextSpan).attrs({
