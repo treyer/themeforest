@@ -55,7 +55,6 @@ const Header = () => {
             opts={playerOptions}
             onReady={onPlayerReady}
           />
-          ;
         </Modal>
       )}
     </Wrapper>

@@ -1,6 +1,7 @@
 export type TagProps = {
-  active?: boolean;
-  disabled?: boolean;
+  active?: boolean | undefined;
+  disabled?: boolean | undefined;
+  clickCallback?: (text: string) => void | undefined;
   children: string;
 };
 

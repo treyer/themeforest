@@ -37,13 +37,13 @@ function FooterDark() {
               </Typography>
             </DescriptionWrapper>
             <SocialMediaWrapper>
-              {SOCIAL_NETWORK_LIST.map((el) => (
+              {SOCIAL_NETWORK_LIST.map(({ id, url }) => (
                 <SocialIconDarkMode
-                  key={el.id}
-                  url={el.url}
+                  key={id}
+                  url={url}
                   width={24}
                   height={24}
-                  color={"inherit"}
+                  color="inherit"
                 />
               ))}
             </SocialMediaWrapper>

@@ -115,13 +115,13 @@ const FooterLight = () => {
               <TextPrimaryHeader>Social</TextPrimaryHeader>
             </Typography>
             <Flex width={200}>
-              {SOCIAL_NETWORK_LIST.map((el) => (
+              {SOCIAL_NETWORK_LIST.map(({ id, url }) => (
                 <SocialIconLightMode
-                  key={el.id}
-                  url={el.url}
+                  key={id}
+                  url={url}
                   width={24}
                   height={24}
-                  color={"inherit"}
+                  color="inherit"
                 />
               ))}
             </Flex>

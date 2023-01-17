@@ -1,17 +1,15 @@
 import { StyledText, Wrapper } from "./styled";
 import { TagProps } from "./types";
 
-const Tag = ({ active, disabled, children }: TagProps) => {
+const Tag = ({ active, disabled, children, clickCallback }: TagProps) => {
+  const callback = (text: string) => () => {
+    if (clickCallback) {
+      clickCallback(text);
+    }
+  };
+
   return (
-    <Wrapper
-      justify="center"
-      paddingTop={3}
-      paddingBottom={3}
-      paddingLeft={11}
-      paddingRight={11}
-      active={active}
-      disabled={disabled}
-    >
+    <Wrapper active={active} disabled={disabled} onClick={callback(children)}>
       <StyledText variant="headline7_bold" active={active} disabled={disabled}>
         {children}
       </StyledText>

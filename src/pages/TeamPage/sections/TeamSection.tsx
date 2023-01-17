@@ -51,27 +51,21 @@ const TeamSection = () => {
   return (
     <Section type={SectionType.Narrow} marginTop={240} marginBottom={120}>
       <Flex flexWrap columnGap={20} rowGap={30} justify="start">
-        {employeeList.map((el, index, arr) => {
-          return index === arr.length - 1 &&
-            employeeList.length < employeesTotalCount ? (
-            <TeamCard
-              key={el.id}
-              imgUrl={el.imgUrl}
-              name={el.name}
-              position={el.position}
-              verticalOffset={(index - 1) % 3 === 0 ? 120 : undefined}
-              callback={setLastElement}
-            />
-          ) : (
-            <TeamCard
-              key={el.id}
-              imgUrl={el.imgUrl}
-              name={el.name}
-              position={el.position}
-              verticalOffset={(index - 1) % 3 === 0 ? 120 : undefined}
-            />
-          );
-        })}
+        {employeeList.map(({ id, imgUrl, name, position }, index, arr) => (
+          <TeamCard
+            key={id}
+            imgUrl={imgUrl}
+            name={name}
+            position={position}
+            verticalOffset={(index - 1) % 3 === 0 ? 120 : undefined}
+            callback={
+              index === arr.length - 1 &&
+              employeeList.length < employeesTotalCount
+                ? setLastElement
+                : undefined
+            }
+          />
+        ))}
       </Flex>
     </Section>
   );

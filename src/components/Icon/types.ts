@@ -4,7 +4,8 @@ type IconColor =
   | "white"
   | "gray"
   | "helperBlue3"
-  | "black";
+  | "black"
+  | "inherit";
 
 export type IconProps = {
   url: string;

@@ -8,8 +8,8 @@ const CategoriesSection = () => {
     <Flex direction="column" rowGap={50} marginTop={66}>
       <Typography variant="headline4_bold">Categories</Typography>
       <Flex direction="column">
-        {blogCategories.map((el) => (
-          <Dropdown key={el.id} title={el.title} content={el.content} />
+        {blogCategories.map(({ id, title, content }) => (
+          <Dropdown key={id} title={title} content={content} />
         ))}
       </Flex>
     </Flex>

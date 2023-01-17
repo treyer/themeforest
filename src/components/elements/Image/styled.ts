@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 import { ImageProps } from "./types";
 
+export const Wrapper = styled.div<ImageProps>`
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
+`;
+
 export const StyledImage = styled.img<ImageProps>`
   display: block;
 
@@ -12,4 +17,5 @@ export const StyledImage = styled.img<ImageProps>`
     marginBottom ? `margin-bottom: ${marginBottom}px;` : ""}
   ${({ marginRight }) => (marginRight ? `margin-right: ${marginRight}px;` : "")}
   ${({ marginLeft }) => (marginLeft ? `margin-left: ${marginLeft}px;` : "")}
+  object-fit: cover;
 `;

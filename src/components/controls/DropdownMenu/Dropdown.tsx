@@ -7,9 +7,9 @@ import { DropdownProps } from "./types";
 const Dropdown = ({ buttonsList, onClickCallback }: DropdownProps) => {
   return (
     <DropdownWrapper direction="column">
-      {buttonsList.map((el) => (
+      {buttonsList.map(({ id, link, description }) => (
         <Flex
-          key={el.id}
+          key={id}
           paddingTop={10}
           paddingBottom={10}
           paddingLeft={20}
@@ -17,7 +17,7 @@ const Dropdown = ({ buttonsList, onClickCallback }: DropdownProps) => {
           justify="space-between"
           onClickCallback={onClickCallback}
         >
-          <MenuButton link={el.link}>{el.description}</MenuButton>
+          <MenuButton link={link}>{description}</MenuButton>
           <IconArrow url={ICON_URLS.ArrowRight} width={8} height={14} />
         </Flex>
       ))}

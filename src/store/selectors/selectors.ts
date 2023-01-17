@@ -20,3 +20,10 @@ export const selectIsLoaderShown = (state: RootState) =>
 
 export const selectEmployeesCount = (state: RootState) =>
   state.employee.list.length;
+
+export const selectPopularPosts = (state: RootState) =>
+  [...state.posts.list].sort((a, b) => b.views - a.views).slice(0, 4);
+
+export const selectTagList = (state: RootState) => state.posts.tagList;
+
+export const selectActiveTag = (state: RootState) => state.posts.activeTag;

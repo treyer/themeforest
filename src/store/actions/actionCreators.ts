@@ -4,6 +4,7 @@ import {
   HIDE_LOADER,
   INCREASE_EMPLOYEE_COUNT_TO_SHOW,
   RESET_EMPLOYEE_COUNT_TO_SHOW,
+  SET_CURRENT_TAG,
   SET_THEME,
   SHOW_LOADER,
 } from "./constants";
@@ -25,3 +26,8 @@ export const increaseEmployeeCountToShow = () => ({
 export const showLoader = () => ({ type: SHOW_LOADER });
 
 export const hideLoader = () => ({ type: HIDE_LOADER });
+
+export const setCurrentTag = (payload: string) => ({
+  type: SET_CURRENT_TAG,
+  payload,
+});

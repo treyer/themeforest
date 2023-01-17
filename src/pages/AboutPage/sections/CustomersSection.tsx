@@ -20,14 +20,8 @@ const CustomersSection = () => {
           accusantium doloremque laudan, totam rem aperiam.
         </Typography>
         <Flex>
-          {CUSTOMERS_LIST.map((el) => (
-            <Image
-              key={el.id}
-              src={el.src}
-              alt={el.alt}
-              width={185}
-              height={132}
-            />
+          {CUSTOMERS_LIST.map(({ id, src, alt }) => (
+            <Image key={id} src={src} alt={alt} width={185} height={132} />
           ))}
         </Flex>
       </Flex>
